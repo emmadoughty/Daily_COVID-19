@@ -181,4 +181,4 @@ Sum_figure <- annotate_figure(figure,
                 bottom = text_grob("A: New cases per day; B: Cumulative cases per day; C: New tests per day;\nD: Cumulative tests per day; E: New fatalities per day; F: Cumulative fatalities per day",
                                    face = "bold", size = 8))
 Sum_figure
-                
+        
