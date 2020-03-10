@@ -1,11 +1,18 @@
-#Load libraries
+## Exploration of UK COVID-19 data
+## Emma Doughty (e.doughty6@gmail.com)
+
+# Install libraries if necessary
 if(!require(ggpubr)) install.packages("ggpubr")
-library(ggpubr)
+if(!require(tidyverse)) install.packages("tidyverse")
+if(!require(scales)) install.packages("scales")
+
+# Load libraries
 library(readr)
 library(tidyr)
 library(plyr)
 library(ggplot2)
 library(scales)
+library(ggpubr)
 
 #Load data
 COVID19_by_day <- read_csv("COVID19_by_day.csv")
@@ -24,7 +31,7 @@ MaxNewCases <- round_any(max(COVID19_by_day$NewCases), Factor, f=ceiling)
 Breaks <- ceiling(Factor/2)
 
 plot_NewCases <- ggplot(data=df_NewCases, aes(x=df_NewCases$Date)) +
-  geom_histogram(binwidth=1, boundary = 1, colour="black") +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(COVID19_by_day$Date), max(COVID19_by_day$Date)),
                breaks = seq(min(COVID19_by_day$Date), max(COVID19_by_day$Date), 1)) +
@@ -46,7 +53,8 @@ MaxCumCases <- round_any(max(COVID19_by_day$CumCases), Factor, f=ceiling)
 Breaks <- ceiling(Factor/2)
 
 plot_CumCases <- ggplot(data=df_NewCases, aes(x=df_NewCases$Date)) + 
-  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, boundary = 1, colour="black") +
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(COVID19_by_day$Date), max(COVID19_by_day$Date)),
                breaks = seq(min(COVID19_by_day$Date), max(COVID19_by_day$Date), 1)) +
@@ -72,7 +80,7 @@ MaxNewTests <- round_any(max(COVID19_by_day$NewTests), Factor, f=ceiling)
 Breaks <- ceiling(Factor/2)
 
 plot_NewTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) + 
-  geom_histogram(binwidth=1, boundary = 1, colour="black") +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#90BEDE") +
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(COVID19_by_day$Date), max(COVID19_by_day$Date)),
                breaks = seq(min(COVID19_by_day$Date), max(COVID19_by_day$Date), 1)) +
@@ -93,7 +101,8 @@ MaxCumTests <- round_any(max(COVID19_by_day$CumTests), Factor, f=ceiling)
 Breaks <- ceiling(Factor/2)
 
 plot_CumTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) + 
-  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, boundary = 1, colour="black") +
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#68EDC6") +
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(COVID19_by_day$Date), max(COVID19_by_day$Date)),
                breaks = seq(min(COVID19_by_day$Date), max(COVID19_by_day$Date), 1)) +
@@ -119,7 +128,7 @@ MaxNewDeaths <- round_any(max(COVID19_by_day$NewDeaths), Factor, f=ceiling)
 Breaks <- ceiling(Factor/2)
 
 plot_NewDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) + 
-  geom_histogram(binwidth=1, boundary = 1, colour="black") +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#90F3FF") +
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(COVID19_by_day$Date), max(COVID19_by_day$Date)),
                breaks = seq(min(COVID19_by_day$Date), max(COVID19_by_day$Date), 1)) +
@@ -140,7 +149,8 @@ MaxCumDeaths <- round_any(max(COVID19_by_day$CumDeaths), Factor, f=ceiling)
 Breaks <- ceiling(Factor/2)
 
 plot_CumDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) + 
-  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, boundary = 1, , colour="black") +
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, boundary = 1, 
+                 colour="black", fill= "#8D80AD") +
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(COVID19_by_day$Date), max(COVID19_by_day$Date)),
                breaks = seq(min(COVID19_by_day$Date), max(COVID19_by_day$Date), 1)) +
@@ -154,23 +164,21 @@ plot_CumDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) +
 
 plot_CumDeaths
 
-figure <- ggarrange(plot_NewCases + font("x.text", size = 8), 
-                    plot_CumCases + font("x.text", size = 8), 
-                    plot_NewTests + font("x.text", size = 8), 
-                    plot_CumTests + font("x.text", size = 8), 
-                    plot_NewDeaths + font("x.text", size = 8), 
-                    plot_CumDeaths + font("x.text", size = 8),
+figure <- ggarrange(plot_NewCases + font("x.text", size = 6), 
+                    plot_CumCases + font("x.text", size = 6), 
+                    plot_NewTests + font("x.text", size = 6), 
+                    plot_CumTests + font("x.text", size = 6), 
+                    plot_NewDeaths + font("x.text", size = 6), 
+                    plot_CumDeaths + font("x.text", size = 6),
           labels = c("A", "B", "C", "D", "E", "F"),
-          ncol = 2, nrow = 3, align = "v")
+          ncol = 2, nrow = 3, align = "hv")
 
-annotate_figure(figure,
-                top = text_grob("UK data for COVID-19", face = "bold", size = 14, vjust = 0),
-                bottom = text_grob("A: New cases per day; B: Cumulative cases per day; C: New tests per day\n
-                                   D: Cumulative tests per day; E: New fatalities per day; F: Cumulative fatalities per day",
-                                   hjust = 1, x = 1, face = "bold", size = 8),
-                right = text_grob("Data source: https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public#number-of-cases",
-                                 rot = 90, , size = 6)
-                )
 
-figure
+Sum_figure <- annotate_figure(figure,
+                top = text_grob("UK data for COVID-19", face = "bold", size = 14),
+                #right = text_grob("Data source: Daily updates at https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public#number-of-cases",
+                #                 rot = 90, hjust = 0.5, size = 8),
+                bottom = text_grob("A: New cases per day; B: Cumulative cases per day; C: New tests per day;\nD: Cumulative tests per day; E: New fatalities per day; F: Cumulative fatalities per day",
+                                   face = "bold", size = 8))
+Sum_figure
                 
