@@ -10,4 +10,4 @@ Cases. per local authority obtained daily from [PHE](https://www.gov.uk/governme
 
 ### Summary figure
 
-![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Rplot.png)
+![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
