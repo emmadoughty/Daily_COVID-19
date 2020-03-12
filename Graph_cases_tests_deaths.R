@@ -63,7 +63,7 @@ plot_CumCases <- ggplot(data=df_NewCases, aes(x=df_NewCases$Date)) +
   scale_y_continuous(limits = c(0, CumCases_Max), 
                      breaks = seq(0, CumCases_Max, CumCases_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative UK cases per day") +
+  ggtitle("Cumulative UK cases") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -112,7 +112,7 @@ plot_CumTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) +
   scale_y_continuous(limits = c(0, CumTests_Max), 
                      breaks = seq(0, CumTests_Max, CumTests_Breaks),  expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative UK tests per day") +
+  ggtitle("Cumulative UK tests") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -139,7 +139,7 @@ plot_NewDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) +
   scale_y_continuous(limits = c(0, NewDeaths_Max), 
                      breaks = seq(0, NewDeaths_Max, NewDeaths_Breaks), expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New UK deaths per day") +
+  ggtitle("New UK deaths") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -161,7 +161,7 @@ plot_CumDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) +
   scale_y_continuous(limits = c(0,CumDeaths_Max), 
                      breaks = seq(0, CumDeaths_Max, CumDeaths_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative UK deaths per day") +
+  ggtitle("Cumulative UK deaths") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -212,3 +212,4 @@ Deaths_figure <- ggarrange(plot_NewDeaths + font("x.text", size = 8),
 pdf("Deaths_plot.pdf", height = 8.27, width = 11.69)
 Deaths_figure
 dev.off()
+
