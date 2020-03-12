@@ -3757,7 +3757,7 @@ plot_Kensington_and_ChelseaNew <- ggplot(data=Kensington_and_Chelsea_data, aes(x
   ylab("Frequency") + xlab("Date") +
   ggtitle("New cases per day: Kensington and Chelsea") +
   theme_minimal() +
-  theme(plot.title = element_text(size=13, face="bold"),
+  theme(plot.title = element_text(size=11, face="bold"),
         axis.line = element_line(colour = "black"),
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank())
@@ -3780,7 +3780,7 @@ plot_Kensington_and_ChelseaCum <- ggplot(data=Kensington_and_Chelsea_data, aes(x
   ylab("Cumulative frequency") + xlab("Date") +
   ggtitle("Cumulative cases: Kensington and Chelsea") +
   theme_minimal() +
-  theme(plot.title = element_text(size=13, face="bold"),
+  theme(plot.title = element_text(size=11, face="bold"),
         axis.line = element_line(colour = "black"),
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank())
@@ -9401,3 +9401,19 @@ York_figure <- ggarrange(plot_YorkNew + font("x.text", size = 8),
 pdf("York_cases_plot.pdf", height = 8.27, width = 11.69)
 York_figure
 dev.off()
+
+#### Summary plot- 4 LA with highest cases 11/03/2020 #####
+
+LA_figure <- ggarrange(plot_DevonCum + font("x.text", size = 8), 
+                        plot_HampshireCum + font("x.text", size = 8), 
+                        plot_HertfordshireCum + font("x.text", size = 8), 
+                        plot_Kensington_and_ChelseaCum + font("x.text", size = 8), 
+                        ncol = 2, nrow = 2, align = "hv")
+
+Sum_figure <- annotate_figure(LA_figure,
+                              top = text_grob("Local authorities with highest total cases, 11/03/2020", face = "bold", size = 14))
+
+pdf("Highest_LA_plot.pdf", height = 8.27, width = 11.69)
+Sum_figure
+dev.off()
+
