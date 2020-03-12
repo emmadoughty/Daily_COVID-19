@@ -2,9 +2,9 @@
 ## Emma Doughty (e.doughty6@gmail.com)
 
 # Install libraries if necessary
-if(!require(ggpubr)) install.packages("ggpubr")
-if(!require(tidyverse)) install.packages("tidyverse")
-if(!require(scales)) install.packages("scales")
+#if(!require(ggpubr)) install.packages("ggpubr")
+#if(!require(tidyverse)) install.packages("tidyverse")
+#if(!require(scales)) install.packages("scales")
 
 # Load libraries
 library(readr)
@@ -24,7 +24,7 @@ COVID19_by_day <- COVID19_by_day[order(COVID19_by_day$Date),]
 #### CASES per day ####
 # Read in new cases per day from summarised data, format date correctly
 df_NewCases <- data.frame(Date=c(COVID19_by_day$Date), ntimes=c(COVID19_by_day$NewCases))
-df_NewCases<- as.data.frame(lapply(df_NewCases, rep, df_NewCases$ntimes))
+df_NewCases <- as.data.frame(lapply(df_NewCases, rep, df_NewCases$ntimes))
 
 # Plot number of NEW CASES per day
 NewCases_Sigfig <- signif(max(COVID19_by_day$NewCases))
@@ -123,7 +123,7 @@ plot_CumTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) +
 #### DEATHS per day ####
 # Read in DEATHS per day from summarised data, format date correctly
 df_NewDeaths <- data.frame(Date=c(COVID19_by_day$Date), ntimes=c(COVID19_by_day$NewDeaths))
-df_NewDeaths<- as.data.frame(lapply(df_NewDeaths, rep, df_NewDeaths$ntimes))
+df_NewDeaths <- as.data.frame(lapply(df_NewDeaths, rep, df_NewDeaths$ntimes))
 
 # Plot NEW DEATHS per day #
 NewDeaths_Sigfig <- signif(max(COVID19_by_day$NewDeaths))
