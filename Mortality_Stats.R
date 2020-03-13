@@ -26,6 +26,7 @@ COVID19_by_day <- COVID19_by_day[order(COVID19_by_day$Date),]
   # 14-23d from symptom onset to death
   # ~5d from onset to reporting
   # Therefore, time from reporting to death min =14-5 = 9d; max = 23-5 =18d; avg = 17d-5 = 12d
+  # Chosen to show 19, 17, 15, 13, 11, 9d to give even spread across the middle/lower 
   # (4-7d exposure to symptom onset)
 
 #### Generate dataframe for plot ####
@@ -39,18 +40,44 @@ df_DeathsCases <- data.frame(Date = COVID19_by_day$Date,
 
 df_DeathsCases[,c(5)] <- sapply(df_DeathsCases$StatValue, as.double)
 
-# Cumulative deaths vs cumulative cases 15 days prior
-# df_Deaths15d <- data.frame(Date = COVID19_by_day$Date, 
+# # Cumulative deaths vs cumulative cases 19 days prior
+# df_Deaths19d <- data.frame(Date = COVID19_by_day$Date, 
 #                            CumCases = COVID19_by_day$CumCases, 
 #                            CumDeaths = COVID19_by_day$CumDeaths, 
-#                            DeathStat = "DeathsV15D", StatValue = "0", 
+#                            DeathStat = "19 days", StatValue = "0", 
 #                            stringsAsFactors = FALSE)
 # 
-# df_Deaths15d[,c(5)] <- sapply(df_Deaths15d$StatValue, as.double)
+# df_Deaths19d[,c(5)] <- sapply(df_Deaths19d$StatValue, as.double)
 # 
-# for (i in 36:nrow(df_Deaths15d)) {
-#   df_Deaths15d[[i, 5]] <- (100 * (df_Deaths15d[i,3]/df_Deaths15d[i-15,2]))
+# for (i in 36:nrow(df_Deaths19d)) {
+#   df_Deaths19d[[i, 5]] <- (100 * (df_Deaths19d[i,3]/df_Deaths19d[i-19,2]))
 # }
+
+# Cumulative deaths vs cumulative cases 17 days prior
+df_Deaths17d <- data.frame(Date = COVID19_by_day$Date, 
+                           CumCases = COVID19_by_day$CumCases, 
+                           CumDeaths = COVID19_by_day$CumDeaths, 
+                           DeathStat = "17 days", StatValue = "0", 
+                           stringsAsFactors = FALSE)
+
+df_Deaths17d[,c(5)] <- sapply(df_Deaths17d$StatValue, as.double)
+
+for (i in 36:nrow(df_Deaths17d)) {
+  df_Deaths17d[[i, 5]] <- (100 * (df_Deaths17d[i,3]/df_Deaths17d[i-17,2]))
+}
+
+# Cumulative deaths vs cumulative cases 15 days prior
+df_Deaths15d <- data.frame(Date = COVID19_by_day$Date, 
+                            CumCases = COVID19_by_day$CumCases, 
+                            CumDeaths = COVID19_by_day$CumDeaths, 
+                            DeathStat = "15 days", StatValue = "0", 
+                            stringsAsFactors = FALSE)
+ 
+df_Deaths15d[,c(5)] <- sapply(df_Deaths15d$StatValue, as.double)
+ 
+for (i in 36:nrow(df_Deaths15d)) {
+  df_Deaths15d[[i, 5]] <- (100 * (df_Deaths15d[i,3]/df_Deaths15d[i-15,2]))
+}
 
 # Cumulative deaths vs cumulative cases 13 days prior
 df_Deaths13d <- data.frame(Date = COVID19_by_day$Date, 
@@ -101,7 +128,7 @@ for (i in 36:nrow(df_Deaths7d)) {
 }
 
 # Merge data for all estimated dates of reporting
-df_DeathsStats <- rbind(df_Deaths13d, df_Deaths11d, df_Deaths9d, df_Deaths7d, df_DeathsCases)
+df_DeathsStats <- rbind(df_Deaths17d, df_Deaths15d, df_Deaths13d, df_Deaths11d, df_Deaths9d, df_Deaths7d, df_DeathsCases)
 df_DeathsStats <-df_DeathsStats[!(df_DeathsStats$CumDeaths==0),]
 
 #### Plot graph for mortslity stats ####
@@ -114,8 +141,8 @@ plot_Mortality <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatV
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(df_DeathsStats$Date), max(df_DeathsStats$Date)),
                breaks = seq(min(df_DeathsStats$Date), max(df_DeathsStats$Date), 1)) +
-  scale_y_continuous(limits = c(0, 50), 
-                     breaks = seq(0, 50, DeathStats_Breaks),
+  scale_y_continuous(limits = c(0, 80), 
+                     breaks = seq(0, 80, DeathStats_Breaks),
                      expand = c(0, 0)) +
   ylab("Deaths/cases (%)") + xlab("Date") +
   ggtitle("Estimated UK mortality rates") +
@@ -126,7 +153,7 @@ plot_Mortality <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatV
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank()) + 
   labs(colour = "Reporting to death:")+ 
-  scale_color_discrete(breaks=c("0 days","7 days","9 days","11 days","13 days"))
+  scale_color_discrete(breaks=c("0 days","7 days","9 days","11 days","13 days","15 days","17 days"))
 
 pdf("Mortality_Stats_plot.pdf", height = 8.27, width = 11.69)
 plot_Mortality
