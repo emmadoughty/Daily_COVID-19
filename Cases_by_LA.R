@@ -1,4 +1,4 @@
-## Exploration of UK COVID-19 data
+## Exploration of UK COVID-19 LA data
 ## Emma Doughty (e.doughty6@gmail.com)
 
 # Install libraries if necessary
@@ -19,7 +19,6 @@ COVID19_by_LA <- read_csv("COVID19_by_LA.csv")
 COVID19_by_LA$Date <- as.Date(COVID19_by_LA$Date, format = "%d/%m/%y")
 COVID19_by_LA <- COVID19_by_LA[order(COVID19_by_LA$Date),]
 
-View(COVID19_by_LA)
 
 #### Barking_and_Dagenham plots ####
 #Read in new cases per day from summarised data, format date correctly
@@ -78,10 +77,13 @@ Barking_and_Dagenham_figure <- ggarrange(plot_Barking_and_DagenhamNew + font("x.
                                          plot_Barking_and_DagenhamCum + font("x.text", size = 8), 
                                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Barking_and_Dagenham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Plot per local authority/Barking_and_Dagenham_cases_plot.pdf", height = 8.27, width = 11.69)
 Barking_and_Dagenham_figure
 dev.off()
 
+
+
+#### Barnet plots ####
 #Read in new cases per day from summarised data, format date correctly
 Barnet_data <- data.frame(Date=c(COVID19_by_LA$Date), ntimes=c(COVID19_by_LA$Barnet))
 Barnet_data <- as.data.frame(lapply(Barnet_data, rep, Barnet_data$ntimes))
@@ -138,7 +140,7 @@ Barnet_figure <- ggarrange(plot_BarnetNew + font("x.text", size = 8),
                            plot_BarnetCum + font("x.text", size = 8),
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Barnet_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Barnet_cases_plot.pdf", height = 8.27, width = 11.69)
 Barnet_figure
 dev.off()
 
@@ -200,7 +202,7 @@ Barnsley_figure <- ggarrange(plot_BarnsleyNew + font("x.text", size = 8),
                              plot_BarnsleyCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Barnsley_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Barnsley_cases_plot.pdf", height = 8.27, width = 11.69)
 Barnsley_figure
 dev.off()
 
@@ -263,7 +265,7 @@ Bath_and_North_East_Somerset_figure <- ggarrange(plot_Bath_and_North_East_Somers
                                                  plot_Bath_and_North_East_SomersetCum + font("x.text", size = 8), 
                                                  ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bath_and_North_East_Somerset_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bath_and_North_East_Somerset_cases_plot.pdf", height = 8.27, width = 11.69)
 Bath_and_North_East_Somerset_figure
 dev.off()
 
@@ -326,7 +328,7 @@ Bedford_figure <- ggarrange(plot_BedfordNew + font("x.text", size = 8),
                             plot_BedfordCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bedford_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bedford_cases_plot.pdf", height = 8.27, width = 11.69)
 Bedford_figure
 dev.off()
 
@@ -389,7 +391,7 @@ Bexley_figure <- ggarrange(plot_BexleyNew + font("x.text", size = 8),
                            plot_BexleyCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bexley_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bexley_cases_plot.pdf", height = 8.27, width = 11.69)
 Bexley_figure
 dev.off()
 
@@ -452,7 +454,7 @@ Birmingham_figure <- ggarrange(plot_BirminghamNew + font("x.text", size = 8),
                                plot_BirminghamCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Birmingham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Birmingham_cases_plot.pdf", height = 8.27, width = 11.69)
 Birmingham_figure
 dev.off()
 
@@ -515,7 +517,7 @@ Blackburn_with_Darwen_figure <- ggarrange(plot_Blackburn_with_DarwenNew + font("
                                           plot_Blackburn_with_DarwenCum + font("x.text", size = 8), 
                                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Blackburn_with_Darwen_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Blackburn_with_Darwen_cases_plot.pdf", height = 8.27, width = 11.69)
 Blackburn_with_Darwen_figure
 dev.off()
 
@@ -578,7 +580,7 @@ Blackpool_figure <- ggarrange(plot_BlackpoolNew + font("x.text", size = 8),
                               plot_BlackpoolCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Blackpool_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Blackpool_cases_plot.pdf", height = 8.27, width = 11.69)
 Blackpool_figure
 dev.off()
 
@@ -641,7 +643,7 @@ Bolton_figure <- ggarrange(plot_BoltonNew + font("x.text", size = 8),
                            plot_BoltonCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bolton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bolton_cases_plot.pdf", height = 8.27, width = 11.69)
 Bolton_figure
 dev.off()
 
@@ -704,7 +706,7 @@ Bournemouth_figure <- ggarrange(plot_BournemouthNew + font("x.text", size = 8),
                                 plot_BournemouthCum + font("x.text", size = 8), 
                                 ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bournemouth_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bournemouth_cases_plot.pdf", height = 8.27, width = 11.69)
 Bournemouth_figure
 dev.off()
 
@@ -767,7 +769,7 @@ Bracknell_Forest_figure <- ggarrange(plot_Bracknell_ForestNew + font("x.text", s
                                      plot_Bracknell_ForestCum + font("x.text", size = 8), 
                                      ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bracknell_Forest_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bracknell_Forest_cases_plot.pdf", height = 8.27, width = 11.69)
 Bracknell_Forest_figure
 dev.off()
 
@@ -830,7 +832,7 @@ Bradford_figure <- ggarrange(plot_BradfordNew + font("x.text", size = 8),
                              plot_BradfordCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bradford_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bradford_cases_plot.pdf", height = 8.27, width = 11.69)
 Bradford_figure
 dev.off()
 
@@ -893,7 +895,7 @@ Brent_figure <- ggarrange(plot_BrentNew + font("x.text", size = 8),
                           plot_BrentCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Brent_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Brent_cases_plot.pdf", height = 8.27, width = 11.69)
 Brent_figure
 dev.off()
 
@@ -956,7 +958,7 @@ Brighton_andHove_figure <- ggarrange(plot_Brighton_andHoveNew + font("x.text", s
                                      plot_Brighton_andHoveCum + font("x.text", size = 8), 
                                      ncol = 1, nrow = 2, align = "hv")
 
-pdf("Brighton_andHove_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Brighton_andHove_cases_plot.pdf", height = 8.27, width = 11.69)
 Brighton_andHove_figure
 dev.off()
 
@@ -1019,7 +1021,7 @@ Bristol_figure <- ggarrange(plot_BristolNew + font("x.text", size = 8),
                             plot_BristolCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bristol_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bristol_cases_plot.pdf", height = 8.27, width = 11.69)
 Bristol_figure
 dev.off()
 
@@ -1082,7 +1084,7 @@ Bromley_figure <- ggarrange(plot_BromleyNew + font("x.text", size = 8),
                             plot_BromleyCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bromley_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bromley_cases_plot.pdf", height = 8.27, width = 11.69)
 Bromley_figure
 dev.off()
 
@@ -1145,7 +1147,7 @@ Buckinghamshire_figure <- ggarrange(plot_BuckinghamshireNew + font("x.text", siz
                                     plot_BuckinghamshireCum + font("x.text", size = 8), 
                                     ncol = 1, nrow = 2, align = "hv")
 
-pdf("Buckinghamshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Buckinghamshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Buckinghamshire_figure
 dev.off()
 
@@ -1208,7 +1210,7 @@ Bury_figure <- ggarrange(plot_BuryNew + font("x.text", size = 8),
                          plot_BuryCum + font("x.text", size = 8), 
                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Bury_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Bury_cases_plot.pdf", height = 8.27, width = 11.69)
 Bury_figure
 dev.off()
 
@@ -1271,7 +1273,7 @@ Calderdale_figure <- ggarrange(plot_CalderdaleNew + font("x.text", size = 8),
                                plot_CalderdaleCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Calderdale_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Calderdale_cases_plot.pdf", height = 8.27, width = 11.69)
 Calderdale_figure
 dev.off()
 
@@ -1334,7 +1336,7 @@ Cambridgeshire_figure <- ggarrange(plot_CambridgeshireNew + font("x.text", size 
                                    plot_CambridgeshireCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("Cambridgeshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Cambridgeshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Cambridgeshire_figure
 dev.off()
 
@@ -1397,7 +1399,7 @@ Camden_figure <- ggarrange(plot_CamdenNew + font("x.text", size = 8),
                            plot_CamdenCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Camden_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Camden_cases_plot.pdf", height = 8.27, width = 11.69)
 Camden_figure
 dev.off()
 
@@ -1460,7 +1462,7 @@ Central_Bedfordshire_figure <- ggarrange(plot_Central_BedfordshireNew + font("x.
                                          plot_Central_BedfordshireCum + font("x.text", size = 8), 
                                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Central_Bedfordshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Central_Bedfordshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Central_Bedfordshire_figure
 dev.off()
 
@@ -1523,7 +1525,7 @@ Cheshire_East_figure <- ggarrange(plot_Cheshire_EastNew + font("x.text", size = 
                                   plot_Cheshire_EastCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Cheshire_East_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Cheshire_East_cases_plot.pdf", height = 8.27, width = 11.69)
 Cheshire_East_figure
 dev.off()
 
@@ -1586,7 +1588,7 @@ Cheshire_West_and_Chester_figure <- ggarrange(plot_Cheshire_West_and_ChesterNew 
                                               plot_Cheshire_West_and_ChesterCum + font("x.text", size = 8), 
                                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Cheshire_West_and_Chester_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Cheshire_West_and_Chester_cases_plot.pdf", height = 8.27, width = 11.69)
 Cheshire_West_and_Chester_figure
 dev.off()
 
@@ -1649,7 +1651,7 @@ Cornwall_and_Isles_of_Scilly_figure <- ggarrange(plot_Cornwall_and_Isles_of_Scil
                                                  plot_Cornwall_and_Isles_of_ScillyCum + font("x.text", size = 8), 
                                                  ncol = 1, nrow = 2, align = "hv")
 
-pdf("Cornwall_and_Isles_of_Scilly_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Cornwall_and_Isles_of_Scilly_cases_plot.pdf", height = 8.27, width = 11.69)
 Cornwall_and_Isles_of_Scilly_figure
 dev.off()
 
@@ -1712,7 +1714,7 @@ County_Durham_figure <- ggarrange(plot_County_DurhamNew + font("x.text", size = 
                                   plot_County_DurhamCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("County_Durham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/County_Durham_cases_plot.pdf", height = 8.27, width = 11.69)
 County_Durham_figure
 dev.off()
 
@@ -1775,7 +1777,7 @@ Coventry_figure <- ggarrange(plot_CoventryNew + font("x.text", size = 8),
                              plot_CoventryCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Coventry_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Coventry_cases_plot.pdf", height = 8.27, width = 11.69)
 Coventry_figure
 dev.off()
 
@@ -1838,7 +1840,7 @@ Croydon_figure <- ggarrange(plot_CroydonNew + font("x.text", size = 8),
                             plot_CroydonCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Croydon_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Croydon_cases_plot.pdf", height = 8.27, width = 11.69)
 Croydon_figure
 dev.off()
 
@@ -1901,7 +1903,7 @@ Cumbria_figure <- ggarrange(plot_CumbriaNew + font("x.text", size = 8),
                             plot_CumbriaCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Cumbria_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Cumbria_cases_plot.pdf", height = 8.27, width = 11.69)
 Cumbria_figure
 dev.off()
 
@@ -1964,7 +1966,7 @@ Darlington_figure <- ggarrange(plot_DarlingtonNew + font("x.text", size = 8),
                                plot_DarlingtonCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Darlington_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Darlington_cases_plot.pdf", height = 8.27, width = 11.69)
 Darlington_figure
 dev.off()
 
@@ -2027,7 +2029,7 @@ Derby_figure <- ggarrange(plot_DerbyNew + font("x.text", size = 8),
                           plot_DerbyCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Derby_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Derby_cases_plot.pdf", height = 8.27, width = 11.69)
 Derby_figure
 dev.off()
 
@@ -2090,7 +2092,7 @@ Derbyshire_figure <- ggarrange(plot_DerbyshireNew + font("x.text", size = 8),
                                plot_DerbyshireCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Derbyshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Derbyshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Derbyshire_figure
 dev.off()
 
@@ -2153,7 +2155,7 @@ Devon_figure <- ggarrange(plot_DevonNew + font("x.text", size = 8),
                           plot_DevonCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Devon_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Devon_cases_plot.pdf", height = 8.27, width = 11.69)
 Devon_figure
 dev.off()
 
@@ -2216,7 +2218,7 @@ Doncaster_figure <- ggarrange(plot_DoncasterNew + font("x.text", size = 8),
                               plot_DoncasterCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Doncaster_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Doncaster_cases_plot.pdf", height = 8.27, width = 11.69)
 Doncaster_figure
 dev.off()
 
@@ -2279,7 +2281,7 @@ Dorset_figure <- ggarrange(plot_DorsetNew + font("x.text", size = 8),
                            plot_DorsetCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Dorset_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Dorset_cases_plot.pdf", height = 8.27, width = 11.69)
 Dorset_figure
 dev.off()
 
@@ -2342,7 +2344,7 @@ Dudley_figure <- ggarrange(plot_DudleyNew + font("x.text", size = 8),
                            plot_DudleyCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Dudley_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Dudley_cases_plot.pdf", height = 8.27, width = 11.69)
 Dudley_figure
 dev.off()
 
@@ -2405,7 +2407,7 @@ Ealing_figure <- ggarrange(plot_EalingNew + font("x.text", size = 8),
                            plot_EalingCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Ealing_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Ealing_cases_plot.pdf", height = 8.27, width = 11.69)
 Ealing_figure
 dev.off()
 
@@ -2468,7 +2470,7 @@ East_Riding_of_Yorkshire_figure <- ggarrange(plot_East_Riding_of_YorkshireNew + 
                                              plot_East_Riding_of_YorkshireCum + font("x.text", size = 8), 
                                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("East_Riding_of_Yorkshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/East_Riding_of_Yorkshire_cases_plot.pdf", height = 8.27, width = 11.69)
 East_Riding_of_Yorkshire_figure
 dev.off()
 
@@ -2531,7 +2533,7 @@ East_Sussex_figure <- ggarrange(plot_East_SussexNew + font("x.text", size = 8),
                                 plot_East_SussexCum + font("x.text", size = 8), 
                                 ncol = 1, nrow = 2, align = "hv")
 
-pdf("East_Sussex_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/East_Sussex_cases_plot.pdf", height = 8.27, width = 11.69)
 East_Sussex_figure
 dev.off()
 
@@ -2594,7 +2596,7 @@ Enfield_figure <- ggarrange(plot_EnfieldNew + font("x.text", size = 8),
                             plot_EnfieldCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Enfield_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Enfield_cases_plot.pdf", height = 8.27, width = 11.69)
 Enfield_figure
 dev.off()
 
@@ -2657,7 +2659,7 @@ Essex_figure <- ggarrange(plot_EssexNew + font("x.text", size = 8),
                           plot_EssexCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Essex_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Essex_cases_plot.pdf", height = 8.27, width = 11.69)
 Essex_figure
 dev.off()
 
@@ -2720,7 +2722,7 @@ Gateshead_figure <- ggarrange(plot_GatesheadNew + font("x.text", size = 8),
                               plot_GatesheadCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Gateshead_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Gateshead_cases_plot.pdf", height = 8.27, width = 11.69)
 Gateshead_figure
 dev.off()
 
@@ -2783,7 +2785,7 @@ Gloucestershire_figure <- ggarrange(plot_GloucestershireNew + font("x.text", siz
                                     plot_GloucestershireCum + font("x.text", size = 8), 
                                     ncol = 1, nrow = 2, align = "hv")
 
-pdf("Gloucestershire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Gloucestershire_cases_plot.pdf", height = 8.27, width = 11.69)
 Gloucestershire_figure
 dev.off()
 
@@ -2846,7 +2848,7 @@ Greenwich_figure <- ggarrange(plot_GreenwichNew + font("x.text", size = 8),
                               plot_GreenwichCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Greenwich_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Greenwich_cases_plot.pdf", height = 8.27, width = 11.69)
 Greenwich_figure
 dev.off()
 
@@ -2909,7 +2911,7 @@ Hackney_and_City_of_London_figure <- ggarrange(plot_Hackney_and_City_of_LondonNe
                                                plot_Hackney_and_City_of_LondonCum + font("x.text", size = 8), 
                                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hackney_and_City_of_London_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hackney_and_City_of_London_cases_plot.pdf", height = 8.27, width = 11.69)
 Hackney_and_City_of_London_figure
 dev.off()
 
@@ -2972,7 +2974,7 @@ Halton_figure <- ggarrange(plot_HaltonNew + font("x.text", size = 8),
                            plot_HaltonCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Halton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Halton_cases_plot.pdf", height = 8.27, width = 11.69)
 Halton_figure
 dev.off()
 
@@ -3035,7 +3037,7 @@ Hammersmith_and_Fulham_figure <- ggarrange(plot_Hammersmith_and_FulhamNew + font
                                            plot_Hammersmith_and_FulhamCum + font("x.text", size = 8), 
                                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hammersmith_and_Fulham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hammersmith_and_Fulham_cases_plot.pdf", height = 8.27, width = 11.69)
 Hammersmith_and_Fulham_figure
 dev.off()
 
@@ -3098,7 +3100,7 @@ Hampshire_figure <- ggarrange(plot_HampshireNew + font("x.text", size = 8),
                               plot_HampshireCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hampshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hampshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Hampshire_figure
 dev.off()
 
@@ -3161,7 +3163,7 @@ Haringey_figure <- ggarrange(plot_HaringeyNew + font("x.text", size = 8),
                              plot_HaringeyCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Haringey_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Haringey_cases_plot.pdf", height = 8.27, width = 11.69)
 Haringey_figure
 dev.off()
 
@@ -3224,7 +3226,7 @@ Harrow_figure <- ggarrange(plot_HarrowNew + font("x.text", size = 8),
                            plot_HarrowCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Harrow_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Harrow_cases_plot.pdf", height = 8.27, width = 11.69)
 Harrow_figure
 dev.off()
 
@@ -3287,7 +3289,7 @@ Hartlepool_figure <- ggarrange(plot_HartlepoolNew + font("x.text", size = 8),
                                plot_HartlepoolCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hartlepool_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hartlepool_cases_plot.pdf", height = 8.27, width = 11.69)
 Hartlepool_figure
 dev.off()
 
@@ -3350,7 +3352,7 @@ Havering_figure <- ggarrange(plot_HaveringNew + font("x.text", size = 8),
                              plot_HaveringCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Havering_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Havering_cases_plot.pdf", height = 8.27, width = 11.69)
 Havering_figure
 dev.off()
 
@@ -3413,7 +3415,7 @@ Herefordshire_figure <- ggarrange(plot_HerefordshireNew + font("x.text", size = 
                                   plot_HerefordshireCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Herefordshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Herefordshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Herefordshire_figure
 dev.off()
 
@@ -3476,7 +3478,7 @@ Hertfordshire_figure <- ggarrange(plot_HertfordshireNew + font("x.text", size = 
                                   plot_HertfordshireCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hertfordshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hertfordshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Hertfordshire_figure
 dev.off()
 
@@ -3539,7 +3541,7 @@ Hillingdon_figure <- ggarrange(plot_HillingdonNew + font("x.text", size = 8),
                                plot_HillingdonCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hillingdon_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hillingdon_cases_plot.pdf", height = 8.27, width = 11.69)
 Hillingdon_figure
 dev.off()
 
@@ -3602,7 +3604,7 @@ Hounslow_figure <- ggarrange(plot_HounslowNew + font("x.text", size = 8),
                              plot_HounslowCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Hounslow_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Hounslow_cases_plot.pdf", height = 8.27, width = 11.69)
 Hounslow_figure
 dev.off()
 
@@ -3665,7 +3667,7 @@ Isle_of_Wight_figure <- ggarrange(plot_Isle_of_WightNew + font("x.text", size = 
                                   plot_Isle_of_WightCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Isle_of_Wight_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Isle_of_Wight_cases_plot.pdf", height = 8.27, width = 11.69)
 Isle_of_Wight_figure
 dev.off()
 
@@ -3728,7 +3730,7 @@ Islington_figure <- ggarrange(plot_IslingtonNew + font("x.text", size = 8),
                               plot_IslingtonCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Islington_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Islington_cases_plot.pdf", height = 8.27, width = 11.69)
 Islington_figure
 dev.off()
 
@@ -3791,7 +3793,7 @@ Kensington_and_Chelsea_figure <- ggarrange(plot_Kensington_and_ChelseaNew + font
                                            plot_Kensington_and_ChelseaCum + font("x.text", size = 8), 
                                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Kensington_and_Chelsea_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Kensington_and_Chelsea_cases_plot.pdf", height = 8.27, width = 11.69)
 Kensington_and_Chelsea_figure
 dev.off()
 
@@ -3854,7 +3856,7 @@ Kent_figure <- ggarrange(plot_KentNew + font("x.text", size = 8),
                          plot_KentCum + font("x.text", size = 8), 
                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Kent_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Kent_cases_plot.pdf", height = 8.27, width = 11.69)
 Kent_figure
 dev.off()
 
@@ -3917,7 +3919,7 @@ Kingston_upon_Hull_figure <- ggarrange(plot_Kingston_upon_HullNew + font("x.text
                                        plot_Kingston_upon_HullCum + font("x.text", size = 8), 
                                        ncol = 1, nrow = 2, align = "hv")
 
-pdf("Kingston_upon_Hull_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Kingston_upon_Hull_cases_plot.pdf", height = 8.27, width = 11.69)
 Kingston_upon_Hull_figure
 dev.off()
 
@@ -3980,7 +3982,7 @@ Kingston_upon_Thames_figure <- ggarrange(plot_Kingston_upon_ThamesNew + font("x.
                                          plot_Kingston_upon_ThamesCum + font("x.text", size = 8), 
                                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Kingston_upon_Thames_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Kingston_upon_Thames_cases_plot.pdf", height = 8.27, width = 11.69)
 Kingston_upon_Thames_figure
 dev.off()
 
@@ -4043,7 +4045,7 @@ Kirklees_figure <- ggarrange(plot_KirkleesNew + font("x.text", size = 8),
                              plot_KirkleesCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Kirklees_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Kirklees_cases_plot.pdf", height = 8.27, width = 11.69)
 Kirklees_figure
 dev.off()
 
@@ -4106,7 +4108,7 @@ Knowsley_figure <- ggarrange(plot_KnowsleyNew + font("x.text", size = 8),
                              plot_KnowsleyCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Knowsley_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Knowsley_cases_plot.pdf", height = 8.27, width = 11.69)
 Knowsley_figure
 dev.off()
 
@@ -4169,7 +4171,7 @@ Lambeth_figure <- ggarrange(plot_LambethNew + font("x.text", size = 8),
                             plot_LambethCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Lambeth_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Lambeth_cases_plot.pdf", height = 8.27, width = 11.69)
 Lambeth_figure
 dev.off()
 
@@ -4232,7 +4234,7 @@ Lancashire_figure <- ggarrange(plot_LancashireNew + font("x.text", size = 8),
                                plot_LancashireCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Lancashire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Lancashire_cases_plot.pdf", height = 8.27, width = 11.69)
 Lancashire_figure
 dev.off()
 
@@ -4295,7 +4297,7 @@ Leeds_figure <- ggarrange(plot_LeedsNew + font("x.text", size = 8),
                           plot_LeedsCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Leeds_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Leeds_cases_plot.pdf", height = 8.27, width = 11.69)
 Leeds_figure
 dev.off()
 
@@ -4358,7 +4360,7 @@ Leicester_figure <- ggarrange(plot_LeicesterNew + font("x.text", size = 8),
                               plot_LeicesterCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Leicester_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Leicester_cases_plot.pdf", height = 8.27, width = 11.69)
 Leicester_figure
 dev.off()
 
@@ -4421,7 +4423,7 @@ Leicestershire_figure <- ggarrange(plot_LeicestershireNew + font("x.text", size 
                                    plot_LeicestershireCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("Leicestershire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Leicestershire_cases_plot.pdf", height = 8.27, width = 11.69)
 Leicestershire_figure
 dev.off()
 
@@ -4484,7 +4486,7 @@ Lewisham_figure <- ggarrange(plot_LewishamNew + font("x.text", size = 8),
                              plot_LewishamCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Lewisham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Lewisham_cases_plot.pdf", height = 8.27, width = 11.69)
 Lewisham_figure
 dev.off()
 
@@ -4547,7 +4549,7 @@ Lincolnshire_figure <- ggarrange(plot_LincolnshireNew + font("x.text", size = 8)
                                  plot_LincolnshireCum + font("x.text", size = 8), 
                                  ncol = 1, nrow = 2, align = "hv")
 
-pdf("Lincolnshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Lincolnshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Lincolnshire_figure
 dev.off()
 
@@ -4610,7 +4612,7 @@ Liverpool_figure <- ggarrange(plot_LiverpoolNew + font("x.text", size = 8),
                               plot_LiverpoolCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Liverpool_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Liverpool_cases_plot.pdf", height = 8.27, width = 11.69)
 Liverpool_figure
 dev.off()
 
@@ -4673,7 +4675,7 @@ Luton_figure <- ggarrange(plot_LutonNew + font("x.text", size = 8),
                           plot_LutonCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Luton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Luton_cases_plot.pdf", height = 8.27, width = 11.69)
 Luton_figure
 dev.off()
 
@@ -4736,7 +4738,7 @@ Manchester_figure <- ggarrange(plot_ManchesterNew + font("x.text", size = 8),
                                plot_ManchesterCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Manchester_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Manchester_cases_plot.pdf", height = 8.27, width = 11.69)
 Manchester_figure
 dev.off()
 
@@ -4799,7 +4801,7 @@ Medway_figure <- ggarrange(plot_MedwayNew + font("x.text", size = 8),
                            plot_MedwayCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Medway_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Medway_cases_plot.pdf", height = 8.27, width = 11.69)
 Medway_figure
 dev.off()
 
@@ -4862,7 +4864,7 @@ Merton_figure <- ggarrange(plot_MertonNew + font("x.text", size = 8),
                            plot_MertonCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Merton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Merton_cases_plot.pdf", height = 8.27, width = 11.69)
 Merton_figure
 dev.off()
 
@@ -4925,7 +4927,7 @@ Middlesbrough_figure <- ggarrange(plot_MiddlesbroughNew + font("x.text", size = 
                                   plot_MiddlesbroughCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Middlesbrough_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Middlesbrough_cases_plot.pdf", height = 8.27, width = 11.69)
 Middlesbrough_figure
 dev.off()
 
@@ -4988,7 +4990,7 @@ Milton_Keynes_figure <- ggarrange(plot_Milton_KeynesNew + font("x.text", size = 
                                   plot_Milton_KeynesCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Milton_Keynes_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Milton_Keynes_cases_plot.pdf", height = 8.27, width = 11.69)
 Milton_Keynes_figure
 dev.off()
 
@@ -5051,7 +5053,7 @@ Newcastle_upon_Tyne_figure <- ggarrange(plot_Newcastle_upon_TyneNew + font("x.te
                                         plot_Newcastle_upon_TyneCum + font("x.text", size = 8), 
                                         ncol = 1, nrow = 2, align = "hv")
 
-pdf("Newcastle_upon_Tyne_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Newcastle_upon_Tyne_cases_plot.pdf", height = 8.27, width = 11.69)
 Newcastle_upon_Tyne_figure
 dev.off()
 
@@ -5114,7 +5116,7 @@ Newham_figure <- ggarrange(plot_NewhamNew + font("x.text", size = 8),
                            plot_NewhamCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Newham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Newham_cases_plot.pdf", height = 8.27, width = 11.69)
 Newham_figure
 dev.off()
 
@@ -5177,7 +5179,7 @@ Norfolk_figure <- ggarrange(plot_NorfolkNew + font("x.text", size = 8),
                             plot_NorfolkCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Norfolk_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Norfolk_cases_plot.pdf", height = 8.27, width = 11.69)
 Norfolk_figure
 dev.off()
 
@@ -5240,7 +5242,7 @@ North_East_Lincolnshire_figure <- ggarrange(plot_North_East_LincolnshireNew + fo
                                             plot_North_East_LincolnshireCum + font("x.text", size = 8), 
                                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("North_East_Lincolnshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/North_East_Lincolnshire_cases_plot.pdf", height = 8.27, width = 11.69)
 North_East_Lincolnshire_figure
 dev.off()
 
@@ -5303,7 +5305,7 @@ North_Lincolnshire_figure <- ggarrange(plot_North_LincolnshireNew + font("x.text
                                        plot_North_LincolnshireCum + font("x.text", size = 8), 
                                        ncol = 1, nrow = 2, align = "hv")
 
-pdf("North_Lincolnshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/North_Lincolnshire_cases_plot.pdf", height = 8.27, width = 11.69)
 North_Lincolnshire_figure
 dev.off()
 
@@ -5366,7 +5368,7 @@ North_Somerset_figure <- ggarrange(plot_North_SomersetNew + font("x.text", size 
                                    plot_North_SomersetCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("North_Somerset_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/North_Somerset_cases_plot.pdf", height = 8.27, width = 11.69)
 North_Somerset_figure
 dev.off()
 
@@ -5429,7 +5431,7 @@ North_Tyneside_figure <- ggarrange(plot_North_TynesideNew + font("x.text", size 
                                    plot_North_TynesideCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("North_Tyneside_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/North_Tyneside_cases_plot.pdf", height = 8.27, width = 11.69)
 North_Tyneside_figure
 dev.off()
 
@@ -5492,7 +5494,7 @@ North_Yorkshire_figure <- ggarrange(plot_North_YorkshireNew + font("x.text", siz
                                     plot_North_YorkshireCum + font("x.text", size = 8), 
                                     ncol = 1, nrow = 2, align = "hv")
 
-pdf("North_Yorkshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/North_Yorkshire_cases_plot.pdf", height = 8.27, width = 11.69)
 North_Yorkshire_figure
 dev.off()
 
@@ -5555,7 +5557,7 @@ Northamptonshire_figure <- ggarrange(plot_NorthamptonshireNew + font("x.text", s
                                      plot_NorthamptonshireCum + font("x.text", size = 8), 
                                      ncol = 1, nrow = 2, align = "hv")
 
-pdf("Northamptonshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Northamptonshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Northamptonshire_figure
 dev.off()
 
@@ -5618,7 +5620,7 @@ Northumberland_figure <- ggarrange(plot_NorthumberlandNew + font("x.text", size 
                                    plot_NorthumberlandCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("Northumberland_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Northumberland_cases_plot.pdf", height = 8.27, width = 11.69)
 Northumberland_figure
 dev.off()
 
@@ -5681,7 +5683,7 @@ Nottingham_figure <- ggarrange(plot_NottinghamNew + font("x.text", size = 8),
                                plot_NottinghamCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Nottingham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Nottingham_cases_plot.pdf", height = 8.27, width = 11.69)
 Nottingham_figure
 dev.off()
 
@@ -5744,7 +5746,7 @@ Nottinghamshire_figure <- ggarrange(plot_NottinghamshireNew + font("x.text", siz
                                     plot_NottinghamshireCum + font("x.text", size = 8), 
                                     ncol = 1, nrow = 2, align = "hv")
 
-pdf("Nottinghamshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Nottinghamshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Nottinghamshire_figure
 dev.off()
 
@@ -5807,7 +5809,7 @@ Oldham_figure <- ggarrange(plot_OldhamNew + font("x.text", size = 8),
                            plot_OldhamCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Oldham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Oldham_cases_plot.pdf", height = 8.27, width = 11.69)
 Oldham_figure
 dev.off()
 
@@ -5870,7 +5872,7 @@ Oxfordshire_figure <- ggarrange(plot_OxfordshireNew + font("x.text", size = 8),
                                 plot_OxfordshireCum + font("x.text", size = 8), 
                                 ncol = 1, nrow = 2, align = "hv")
 
-pdf("Oxfordshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Oxfordshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Oxfordshire_figure
 dev.off()
 
@@ -5933,7 +5935,7 @@ Peterborough_figure <- ggarrange(plot_PeterboroughNew + font("x.text", size = 8)
                                  plot_PeterboroughCum + font("x.text", size = 8), 
                                  ncol = 1, nrow = 2, align = "hv")
 
-pdf("Peterborough_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Peterborough_cases_plot.pdf", height = 8.27, width = 11.69)
 Peterborough_figure
 dev.off()
 
@@ -5996,7 +5998,7 @@ Plymouth_figure <- ggarrange(plot_PlymouthNew + font("x.text", size = 8),
                              plot_PlymouthCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Plymouth_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Plymouth_cases_plot.pdf", height = 8.27, width = 11.69)
 Plymouth_figure
 dev.off()
 
@@ -6059,7 +6061,7 @@ Portsmouth_figure <- ggarrange(plot_PortsmouthNew + font("x.text", size = 8),
                                plot_PortsmouthCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Portsmouth_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Portsmouth_cases_plot.pdf", height = 8.27, width = 11.69)
 Portsmouth_figure
 dev.off()
 
@@ -6122,7 +6124,7 @@ Reading_figure <- ggarrange(plot_ReadingNew + font("x.text", size = 8),
                             plot_ReadingCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Reading_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Reading_cases_plot.pdf", height = 8.27, width = 11.69)
 Reading_figure
 dev.off()
 
@@ -6185,7 +6187,7 @@ Redbridge_figure <- ggarrange(plot_RedbridgeNew + font("x.text", size = 8),
                               plot_RedbridgeCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Redbridge_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Redbridge_cases_plot.pdf", height = 8.27, width = 11.69)
 Redbridge_figure
 dev.off()
 
@@ -6248,7 +6250,7 @@ Redcar_and_Cleveland_figure <- ggarrange(plot_Redcar_and_ClevelandNew + font("x.
                                          plot_Redcar_and_ClevelandCum + font("x.text", size = 8), 
                                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Redcar_and_Cleveland_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Redcar_and_Cleveland_cases_plot.pdf", height = 8.27, width = 11.69)
 Redcar_and_Cleveland_figure
 dev.off()
 
@@ -6311,7 +6313,7 @@ Richmond_upon_Thames_figure <- ggarrange(plot_Richmond_upon_ThamesNew + font("x.
                                          plot_Richmond_upon_ThamesCum + font("x.text", size = 8), 
                                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Richmond_upon_Thames_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Richmond_upon_Thames_cases_plot.pdf", height = 8.27, width = 11.69)
 Richmond_upon_Thames_figure
 dev.off()
 
@@ -6374,7 +6376,7 @@ Rochdale_figure <- ggarrange(plot_RochdaleNew + font("x.text", size = 8),
                              plot_RochdaleCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Rochdale_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Rochdale_cases_plot.pdf", height = 8.27, width = 11.69)
 Rochdale_figure
 dev.off()
 
@@ -6437,7 +6439,7 @@ Rotherham_figure <- ggarrange(plot_RotherhamNew + font("x.text", size = 8),
                               plot_RotherhamCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Rotherham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Rotherham_cases_plot.pdf", height = 8.27, width = 11.69)
 Rotherham_figure
 dev.off()
 
@@ -6500,7 +6502,7 @@ Rutland_figure <- ggarrange(plot_RutlandNew + font("x.text", size = 8),
                             plot_RutlandCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Rutland_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Rutland_cases_plot.pdf", height = 8.27, width = 11.69)
 Rutland_figure
 dev.off()
 
@@ -6563,7 +6565,7 @@ Salford_figure <- ggarrange(plot_SalfordNew + font("x.text", size = 8),
                             plot_SalfordCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Salford_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Salford_cases_plot.pdf", height = 8.27, width = 11.69)
 Salford_figure
 dev.off()
 
@@ -6626,7 +6628,7 @@ Sandwell_figure <- ggarrange(plot_SandwellNew + font("x.text", size = 8),
                              plot_SandwellCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Sandwell_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Sandwell_cases_plot.pdf", height = 8.27, width = 11.69)
 Sandwell_figure
 dev.off()
 
@@ -6689,7 +6691,7 @@ Sefton_figure <- ggarrange(plot_SeftonNew + font("x.text", size = 8),
                            plot_SeftonCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Sefton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Sefton_cases_plot.pdf", height = 8.27, width = 11.69)
 Sefton_figure
 dev.off()
 
@@ -6752,7 +6754,7 @@ Sheffield_figure <- ggarrange(plot_SheffieldNew + font("x.text", size = 8),
                               plot_SheffieldCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Sheffield_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Sheffield_cases_plot.pdf", height = 8.27, width = 11.69)
 Sheffield_figure
 dev.off()
 
@@ -6815,7 +6817,7 @@ Shropshire_figure <- ggarrange(plot_ShropshireNew + font("x.text", size = 8),
                                plot_ShropshireCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Shropshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Shropshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Shropshire_figure
 dev.off()
 
@@ -6878,7 +6880,7 @@ Slough_figure <- ggarrange(plot_SloughNew + font("x.text", size = 8),
                            plot_SloughCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Slough_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Slough_cases_plot.pdf", height = 8.27, width = 11.69)
 Slough_figure
 dev.off()
 
@@ -6941,7 +6943,7 @@ Solihull_figure <- ggarrange(plot_SolihullNew + font("x.text", size = 8),
                              plot_SolihullCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Solihull_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Solihull_cases_plot.pdf", height = 8.27, width = 11.69)
 Solihull_figure
 dev.off()
 
@@ -7004,7 +7006,7 @@ Somerset_figure <- ggarrange(plot_SomersetNew + font("x.text", size = 8),
                              plot_SomersetCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Somerset_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Somerset_cases_plot.pdf", height = 8.27, width = 11.69)
 Somerset_figure
 dev.off()
 
@@ -7067,7 +7069,7 @@ South_Gloucestershire_figure <- ggarrange(plot_South_GloucestershireNew + font("
                                           plot_South_GloucestershireCum + font("x.text", size = 8), 
                                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("South_Gloucestershire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/South_Gloucestershire_cases_plot.pdf", height = 8.27, width = 11.69)
 South_Gloucestershire_figure
 dev.off()
 
@@ -7130,7 +7132,7 @@ South_Tyneside_figure <- ggarrange(plot_South_TynesideNew + font("x.text", size 
                                    plot_South_TynesideCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("South_Tyneside_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/South_Tyneside_cases_plot.pdf", height = 8.27, width = 11.69)
 South_Tyneside_figure
 dev.off()
 
@@ -7193,7 +7195,7 @@ Southampton_figure <- ggarrange(plot_SouthamptonNew + font("x.text", size = 8),
                                 plot_SouthamptonCum + font("x.text", size = 8), 
                                 ncol = 1, nrow = 2, align = "hv")
 
-pdf("Southampton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Southampton_cases_plot.pdf", height = 8.27, width = 11.69)
 Southampton_figure
 dev.off()
 
@@ -7256,7 +7258,7 @@ Southend-on-Sea_figure <- ggarrange(plot_Southend-on-SeaNew + font("x.text", siz
                                     plot_Southend-on-SeaCum + font("x.text", size = 8), 
                                     ncol = 1, nrow = 2, align = "hv")
 
-pdf("Southend-on-Sea_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Southend-on-Sea_cases_plot.pdf", height = 8.27, width = 11.69)
 Southend-on-Sea_figure
 dev.off()
 
@@ -7319,7 +7321,7 @@ Southwark_figure <- ggarrange(plot_SouthwarkNew + font("x.text", size = 8),
                               plot_SouthwarkCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Southwark_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Southwark_cases_plot.pdf", height = 8.27, width = 11.69)
 Southwark_figure
 dev.off()
 
@@ -7382,7 +7384,7 @@ St_Helens_figure <- ggarrange(plot_St_HelensNew + font("x.text", size = 8),
                               plot_St_HelensCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("St_Helens_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/St_Helens_cases_plot.pdf", height = 8.27, width = 11.69)
 St_Helens_figure
 dev.off()
 
@@ -7445,7 +7447,7 @@ Staffordshire_figure <- ggarrange(plot_StaffordshireNew + font("x.text", size = 
                                   plot_StaffordshireCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Staffordshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Staffordshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Staffordshire_figure
 dev.off()
 
@@ -7508,7 +7510,7 @@ Stockport_figure <- ggarrange(plot_StockportNew + font("x.text", size = 8),
                               plot_StockportCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Stockport_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Stockport_cases_plot.pdf", height = 8.27, width = 11.69)
 Stockport_figure
 dev.off()
 
@@ -7571,7 +7573,7 @@ Stockton-on-Tees_figure <- ggarrange(plot_Stockton-on-TeesNew + font("x.text", s
                                      plot_Stockton-on-TeesCum + font("x.text", size = 8), 
                                      ncol = 1, nrow = 2, align = "hv")
 
-pdf("Stockton-on-Tees_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Stockton-on-Tees_cases_plot.pdf", height = 8.27, width = 11.69)
 Stockton-on-Tees_figure
 dev.off()
 
@@ -7634,7 +7636,7 @@ Stoke-on-Trent_figure <- ggarrange(plot_Stoke-on-TrentNew + font("x.text", size 
                                    plot_Stoke-on-TrentCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("Stoke-on-Trent_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Stoke-on-Trent_cases_plot.pdf", height = 8.27, width = 11.69)
 Stoke-on-Trent_figure
 dev.off()
 
@@ -7697,7 +7699,7 @@ Suffolk_figure <- ggarrange(plot_SuffolkNew + font("x.text", size = 8),
                             plot_SuffolkCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Suffolk_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Suffolk_cases_plot.pdf", height = 8.27, width = 11.69)
 Suffolk_figure
 dev.off()
 
@@ -7760,7 +7762,7 @@ Sunderland_figure <- ggarrange(plot_SunderlandNew + font("x.text", size = 8),
                                plot_SunderlandCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Sunderland_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Sunderland_cases_plot.pdf", height = 8.27, width = 11.69)
 Sunderland_figure
 dev.off()
 
@@ -7823,7 +7825,7 @@ Surrey_figure <- ggarrange(plot_SurreyNew + font("x.text", size = 8),
                            plot_SurreyCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Surrey_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Surrey_cases_plot.pdf", height = 8.27, width = 11.69)
 Surrey_figure
 dev.off()
 
@@ -7886,7 +7888,7 @@ Sutton_figure <- ggarrange(plot_SuttonNew + font("x.text", size = 8),
                            plot_SuttonCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Sutton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Sutton_cases_plot.pdf", height = 8.27, width = 11.69)
 Sutton_figure
 dev.off()
 
@@ -7949,7 +7951,7 @@ Swindon_figure <- ggarrange(plot_SwindonNew + font("x.text", size = 8),
                             plot_SwindonCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Swindon_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Swindon_cases_plot.pdf", height = 8.27, width = 11.69)
 Swindon_figure
 dev.off()
 
@@ -8012,7 +8014,7 @@ Tameside_figure <- ggarrange(plot_TamesideNew + font("x.text", size = 8),
                              plot_TamesideCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Tameside_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Tameside_cases_plot.pdf", height = 8.27, width = 11.69)
 Tameside_figure
 dev.off()
 
@@ -8075,7 +8077,7 @@ Telford_and_Wrekin_figure <- ggarrange(plot_Telford_and_WrekinNew + font("x.text
                                        plot_Telford_and_WrekinCum + font("x.text", size = 8), 
                                        ncol = 1, nrow = 2, align = "hv")
 
-pdf("Telford_and_Wrekin_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Telford_and_Wrekin_cases_plot.pdf", height = 8.27, width = 11.69)
 Telford_and_Wrekin_figure
 dev.off()
 
@@ -8138,7 +8140,7 @@ Thurrock_figure <- ggarrange(plot_ThurrockNew + font("x.text", size = 8),
                              plot_ThurrockCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Thurrock_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Thurrock_cases_plot.pdf", height = 8.27, width = 11.69)
 Thurrock_figure
 dev.off()
 
@@ -8201,7 +8203,7 @@ Torbay_figure <- ggarrange(plot_TorbayNew + font("x.text", size = 8),
                            plot_TorbayCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Torbay_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Torbay_cases_plot.pdf", height = 8.27, width = 11.69)
 Torbay_figure
 dev.off()
 
@@ -8264,7 +8266,7 @@ Tower_Hamlets_figure <- ggarrange(plot_Tower_HamletsNew + font("x.text", size = 
                                   plot_Tower_HamletsCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Tower_Hamlets_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Tower_Hamlets_cases_plot.pdf", height = 8.27, width = 11.69)
 Tower_Hamlets_figure
 dev.off()
 
@@ -8327,7 +8329,7 @@ Trafford_figure <- ggarrange(plot_TraffordNew + font("x.text", size = 8),
                              plot_TraffordCum + font("x.text", size = 8), 
                              ncol = 1, nrow = 2, align = "hv")
 
-pdf("Trafford_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Trafford_cases_plot.pdf", height = 8.27, width = 11.69)
 Trafford_figure
 dev.off()
 
@@ -8390,7 +8392,7 @@ Wakefield_figure <- ggarrange(plot_WakefieldNew + font("x.text", size = 8),
                               plot_WakefieldCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wakefield_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wakefield_cases_plot.pdf", height = 8.27, width = 11.69)
 Wakefield_figure
 dev.off()
 
@@ -8453,7 +8455,7 @@ Walsall_figure <- ggarrange(plot_WalsallNew + font("x.text", size = 8),
                             plot_WalsallCum + font("x.text", size = 8), 
                             ncol = 1, nrow = 2, align = "hv")
 
-pdf("Walsall_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Walsall_cases_plot.pdf", height = 8.27, width = 11.69)
 Walsall_figure
 dev.off()
 
@@ -8516,7 +8518,7 @@ Waltham_Forest_figure <- ggarrange(plot_Waltham_ForestNew + font("x.text", size 
                                    plot_Waltham_ForestCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("Waltham_Forest_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Waltham_Forest_cases_plot.pdf", height = 8.27, width = 11.69)
 Waltham_Forest_figure
 dev.off()
 
@@ -8579,7 +8581,7 @@ Wandsworth_figure <- ggarrange(plot_WandsworthNew + font("x.text", size = 8),
                                plot_WandsworthCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wandsworth_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wandsworth_cases_plot.pdf", height = 8.27, width = 11.69)
 Wandsworth_figure
 dev.off()
 
@@ -8642,7 +8644,7 @@ Warrington_figure <- ggarrange(plot_WarringtonNew + font("x.text", size = 8),
                                plot_WarringtonCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Warrington_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Warrington_cases_plot.pdf", height = 8.27, width = 11.69)
 Warrington_figure
 dev.off()
 
@@ -8705,7 +8707,7 @@ Warwickshire_figure <- ggarrange(plot_WarwickshireNew + font("x.text", size = 8)
                                  plot_WarwickshireCum + font("x.text", size = 8), 
                                  ncol = 1, nrow = 2, align = "hv")
 
-pdf("Warwickshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Warwickshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Warwickshire_figure
 dev.off()
 
@@ -8768,7 +8770,7 @@ West_Berkshire_figure <- ggarrange(plot_West_BerkshireNew + font("x.text", size 
                                    plot_West_BerkshireCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("West_Berkshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/West_Berkshire_cases_plot.pdf", height = 8.27, width = 11.69)
 West_Berkshire_figure
 dev.off()
 
@@ -8831,7 +8833,7 @@ West_Sussex_figure <- ggarrange(plot_West_SussexNew + font("x.text", size = 8),
                                 plot_West_SussexCum + font("x.text", size = 8), 
                                 ncol = 1, nrow = 2, align = "hv")
 
-pdf("West_Sussex_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/West_Sussex_cases_plot.pdf", height = 8.27, width = 11.69)
 West_Sussex_figure
 dev.off()
 
@@ -8894,7 +8896,7 @@ Westminster_figure <- ggarrange(plot_WestminsterNew + font("x.text", size = 8),
                                 plot_WestminsterCum + font("x.text", size = 8), 
                                 ncol = 1, nrow = 2, align = "hv")
 
-pdf("Westminster_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Westminster_cases_plot.pdf", height = 8.27, width = 11.69)
 Westminster_figure
 dev.off()
 
@@ -8957,7 +8959,7 @@ Wigan_figure <- ggarrange(plot_WiganNew + font("x.text", size = 8),
                           plot_WiganCum + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wigan_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wigan_cases_plot.pdf", height = 8.27, width = 11.69)
 Wigan_figure
 dev.off()
 
@@ -9020,7 +9022,7 @@ Wiltshire_figure <- ggarrange(plot_WiltshireNew + font("x.text", size = 8),
                               plot_WiltshireCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wiltshire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wiltshire_cases_plot.pdf", height = 8.27, width = 11.69)
 Wiltshire_figure
 dev.off()
 
@@ -9083,7 +9085,7 @@ Windsor_and_Maidenhead_figure <- ggarrange(plot_Windsor_and_MaidenheadNew + font
                                            plot_Windsor_and_MaidenheadCum + font("x.text", size = 8), 
                                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Windsor_and_Maidenhead_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Windsor_and_Maidenhead_cases_plot.pdf", height = 8.27, width = 11.69)
 Windsor_and_Maidenhead_figure
 dev.off()
 
@@ -9146,7 +9148,7 @@ Wirral_figure <- ggarrange(plot_WirralNew + font("x.text", size = 8),
                            plot_WirralCum + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wirral_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wirral_cases_plot.pdf", height = 8.27, width = 11.69)
 Wirral_figure
 dev.off()
 
@@ -9209,7 +9211,7 @@ Wokingham_figure <- ggarrange(plot_WokinghamNew + font("x.text", size = 8),
                               plot_WokinghamCum + font("x.text", size = 8), 
                               ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wokingham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wokingham_cases_plot.pdf", height = 8.27, width = 11.69)
 Wokingham_figure
 dev.off()
 
@@ -9272,7 +9274,7 @@ Wolverhampton_figure <- ggarrange(plot_WolverhamptonNew + font("x.text", size = 
                                   plot_WolverhamptonCum + font("x.text", size = 8), 
                                   ncol = 1, nrow = 2, align = "hv")
 
-pdf("Wolverhampton_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Wolverhampton_cases_plot.pdf", height = 8.27, width = 11.69)
 Wolverhampton_figure
 dev.off()
 
@@ -9335,7 +9337,7 @@ Worcestershire_figure <- ggarrange(plot_WorcestershireNew + font("x.text", size 
                                    plot_WorcestershireCum + font("x.text", size = 8), 
                                    ncol = 1, nrow = 2, align = "hv")
 
-pdf("Worcestershire_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Worcestershire_cases_plot.pdf", height = 8.27, width = 11.69)
 Worcestershire_figure
 dev.off()
 
@@ -9398,10 +9400,10 @@ York_figure <- ggarrange(plot_YorkNew + font("x.text", size = 8),
                          plot_YorkCum + font("x.text", size = 8), 
                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("York_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/York_cases_plot.pdf", height = 8.27, width = 11.69)
 York_figure
 dev.off()
-
+w
 #### Summary plot- 4 LA with highest cases 11/03/2020 #####
 
 LA_figure <- ggarrange(plot_DevonCum + font("x.text", size = 8), 
@@ -9413,7 +9415,7 @@ LA_figure <- ggarrange(plot_DevonCum + font("x.text", size = 8),
 Sum_figure <- annotate_figure(LA_figure,
                               top = text_grob("Local authorities with highest total cases, 11/03/2020", face = "bold", size = 14))
 
-pdf("Highest_LA_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Highest_LA_plot.pdf", height = 8.27, width = 11.69)
 Sum_figure
 dev.off()
 
