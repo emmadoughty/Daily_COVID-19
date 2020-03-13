@@ -7,6 +7,7 @@ Number of cases, tests and deaths obtained from [official daily updates](https:/
 Cases. per local authority obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6)
 
 
+## Analyses
 #### Summary plots
 
 ![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
