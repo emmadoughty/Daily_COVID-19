@@ -1,4 +1,4 @@
-## Exploration of UK COVID-19 data: Mortality statistics over time
+## Exploration of UK COVID-19 data: CFR statistics over time
 ## Emma Doughty (e.doughty6@gmail.com)
 
 # Install libraries if necessary
@@ -101,7 +101,7 @@ df_DeathsStats <-df_DeathsStats[!(df_DeathsStats$CumDeaths==0),]
 DeathStats_Factor <- 10^(floor(log10(signif(max(df_DeathsStats$StatValue)))))
 DeathStats_Breaks <- ceiling(DeathStats_Factor/2)
 
-plot_Mortality <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatValue, group=DeathStat)) +
+plot_CFR <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatValue, group=DeathStat)) +
   geom_line(aes(color=DeathStat))+
   geom_point()+
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
@@ -111,17 +111,17 @@ plot_Mortality <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatV
                      breaks = seq(0, 80, DeathStats_Breaks),
                      expand = c(0, 0)) +
   ylab("Deaths/cases (%)") + xlab("Date") +
-  ggtitle("Estimated UK mortality rates") +
+  ggtitle("Estimated UK case fatality rates") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         legend.position = "bottom",
         axis.line = element_line(colour = "black"),
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank()) + 
-  labs(colour = "Reporting to death:")+ 
+  labs(colour = "Reporting to death:") + 
   scale_color_discrete(breaks=c("9 days","11 days","13 days","15 days","17 days"))
 
-pdf("Mortality_Stats_plot.pdf", height = 8.27, width = 11.69)
-plot_Mortality
+pdf("CFR_Stats_plot.pdf", height = 8.27, width = 11.69)
+plot_CFR
 dev.off()
 
