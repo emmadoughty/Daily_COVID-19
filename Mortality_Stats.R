@@ -30,29 +30,6 @@ COVID19_by_day <- COVID19_by_day[order(COVID19_by_day$Date),]
   # (4-7d exposure to symptom onset)
 
 #### Generate dataframe for plot ####
-# Cumulative deaths vs cumulative cases on same day
-df_DeathsCases <- data.frame(Date = COVID19_by_day$Date, 
-                             CumCases = COVID19_by_day$CumCases, 
-                             CumDeaths = COVID19_by_day$CumDeaths, 
-                             DeathStat = "0 days", 
-                             StatValue = (100 * (COVID19_by_day$CumDeaths / COVID19_by_day$CumCases)), 
-                             stringsAsFactors = FALSE)
-
-df_DeathsCases[,c(5)] <- sapply(df_DeathsCases$StatValue, as.double)
-
-# # Cumulative deaths vs cumulative cases 19 days prior
-# df_Deaths19d <- data.frame(Date = COVID19_by_day$Date, 
-#                            CumCases = COVID19_by_day$CumCases, 
-#                            CumDeaths = COVID19_by_day$CumDeaths, 
-#                            DeathStat = "19 days", StatValue = "0", 
-#                            stringsAsFactors = FALSE)
-# 
-# df_Deaths19d[,c(5)] <- sapply(df_Deaths19d$StatValue, as.double)
-# 
-# for (i in 36:nrow(df_Deaths19d)) {
-#   df_Deaths19d[[i, 5]] <- (100 * (df_Deaths19d[i,3]/df_Deaths19d[i-19,2]))
-# }
-
 # Cumulative deaths vs cumulative cases 17 days prior
 df_Deaths17d <- data.frame(Date = COVID19_by_day$Date, 
                            CumCases = COVID19_by_day$CumCases, 
@@ -116,19 +93,8 @@ for (i in 36:nrow(df_Deaths9d)) {
   df_Deaths9d[[i, 5]] <- (100 * (df_Deaths9d[i,3]/df_Deaths9d[i-9,2]))
 }
 
-# Cumulative deaths vs cumulative cases 7 days prior
-df_Deaths7d <- data.frame(Date = COVID19_by_day$Date, 
-                          CumCases = COVID19_by_day$CumCases, 
-                          CumDeaths = COVID19_by_day$CumDeaths, 
-                          DeathStat = "7 days", StatValue = "0", 
-                          stringsAsFactors = FALSE)
-df_Deaths7d[,c(5)] <- sapply(df_Deaths7d$StatValue, as.double)
-for (i in 36:nrow(df_Deaths7d)) {
-  df_Deaths7d[[i, 5]] <- (100 * (df_Deaths7d[i,3]/df_Deaths7d[i-7,2]))
-}
-
 # Merge data for all estimated dates of reporting
-df_DeathsStats <- rbind(df_Deaths17d, df_Deaths15d, df_Deaths13d, df_Deaths11d, df_Deaths9d, df_Deaths7d, df_DeathsCases)
+df_DeathsStats <- rbind(df_Deaths17d, df_Deaths15d, df_Deaths13d, df_Deaths11d, df_Deaths9d)
 df_DeathsStats <-df_DeathsStats[!(df_DeathsStats$CumDeaths==0),]
 
 #### Plot graph for mortslity stats ####
@@ -153,7 +119,7 @@ plot_Mortality <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatV
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank()) + 
   labs(colour = "Reporting to death:")+ 
-  scale_color_discrete(breaks=c("0 days","7 days","9 days","11 days","13 days","15 days","17 days"))
+  scale_color_discrete(breaks=c("9 days","11 days","13 days","15 days","17 days"))
 
 pdf("Mortality_Stats_plot.pdf", height = 8.27, width = 11.69)
 plot_Mortality
