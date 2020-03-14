@@ -14,7 +14,7 @@
 
 **Local_regions.csv** contains  numbers of cases with national breakdowns, NHS regions and Scottish heath boards
 - Data for cases in each nation collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
-- Data for cases in each NHS region collated from daily [PHE UTLA updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8)
+- Data for cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8)
 - Data for cases in Scottish health boards collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 
 ## Analyses
