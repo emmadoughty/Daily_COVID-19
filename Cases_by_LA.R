@@ -77,7 +77,7 @@ Barking_and_Dagenham_figure <- ggarrange(plot_Barking_and_DagenhamNew + font("x.
                                          plot_Barking_and_DagenhamCum + font("x.text", size = 8), 
                                          ncol = 1, nrow = 2, align = "hv")
 
-pdf("Plot per local authority/Plot per local authority/Barking_and_Dagenham_cases_plot.pdf", height = 8.27, width = 11.69)
+pdf("Plot per local authority/Barking_and_Dagenham_cases_plot.pdf", height = 8.27, width = 11.69)
 Barking_and_Dagenham_figure
 dev.off()
 
@@ -9403,7 +9403,7 @@ York_figure <- ggarrange(plot_YorkNew + font("x.text", size = 8),
 pdf("Plot per local authority/York_cases_plot.pdf", height = 8.27, width = 11.69)
 York_figure
 dev.off()
-w
+
 #### Summary plot- 4 LA with highest cases 11/03/2020 #####
 
 LA_figure <- ggarrange(plot_DevonCum + font("x.text", size = 8), 
