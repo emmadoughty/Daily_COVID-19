@@ -9,7 +9,7 @@
 
 **COVID19_by_LA.csv** contains the number of new cases per day for each Upper Tier Local Authority (England)
 - Cumulative cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6). When calculating new cases per UTLA, it can sometimes be observed that the cumulative numbers of cases per UTLA goes down from one day to the next (presumably also due to data cleaning).
-  - In the data that I'm calculating for new cases per day, if cumulative cases decrease in a UTLA, I'm deducting cases from the latest day when positive cases were confirmed such that that total number of cases per UTLA is always in line with the most up-to-date cumulative counts from PHE.
+  - In the data I'm calculating for new cases per day, if the reported cumulative cases decrease in a UTLA, I'm considering the number of new cases tat day to be zero and deducting cases from the last day when positive cases were confirmed such that that total number of cases per UTLA is always in line with the most up-to-date cumulative counts from PHE.
   - See **Local_breakdown_raw.csv** for the original cumulative values 
 
 **Local_regions.csv** contains  numbers of cases with national breakdowns, NHS regions and Scottish heath boards
