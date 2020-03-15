@@ -15,7 +15,7 @@ library(scales)
 library(ggpubr)
 
 #Load data
-COVID19_by_day <- read_csv("COVID19_by_day.csv")
+COVID19_by_day <- read_csv("Data/COVID19_by_day.csv")
 COVID19_by_day$Date <- as.Date(COVID19_by_day$Date, format = "%d/%m/%y")
 COVID19_by_day <- COVID19_by_day[order(COVID19_by_day$Date),]
 
