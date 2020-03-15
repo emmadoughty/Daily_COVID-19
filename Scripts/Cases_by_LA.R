@@ -14,7 +14,7 @@ library(ggplot2)
 library(scales)
 library(ggpubr)
 
-#Load data
+#### Load data for UTLAs ####
 COVID19_by_LA <- read_csv("Data/COVID19_by_LA.csv")
 COVID19_by_LA$Date <- as.Date(COVID19_by_LA$Date, format = "%d/%m/%y")
 COVID19_by_LA <- COVID19_by_LA[order(COVID19_by_LA$Date),]
@@ -24,7 +24,6 @@ COVID19_by_LA <- COVID19_by_LA[order(COVID19_by_LA$Date),]
 #Read in new cases per day from summarised data, format date correctly
 Barking_and_Dagenham_data <- data.frame(Date=c(COVID19_by_LA$Date), ntimes=c(COVID19_by_LA$Barking_and_Dagenham))
 Barking_and_Dagenham_data <- as.data.frame(lapply(Barking_and_Dagenham_data, rep, Barking_and_Dagenham_data$ntimes))
-
 
 # Plot number of NEW CASES per day
 Barking_and_DagenhamNew_Sigfig <- signif(max(COVID19_by_LA$Barking_and_Dagenham))
@@ -48,7 +47,6 @@ plot_Barking_and_DagenhamNew <- ggplot(data=Barking_and_Dagenham_data, aes(x=Bar
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank())
 
-
 # Plot CUMULATIVE CASES per day
 Barking_and_DagenhamCum_Sigfig <- signif(sum(COVID19_by_LA$Barking_and_Dagenham))
 Barking_and_DagenhamCum_Factor <- 10^(floor(log10(Barking_and_DagenhamCum_Sigfig)))
@@ -71,7 +69,6 @@ plot_Barking_and_DagenhamCum <- ggplot(data=Barking_and_Dagenham_data, aes(x=Bar
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank())
 
-
 # Generate figures
 Barking_and_Dagenham_figure <- ggarrange(plot_Barking_and_DagenhamNew + font("x.text", size = 8), 
                                          plot_Barking_and_DagenhamCum + font("x.text", size = 8), 
@@ -87,7 +84,6 @@ dev.off()
 #Read in new cases per day from summarised data, format date correctly
 Barnet_data <- data.frame(Date=c(COVID19_by_LA$Date), ntimes=c(COVID19_by_LA$Barnet))
 Barnet_data <- as.data.frame(lapply(Barnet_data, rep, Barnet_data$ntimes))
-
 
 # Plot number of NEW CASES per day
 BarnetNew_Sigfig <- signif(max(COVID19_by_LA$Barnet))
@@ -111,7 +107,6 @@ plot_BarnetNew <- ggplot(data=Barnet_data, aes(x=Barnet_data$Date)) +
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1),
         panel.grid.minor = element_blank())
 
-
 # Plot CUMULATIVE CASES per day
 BarnetCum_Sigfig <- signif(sum(COVID19_by_LA$Barnet))
 BarnetCum_Factor <- 10^(floor(log10(BarnetCum_Sigfig)))
@@ -134,7 +129,6 @@ plot_BarnetCum <- ggplot(data=Barnet_data, aes(x=Barnet_data$Date)) +
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1),
         panel.grid.minor = element_blank())
 
-
 # Generate figures
 Barnet_figure <- ggarrange(plot_BarnetNew + font("x.text", size = 8),
                            plot_BarnetCum + font("x.text", size = 8),
@@ -149,7 +143,6 @@ dev.off()
 #Read in new cases per day from summarised data, format date correctly
 Barnsley_data <- data.frame(Date=c(COVID19_by_LA$Date), ntimes=c(COVID19_by_LA$Barnsley))
 Barnsley_data <- as.data.frame(lapply(Barnsley_data, rep, Barnsley_data$ntimes))
-
 
 # Plot number of NEW CASES per day
 BarnsleyNew_Sigfig <- signif(max(COVID19_by_LA$Barnsley))
@@ -9402,6 +9395,1037 @@ York_figure <- ggarrange(plot_YorkNew + font("x.text", size = 8),
 
 pdf("Plot per local authority/York_cases_plot.pdf", height = 8.27, width = 11.69)
 York_figure
+dev.off()
+
+#### Load data for UK nations, NHS regions and Scottish health boards ####
+COVID19_by_region <- read_csv("Data/Local_regions.csv")
+COVID19_by_region$Date <- as.Date(COVID19_by_region$Date, format = "%d/%m/%y")
+COVID19_by_region <- COVID19_by_region[order(COVID19_by_region$Date),]
+
+#### East_of_England plots ####
+#Read in new cases per day from summarised data, format date correctly
+East_of_England_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$East_of_England))
+East_of_England_data <- as.data.frame(lapply(East_of_England_data, rep, East_of_England_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+East_of_EnglandNew_Sigfig <- signif(max(COVID19_by_region$East_of_England))
+East_of_EnglandNew_Factor <- 10^(floor(log10(East_of_EnglandNew_Sigfig)))
+East_of_EnglandNew_Max <- round_any(max(COVID19_by_region$East_of_England), East_of_EnglandNew_Factor, f=ceiling)
+East_of_EnglandNew_Breaks <- ceiling(East_of_EnglandNew_Factor/2)
+
+plot_East_of_EnglandNew <- ggplot(data=East_of_England_data, aes(x=East_of_England_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, East_of_EnglandNew_Max), 
+                     breaks = seq(0, East_of_EnglandNew_Max, East_of_EnglandNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: East_of_England") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+East_of_EnglandCum_Sigfig <- signif(sum(COVID19_by_region$East_of_England))
+East_of_EnglandCum_Factor <- 10^(floor(log10(East_of_EnglandCum_Sigfig)))
+East_of_EnglandCum_Max <- round_any(sum(COVID19_by_region$East_of_England), East_of_EnglandCum_Factor, f=ceiling)
+East_of_EnglandCum_Breaks <- ceiling(East_of_EnglandCum_Factor/2)
+
+plot_East_of_EnglandCum <- ggplot(data=East_of_England_data, aes(x=East_of_England_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, East_of_EnglandCum_Max), 
+                     breaks = seq(0, East_of_EnglandCum_Max, East_of_EnglandCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: East_of_England") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Generate figures
+East_of_England_figure <- ggarrange(plot_East_of_EnglandNew + font("x.text", size = 8), 
+                          plot_East_of_EnglandCum + font("x.text", size = 8), 
+                          ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/East_of_England.pdf", height = 8.27, width = 11.69)
+East_of_England_figure
+dev.off()
+
+#### London plots ####
+#Read in new cases per day from summarised data, format date correctly
+London_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$London))
+London_data <- as.data.frame(lapply(London_data, rep, London_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+LondonNew_Sigfig <- signif(max(COVID19_by_region$London))
+LondonNew_Factor <- 10^(floor(log10(LondonNew_Sigfig)))
+LondonNew_Max <- round_any(max(COVID19_by_region$London), LondonNew_Factor, f=ceiling)
+LondonNew_Breaks <- ceiling(LondonNew_Factor/2)
+
+plot_LondonNew <- ggplot(data=London_data, aes(x=London_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, LondonNew_Max), 
+                     breaks = seq(0, LondonNew_Max, LondonNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: London") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+LondonCum_Sigfig <- signif(sum(COVID19_by_region$London))
+LondonCum_Factor <- 10^(floor(log10(LondonCum_Sigfig)))
+LondonCum_Max <- round_any(sum(COVID19_by_region$London), LondonCum_Factor, f=ceiling)
+LondonCum_Breaks <- ceiling(LondonCum_Factor/2)
+
+plot_LondonCum <- ggplot(data=London_data, aes(x=London_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, LondonCum_Max), 
+                     breaks = seq(0, LondonCum_Max, LondonCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: London") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Generate figures
+London_figure <- ggarrange(plot_LondonNew + font("x.text", size = 8), 
+                                    plot_LondonCum + font("x.text", size = 8), 
+                                    ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/London.pdf", height = 8.27, width = 11.69)
+London_figure
+dev.off()
+
+#### Midlands plots ####
+#Read in new cases per day from summarised data, format date correctly
+Midlands_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Midlands))
+Midlands_data <- as.data.frame(lapply(Midlands_data, rep, Midlands_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+MidlandsNew_Sigfig <- signif(max(COVID19_by_region$Midlands))
+MidlandsNew_Factor <- 10^(floor(log10(MidlandsNew_Sigfig)))
+MidlandsNew_Max <- round_any(max(COVID19_by_region$Midlands), MidlandsNew_Factor, f=ceiling)
+MidlandsNew_Breaks <- ceiling(MidlandsNew_Factor/2)
+
+plot_MidlandsNew <- ggplot(data=Midlands_data, aes(x=Midlands_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, MidlandsNew_Max), 
+                     breaks = seq(0, MidlandsNew_Max, MidlandsNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Midlands") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+MidlandsCum_Sigfig <- signif(sum(COVID19_by_region$Midlands))
+MidlandsCum_Factor <- 10^(floor(log10(MidlandsCum_Sigfig)))
+MidlandsCum_Max <- round_any(sum(COVID19_by_region$Midlands), MidlandsCum_Factor, f=ceiling)
+MidlandsCum_Breaks <- ceiling(MidlandsCum_Factor/2)
+
+plot_MidlandsCum <- ggplot(data=Midlands_data, aes(x=Midlands_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, MidlandsCum_Max), 
+                     breaks = seq(0, MidlandsCum_Max, MidlandsCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Midlands") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Generate figures
+Midlands_figure <- ggarrange(plot_MidlandsNew + font("x.text", size = 8), 
+                           plot_MidlandsCum + font("x.text", size = 8), 
+                           ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Midlands.pdf", height = 8.27, width = 11.69)
+Midlands_figure
+dev.off()
+
+#### North_East_and_Yorkshire plots ####
+#Read in new cases per day from summarised data, format date correctly
+North_East_and_Yorkshire_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$North_East_and_Yorkshire))
+North_East_and_Yorkshire_data <- as.data.frame(lapply(North_East_and_Yorkshire_data, rep, North_East_and_Yorkshire_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+North_East_and_YorkshireNew_Sigfig <- signif(max(COVID19_by_region$North_East_and_Yorkshire))
+North_East_and_YorkshireNew_Factor <- 10^(floor(log10(North_East_and_YorkshireNew_Sigfig)))
+North_East_and_YorkshireNew_Max <- round_any(max(COVID19_by_region$North_East_and_Yorkshire), North_East_and_YorkshireNew_Factor, f=ceiling)
+North_East_and_YorkshireNew_Breaks <- ceiling(North_East_and_YorkshireNew_Factor/2)
+
+plot_North_East_and_YorkshireNew <- ggplot(data=North_East_and_Yorkshire_data, aes(x=North_East_and_Yorkshire_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, North_East_and_YorkshireNew_Max), 
+                     breaks = seq(0, North_East_and_YorkshireNew_Max, North_East_and_YorkshireNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: North_East_and_Yorkshire") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+North_East_and_YorkshireCum_Sigfig <- signif(sum(COVID19_by_region$North_East_and_Yorkshire))
+North_East_and_YorkshireCum_Factor <- 10^(floor(log10(North_East_and_YorkshireCum_Sigfig)))
+North_East_and_YorkshireCum_Max <- round_any(sum(COVID19_by_region$North_East_and_Yorkshire), North_East_and_YorkshireCum_Factor, f=ceiling)
+North_East_and_YorkshireCum_Breaks <- ceiling(North_East_and_YorkshireCum_Factor/2)
+
+plot_North_East_and_YorkshireCum <- ggplot(data=North_East_and_Yorkshire_data, aes(x=North_East_and_Yorkshire_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, North_East_and_YorkshireCum_Max), 
+                     breaks = seq(0, North_East_and_YorkshireCum_Max, North_East_and_YorkshireCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: North_East_and_Yorkshire") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Generate figures
+North_East_and_Yorkshire_figure <- ggarrange(plot_North_East_and_YorkshireNew + font("x.text", size = 8), 
+                           plot_North_East_and_YorkshireCum + font("x.text", size = 8), 
+                           ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/North_East_and_Yorkshire.pdf", height = 8.27, width = 11.69)
+North_East_and_Yorkshire_figure
+dev.off()
+
+#### North_West plots ####
+#Read in new cases per day from summarised data, format date correctly
+North_West_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$North_West))
+North_West_data <- as.data.frame(lapply(North_West_data, rep, North_West_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+North_WestNew_Sigfig <- signif(max(COVID19_by_region$North_West))
+North_WestNew_Factor <- 10^(floor(log10(North_WestNew_Sigfig)))
+North_WestNew_Max <- round_any(max(COVID19_by_region$North_West), North_WestNew_Factor, f=ceiling)
+North_WestNew_Breaks <- ceiling(North_WestNew_Factor/2)
+
+plot_North_WestNew <- ggplot(data=North_West_data, aes(x=North_West_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, North_WestNew_Max), 
+                     breaks = seq(0, North_WestNew_Max, North_WestNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: North_West") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+North_WestCum_Sigfig <- signif(sum(COVID19_by_region$North_West))
+North_WestCum_Factor <- 10^(floor(log10(North_WestCum_Sigfig)))
+North_WestCum_Max <- round_any(sum(COVID19_by_region$North_West), North_WestCum_Factor, f=ceiling)
+North_WestCum_Breaks <- ceiling(North_WestCum_Factor/2)
+
+plot_North_WestCum <- ggplot(data=North_West_data, aes(x=North_West_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, North_WestCum_Max), 
+                     breaks = seq(0, North_WestCum_Max, North_WestCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: North_West") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+North_West_figure <- ggarrange(plot_North_WestNew + font("x.text", size = 8), 
+                                             plot_North_WestCum + font("x.text", size = 8), 
+                                             ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/North_West.pdf", height = 8.27, width = 11.69)
+North_West_figure
+dev.off()
+
+#### South_East plots ####
+#Read in new cases per day from summarised data, format date correctly
+South_East_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$South_East))
+South_East_data <- as.data.frame(lapply(South_East_data, rep, South_East_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+South_EastNew_Sigfig <- signif(max(COVID19_by_region$South_East))
+South_EastNew_Factor <- 10^(floor(log10(South_EastNew_Sigfig)))
+South_EastNew_Max <- round_any(max(COVID19_by_region$South_East), South_EastNew_Factor, f=ceiling)
+South_EastNew_Breaks <- ceiling(South_EastNew_Factor/2)
+
+plot_South_EastNew <- ggplot(data=South_East_data, aes(x=South_East_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, South_EastNew_Max), 
+                     breaks = seq(0, South_EastNew_Max, South_EastNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: South_East") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+South_EastCum_Sigfig <- signif(sum(COVID19_by_region$South_East))
+South_EastCum_Factor <- 10^(floor(log10(South_EastCum_Sigfig)))
+South_EastCum_Max <- round_any(sum(COVID19_by_region$South_East), South_EastCum_Factor, f=ceiling)
+South_EastCum_Breaks <- ceiling(South_EastCum_Factor/2)
+
+plot_South_EastCum <- ggplot(data=South_East_data, aes(x=South_East_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, South_EastCum_Max), 
+                     breaks = seq(0, South_EastCum_Max, South_EastCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: South_East") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+South_East_figure <- ggarrange(plot_South_EastNew + font("x.text", size = 8), 
+                               plot_South_EastCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/South_East.pdf", height = 8.27, width = 11.69)
+South_East_figure
+dev.off()
+
+#### South_West plots ####
+#Read in new cases per day from summarised data, format date correctly
+South_West_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$South_West))
+South_West_data <- as.data.frame(lapply(South_West_data, rep, South_West_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+South_WestNew_Sigfig <- signif(max(COVID19_by_region$South_West))
+South_WestNew_Factor <- 10^(floor(log10(South_WestNew_Sigfig)))
+South_WestNew_Max <- round_any(max(COVID19_by_region$South_West), South_WestNew_Factor, f=ceiling)
+South_WestNew_Breaks <- ceiling(South_WestNew_Factor/2)
+
+plot_South_WestNew <- ggplot(data=South_West_data, aes(x=South_West_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, South_WestNew_Max), 
+                     breaks = seq(0, South_WestNew_Max, South_WestNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: South_West") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+South_WestCum_Sigfig <- signif(sum(COVID19_by_region$South_West))
+South_WestCum_Factor <- 10^(floor(log10(South_WestCum_Sigfig)))
+South_WestCum_Max <- round_any(sum(COVID19_by_region$South_West), South_WestCum_Factor, f=ceiling)
+South_WestCum_Breaks <- ceiling(South_WestCum_Factor/2)
+
+plot_South_WestCum <- ggplot(data=South_West_data, aes(x=South_West_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, South_WestCum_Max), 
+                     breaks = seq(0, South_WestCum_Max, South_WestCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: South_West") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+South_West_figure <- ggarrange(plot_South_WestNew + font("x.text", size = 8), 
+                               plot_South_WestCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/South_West.pdf", height = 8.27, width = 11.69)
+South_West_figure
+dev.off()
+
+#### England plots ####
+#Read in new cases per day from summarised data, format date correctly
+England_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$England))
+England_data <- as.data.frame(lapply(England_data, rep, England_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+EnglandNew_Sigfig <- signif(max(COVID19_by_region$England))
+EnglandNew_Factor <- 10^(floor(log10(EnglandNew_Sigfig)))
+EnglandNew_Max <- round_any(max(COVID19_by_region$England), EnglandNew_Factor, f=ceiling)
+EnglandNew_Breaks <- ceiling(EnglandNew_Factor/2)
+
+plot_EnglandNew <- ggplot(data=England_data, aes(x=England_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, EnglandNew_Max), 
+                     breaks = seq(0, EnglandNew_Max, EnglandNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: England") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+EnglandCum_Sigfig <- signif(sum(COVID19_by_region$England))
+EnglandCum_Factor <- 10^(floor(log10(EnglandCum_Sigfig)))
+EnglandCum_Max <- round_any(sum(COVID19_by_region$England), EnglandCum_Factor, f=ceiling)
+EnglandCum_Breaks <- ceiling(EnglandCum_Factor/2)
+
+plot_EnglandCum <- ggplot(data=England_data, aes(x=England_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, EnglandCum_Max), 
+                     breaks = seq(0, EnglandCum_Max, EnglandCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: England") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+England_figure <- ggarrange(plot_EnglandNew + font("x.text", size = 8), 
+                               plot_EnglandCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/England.pdf", height = 8.27, width = 11.69)
+England_figure
+dev.off()
+
+#### Scotland plots ####
+#Read in new cases per day from summarised data, format date correctly
+Scotland_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Scotland))
+Scotland_data <- as.data.frame(lapply(Scotland_data, rep, Scotland_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+ScotlandNew_Sigfig <- signif(max(COVID19_by_region$Scotland))
+ScotlandNew_Factor <- 10^(floor(log10(ScotlandNew_Sigfig)))
+ScotlandNew_Max <- round_any(max(COVID19_by_region$Scotland), ScotlandNew_Factor, f=ceiling)
+ScotlandNew_Breaks <- ceiling(ScotlandNew_Factor/2)
+
+plot_ScotlandNew <- ggplot(data=Scotland_data, aes(x=Scotland_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, ScotlandNew_Max), 
+                     breaks = seq(0, ScotlandNew_Max, ScotlandNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Scotland") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+ScotlandCum_Sigfig <- signif(sum(COVID19_by_region$Scotland))
+ScotlandCum_Factor <- 10^(floor(log10(ScotlandCum_Sigfig)))
+ScotlandCum_Max <- round_any(sum(COVID19_by_region$Scotland), ScotlandCum_Factor, f=ceiling)
+ScotlandCum_Breaks <- ceiling(ScotlandCum_Factor/2)
+
+plot_ScotlandCum <- ggplot(data=Scotland_data, aes(x=Scotland_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, ScotlandCum_Max), 
+                     breaks = seq(0, ScotlandCum_Max, ScotlandCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Scotland") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Scotland_figure <- ggarrange(plot_ScotlandNew + font("x.text", size = 8), 
+                               plot_ScotlandCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Scotland.pdf", height = 8.27, width = 11.69)
+Scotland_figure
+dev.off()
+
+#### Wales plots ####
+#Read in new cases per day from summarised data, format date correctly
+Wales_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Wales))
+Wales_data <- as.data.frame(lapply(Wales_data, rep, Wales_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+WalesNew_Sigfig <- signif(max(COVID19_by_region$Wales))
+WalesNew_Factor <- 10^(floor(log10(WalesNew_Sigfig)))
+WalesNew_Max <- round_any(max(COVID19_by_region$Wales), WalesNew_Factor, f=ceiling)
+WalesNew_Breaks <- ceiling(WalesNew_Factor/2)
+
+plot_WalesNew <- ggplot(data=Wales_data, aes(x=Wales_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, WalesNew_Max), 
+                     breaks = seq(0, WalesNew_Max, WalesNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Wales") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+WalesCum_Sigfig <- signif(sum(COVID19_by_region$Wales))
+WalesCum_Factor <- 10^(floor(log10(WalesCum_Sigfig)))
+WalesCum_Max <- round_any(sum(COVID19_by_region$Wales), WalesCum_Factor, f=ceiling)
+WalesCum_Breaks <- ceiling(WalesCum_Factor/2)
+
+plot_WalesCum <- ggplot(data=Wales_data, aes(x=Wales_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, WalesCum_Max), 
+                     breaks = seq(0, WalesCum_Max, WalesCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Wales") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Wales_figure <- ggarrange(plot_WalesNew + font("x.text", size = 8), 
+                               plot_WalesCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Wales.pdf", height = 8.27, width = 11.69)
+Wales_figure
+dev.off()
+
+#### Northern_Ireland plots ####
+#Read in new cases per day from summarised data, format date correctly
+Northern_Ireland_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Northern_Ireland))
+Northern_Ireland_data <- as.data.frame(lapply(Northern_Ireland_data, rep, Northern_Ireland_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+Northern_IrelandNew_Sigfig <- signif(max(COVID19_by_region$Northern_Ireland))
+Northern_IrelandNew_Factor <- 10^(floor(log10(Northern_IrelandNew_Sigfig)))
+Northern_IrelandNew_Max <- round_any(max(COVID19_by_region$Northern_Ireland), Northern_IrelandNew_Factor, f=ceiling)
+Northern_IrelandNew_Breaks <- ceiling(Northern_IrelandNew_Factor/2)
+
+plot_Northern_IrelandNew <- ggplot(data=Northern_Ireland_data, aes(x=Northern_Ireland_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Northern_IrelandNew_Max), 
+                     breaks = seq(0, Northern_IrelandNew_Max, Northern_IrelandNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Northern_Ireland") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+Northern_IrelandCum_Sigfig <- signif(sum(COVID19_by_region$Northern_Ireland))
+Northern_IrelandCum_Factor <- 10^(floor(log10(Northern_IrelandCum_Sigfig)))
+Northern_IrelandCum_Max <- round_any(sum(COVID19_by_region$Northern_Ireland), Northern_IrelandCum_Factor, f=ceiling)
+Northern_IrelandCum_Breaks <- ceiling(Northern_IrelandCum_Factor/2)
+
+plot_Northern_IrelandCum <- ggplot(data=Northern_Ireland_data, aes(x=Northern_Ireland_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Northern_IrelandCum_Max), 
+                     breaks = seq(0, Northern_IrelandCum_Max, Northern_IrelandCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Northern_Ireland") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Northern_Ireland_figure <- ggarrange(plot_Northern_IrelandNew + font("x.text", size = 8), 
+                               plot_Northern_IrelandCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Northern_Ireland.pdf", height = 8.27, width = 11.69)
+Northern_Ireland_figure
+dev.off()
+
+#### Ayrshire_and_Arran plots ####
+#Read in new cases per day from summarised data, format date correctly
+Ayrshire_and_Arran_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Ayrshire_and_Arran))
+Ayrshire_and_Arran_data <- as.data.frame(lapply(Ayrshire_and_Arran_data, rep, Ayrshire_and_Arran_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+Ayrshire_and_ArranNew_Sigfig <- signif(max(COVID19_by_region$Ayrshire_and_Arran))
+Ayrshire_and_ArranNew_Factor <- 10^(floor(log10(Ayrshire_and_ArranNew_Sigfig)))
+Ayrshire_and_ArranNew_Max <- round_any(max(COVID19_by_region$Ayrshire_and_Arran), Ayrshire_and_ArranNew_Factor, f=ceiling)
+Ayrshire_and_ArranNew_Breaks <- ceiling(Ayrshire_and_ArranNew_Factor/2)
+
+plot_Ayrshire_and_ArranNew <- ggplot(data=Ayrshire_and_Arran_data, aes(x=Ayrshire_and_Arran_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Ayrshire_and_ArranNew_Max), 
+                     breaks = seq(0, Ayrshire_and_ArranNew_Max, Ayrshire_and_ArranNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Ayrshire_and_Arran") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+Ayrshire_and_ArranCum_Sigfig <- signif(sum(COVID19_by_region$Ayrshire_and_Arran))
+Ayrshire_and_ArranCum_Factor <- 10^(floor(log10(Ayrshire_and_ArranCum_Sigfig)))
+Ayrshire_and_ArranCum_Max <- round_any(sum(COVID19_by_region$Ayrshire_and_Arran), Ayrshire_and_ArranCum_Factor, f=ceiling)
+Ayrshire_and_ArranCum_Breaks <- ceiling(Ayrshire_and_ArranCum_Factor/2)
+
+plot_Ayrshire_and_ArranCum <- ggplot(data=Ayrshire_and_Arran_data, aes(x=Ayrshire_and_Arran_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Ayrshire_and_ArranCum_Max), 
+                     breaks = seq(0, Ayrshire_and_ArranCum_Max, Ayrshire_and_ArranCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Ayrshire_and_Arran") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Ayrshire_and_Arran_figure <- ggarrange(plot_Ayrshire_and_ArranNew + font("x.text", size = 8), 
+                               plot_Ayrshire_and_ArranCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Ayrshire_and_Arran.pdf", height = 8.27, width = 11.69)
+Ayrshire_and_Arran_figure
+dev.off()
+
+
+#### Borders plots ####
+#Read in new cases per day from summarised data, format date correctly
+Borders_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Borders))
+Borders_data <- as.data.frame(lapply(Borders_data, rep, Borders_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+BordersNew_Sigfig <- signif(max(COVID19_by_region$Borders))
+BordersNew_Factor <- 10^(floor(log10(BordersNew_Sigfig)))
+BordersNew_Max <- round_any(max(COVID19_by_region$Borders), BordersNew_Factor, f=ceiling)
+BordersNew_Breaks <- ceiling(BordersNew_Factor/2)
+
+plot_BordersNew <- ggplot(data=Borders_data, aes(x=Borders_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, BordersNew_Max), 
+                     breaks = seq(0, BordersNew_Max, BordersNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Borders") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+BordersCum_Sigfig <- signif(sum(COVID19_by_region$Borders))
+BordersCum_Factor <- 10^(floor(log10(BordersCum_Sigfig)))
+BordersCum_Max <- round_any(sum(COVID19_by_region$Borders), BordersCum_Factor, f=ceiling)
+BordersCum_Breaks <- ceiling(BordersCum_Factor/2)
+
+plot_BordersCum <- ggplot(data=Borders_data, aes(x=Borders_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, BordersCum_Max), 
+                     breaks = seq(0, BordersCum_Max, BordersCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Borders") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Borders_figure <- ggarrange(plot_BordersNew + font("x.text", size = 8), 
+                               plot_BordersCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Borders.pdf", height = 8.27, width = 11.69)
+Borders_figure
+dev.off()
+
+#### Fife plots ####
+#Read in new cases per day from summarised data, format date correctly
+Fife_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Fife))
+Fife_data <- as.data.frame(lapply(Fife_data, rep, Fife_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+FifeNew_Sigfig <- signif(max(COVID19_by_region$Fife))
+FifeNew_Factor <- 10^(floor(log10(FifeNew_Sigfig)))
+FifeNew_Max <- round_any(max(COVID19_by_region$Fife), FifeNew_Factor, f=ceiling)
+FifeNew_Breaks <- ceiling(FifeNew_Factor/2)
+
+plot_FifeNew <- ggplot(data=Fife_data, aes(x=Fife_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, FifeNew_Max), 
+                     breaks = seq(0, FifeNew_Max, FifeNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Fife") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+FifeCum_Sigfig <- signif(sum(COVID19_by_region$Fife))
+FifeCum_Factor <- 10^(floor(log10(FifeCum_Sigfig)))
+FifeCum_Max <- round_any(sum(COVID19_by_region$Fife), FifeCum_Factor, f=ceiling)
+FifeCum_Breaks <- ceiling(FifeCum_Factor/2)
+
+plot_FifeCum <- ggplot(data=Fife_data, aes(x=Fife_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, FifeCum_Max), 
+                     breaks = seq(0, FifeCum_Max, FifeCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Fife") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Fife_figure <- ggarrange(plot_FifeNew + font("x.text", size = 8), 
+                               plot_FifeCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Fife.pdf", height = 8.27, width = 11.69)
+Fife_figure
+dev.off()
+
+#### Forth_Valley plots ####
+#Read in new cases per day from summarised data, format date correctly
+Forth_Valley_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Forth_Valley))
+Forth_Valley_data <- as.data.frame(lapply(Forth_Valley_data, rep, Forth_Valley_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+Forth_ValleyNew_Sigfig <- signif(max(COVID19_by_region$Forth_Valley))
+Forth_ValleyNew_Factor <- 10^(floor(log10(Forth_ValleyNew_Sigfig)))
+Forth_ValleyNew_Max <- round_any(max(COVID19_by_region$Forth_Valley), Forth_ValleyNew_Factor, f=ceiling)
+Forth_ValleyNew_Breaks <- ceiling(Forth_ValleyNew_Factor/2)
+
+plot_Forth_ValleyNew <- ggplot(data=Forth_Valley_data, aes(x=Forth_Valley_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Forth_ValleyNew_Max), 
+                     breaks = seq(0, Forth_ValleyNew_Max, Forth_ValleyNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Forth_Valley") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+Forth_ValleyCum_Sigfig <- signif(sum(COVID19_by_region$Forth_Valley))
+Forth_ValleyCum_Factor <- 10^(floor(log10(Forth_ValleyCum_Sigfig)))
+Forth_ValleyCum_Max <- round_any(sum(COVID19_by_region$Forth_Valley), Forth_ValleyCum_Factor, f=ceiling)
+Forth_ValleyCum_Breaks <- ceiling(Forth_ValleyCum_Factor/2)
+
+plot_Forth_ValleyCum <- ggplot(data=Forth_Valley_data, aes(x=Forth_Valley_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Forth_ValleyCum_Max), 
+                     breaks = seq(0, Forth_ValleyCum_Max, Forth_ValleyCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Forth_Valley") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Forth_Valley_figure <- ggarrange(plot_Forth_ValleyNew + font("x.text", size = 8), 
+                               plot_Forth_ValleyCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Forth_Valley.pdf", height = 8.27, width = 11.69)
+Forth_Valley_figure
+dev.off()
+
+#### Grampian plots ####
+#Read in new cases per day from summarised data, format date correctly
+Grampian_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Grampian))
+Grampian_data <- as.data.frame(lapply(Grampian_data, rep, Grampian_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+GrampianNew_Sigfig <- signif(max(COVID19_by_region$Grampian))
+GrampianNew_Factor <- 10^(floor(log10(GrampianNew_Sigfig)))
+GrampianNew_Max <- round_any(max(COVID19_by_region$Grampian), GrampianNew_Factor, f=ceiling)
+GrampianNew_Breaks <- ceiling(GrampianNew_Factor/2)
+
+plot_GrampianNew <- ggplot(data=Grampian_data, aes(x=Grampian_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, GrampianNew_Max), 
+                     breaks = seq(0, GrampianNew_Max, GrampianNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Grampian") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+GrampianCum_Sigfig <- signif(sum(COVID19_by_region$Grampian))
+GrampianCum_Factor <- 10^(floor(log10(GrampianCum_Sigfig)))
+GrampianCum_Max <- round_any(sum(COVID19_by_region$Grampian), GrampianCum_Factor, f=ceiling)
+GrampianCum_Breaks <- ceiling(GrampianCum_Factor/2)
+
+plot_GrampianCum <- ggplot(data=Grampian_data, aes(x=Grampian_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, GrampianCum_Max), 
+                     breaks = seq(0, GrampianCum_Max, GrampianCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Grampian") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Grampian_figure <- ggarrange(plot_GrampianNew + font("x.text", size = 8), 
+                               plot_GrampianCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Grampian.pdf", height = 8.27, width = 11.69)
+Grampian_figure
+dev.off()
+
+
+#### Greater_Glasgow_and_Clyde plots ####
+#Read in new cases per day from summarised data, format date correctly
+Greater_Glasgow_and_Clyde_data <- data.frame(Date=c(COVID19_by_region$Date), ntimes=c(COVID19_by_region$Greater_Glasgow_and_Clyde))
+Greater_Glasgow_and_Clyde_data <- as.data.frame(lapply(Greater_Glasgow_and_Clyde_data, rep, Greater_Glasgow_and_Clyde_data$ntimes))
+
+
+# Plot number of NEW CASES per day
+Greater_Glasgow_and_ClydeNew_Sigfig <- signif(max(COVID19_by_region$Greater_Glasgow_and_Clyde))
+Greater_Glasgow_and_ClydeNew_Factor <- 10^(floor(log10(Greater_Glasgow_and_ClydeNew_Sigfig)))
+Greater_Glasgow_and_ClydeNew_Max <- round_any(max(COVID19_by_region$Greater_Glasgow_and_Clyde), Greater_Glasgow_and_ClydeNew_Factor, f=ceiling)
+Greater_Glasgow_and_ClydeNew_Breaks <- ceiling(Greater_Glasgow_and_ClydeNew_Factor/2)
+
+plot_Greater_Glasgow_and_ClydeNew <- ggplot(data=Greater_Glasgow_and_Clyde_data, aes(x=Greater_Glasgow_and_Clyde_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Greater_Glasgow_and_ClydeNew_Max), 
+                     breaks = seq(0, Greater_Glasgow_and_ClydeNew_Max, Greater_Glasgow_and_ClydeNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Greater_Glasgow_and_Clyde") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+
+# Plot CUMULATIVE CASES per day
+Greater_Glasgow_and_ClydeCum_Sigfig <- signif(sum(COVID19_by_region$Greater_Glasgow_and_Clyde))
+Greater_Glasgow_and_ClydeCum_Factor <- 10^(floor(log10(Greater_Glasgow_and_ClydeCum_Sigfig)))
+Greater_Glasgow_and_ClydeCum_Max <- round_any(sum(COVID19_by_region$Greater_Glasgow_and_Clyde), Greater_Glasgow_and_ClydeCum_Factor, f=ceiling)
+Greater_Glasgow_and_ClydeCum_Breaks <- ceiling(Greater_Glasgow_and_ClydeCum_Factor/2)
+
+plot_Greater_Glasgow_and_ClydeCum <- ggplot(data=Greater_Glasgow_and_Clyde_data, aes(x=Greater_Glasgow_and_Clyde_data$Date)) + 
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+               limits = c(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date)),
+               breaks = seq(min(COVID19_by_region$Date)-1, max(COVID19_by_region$Date), 1)) +
+  scale_y_continuous(limits = c(0, Greater_Glasgow_and_ClydeCum_Max), 
+                     breaks = seq(0, Greater_Glasgow_and_ClydeCum_Max, Greater_Glasgow_and_ClydeCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Greater_Glasgow_and_Clyde") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Greater_Glasgow_and_Clyde_figure <- ggarrange(plot_Greater_Glasgow_and_ClydeNew + font("x.text", size = 8), 
+                               plot_Greater_Glasgow_and_ClydeCum + font("x.text", size = 8), 
+                               ncol = 1, nrow = 2, align = "hv")
+
+pdf("Regional plots/Greater_Glasgow_and_Clyde.pdf", height = 8.27, width = 11.69)
+Greater_Glasgow_and_Clyde_figure
 dev.off()
 
 #### Summary plot- 4 LA with highest cases 11/03/2020 #####
