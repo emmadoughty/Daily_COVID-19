@@ -9423,7 +9423,7 @@ plot_East_of_EnglandNew <- ggplot(data=East_of_England_data, aes(x=East_of_Engla
                      breaks = seq(0, East_of_EnglandNew_Max, East_of_EnglandNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: East_of_England") +
+  ggtitle("New cases per day: East of England") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9446,7 +9446,7 @@ plot_East_of_EnglandCum <- ggplot(data=East_of_England_data, aes(x=East_of_Engla
   scale_y_continuous(limits = c(0, East_of_EnglandCum_Max), 
                      breaks = seq(0, East_of_EnglandCum_Max, East_of_EnglandCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: East_of_England") +
+  ggtitle("Cumulative cases: East of England") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9606,7 +9606,7 @@ plot_North_East_and_YorkshireNew <- ggplot(data=North_East_and_Yorkshire_data, a
                      breaks = seq(0, North_East_and_YorkshireNew_Max, North_East_and_YorkshireNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: North_East_and_Yorkshire") +
+  ggtitle("New cases per day: North East and Yorkshire") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9629,7 +9629,7 @@ plot_North_East_and_YorkshireCum <- ggplot(data=North_East_and_Yorkshire_data, a
   scale_y_continuous(limits = c(0, North_East_and_YorkshireCum_Max), 
                      breaks = seq(0, North_East_and_YorkshireCum_Max, North_East_and_YorkshireCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: North_East_and_Yorkshire") +
+  ggtitle("Cumulative cases: North East and Yorkshire") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9667,7 +9667,7 @@ plot_North_WestNew <- ggplot(data=North_West_data, aes(x=North_West_data$Date)) 
                      breaks = seq(0, North_WestNew_Max, North_WestNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: North_West") +
+  ggtitle("New cases per day: North West") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9690,7 +9690,7 @@ plot_North_WestCum <- ggplot(data=North_West_data, aes(x=North_West_data$Date)) 
   scale_y_continuous(limits = c(0, North_WestCum_Max), 
                      breaks = seq(0, North_WestCum_Max, North_WestCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: North_West") +
+  ggtitle("Cumulative cases: North West") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9727,7 +9727,7 @@ plot_South_EastNew <- ggplot(data=South_East_data, aes(x=South_East_data$Date)) 
                      breaks = seq(0, South_EastNew_Max, South_EastNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: South_East") +
+  ggtitle("New cases per day: South East") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9750,7 +9750,7 @@ plot_South_EastCum <- ggplot(data=South_East_data, aes(x=South_East_data$Date)) 
   scale_y_continuous(limits = c(0, South_EastCum_Max), 
                      breaks = seq(0, South_EastCum_Max, South_EastCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: South_East") +
+  ggtitle("Cumulative cases: South East") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9787,7 +9787,7 @@ plot_South_WestNew <- ggplot(data=South_West_data, aes(x=South_West_data$Date)) 
                      breaks = seq(0, South_WestNew_Max, South_WestNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: South_West") +
+  ggtitle("New cases per day: South West") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -9810,7 +9810,7 @@ plot_South_WestCum <- ggplot(data=South_West_data, aes(x=South_West_data$Date)) 
   scale_y_continuous(limits = c(0, South_WestCum_Max), 
                      breaks = seq(0, South_WestCum_Max, South_WestCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: South_West") +
+  ggtitle("Cumulative cases: South West") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10027,7 +10027,7 @@ plot_Northern_IrelandNew <- ggplot(data=Northern_Ireland_data, aes(x=Northern_Ir
                      breaks = seq(0, Northern_IrelandNew_Max, Northern_IrelandNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: Northern_Ireland") +
+  ggtitle("New cases per day: Northern Ireland") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10050,7 +10050,7 @@ plot_Northern_IrelandCum <- ggplot(data=Northern_Ireland_data, aes(x=Northern_Ir
   scale_y_continuous(limits = c(0, Northern_IrelandCum_Max), 
                      breaks = seq(0, Northern_IrelandCum_Max, Northern_IrelandCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: Northern_Ireland") +
+  ggtitle("Cumulative cases: Northern Ireland") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10087,7 +10087,7 @@ plot_Ayrshire_and_ArranNew <- ggplot(data=Ayrshire_and_Arran_data, aes(x=Ayrshir
                      breaks = seq(0, Ayrshire_and_ArranNew_Max, Ayrshire_and_ArranNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: Ayrshire_and_Arran") +
+  ggtitle("New cases per day: Ayrshire and Arran") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10110,7 +10110,7 @@ plot_Ayrshire_and_ArranCum <- ggplot(data=Ayrshire_and_Arran_data, aes(x=Ayrshir
   scale_y_continuous(limits = c(0, Ayrshire_and_ArranCum_Max), 
                      breaks = seq(0, Ayrshire_and_ArranCum_Max, Ayrshire_and_ArranCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: Ayrshire_and_Arran") +
+  ggtitle("Cumulative cases: Ayrshire and Arran") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10268,7 +10268,7 @@ plot_Forth_ValleyNew <- ggplot(data=Forth_Valley_data, aes(x=Forth_Valley_data$D
                      breaks = seq(0, Forth_ValleyNew_Max, Forth_ValleyNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: Forth_Valley") +
+  ggtitle("New cases per day: Forth Valley") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10291,7 +10291,7 @@ plot_Forth_ValleyCum <- ggplot(data=Forth_Valley_data, aes(x=Forth_Valley_data$D
   scale_y_continuous(limits = c(0, Forth_ValleyCum_Max), 
                      breaks = seq(0, Forth_ValleyCum_Max, Forth_ValleyCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: Forth_Valley") +
+  ggtitle("Cumulative cases: Forth Valley") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10389,7 +10389,7 @@ plot_Greater_Glasgow_and_ClydeNew <- ggplot(data=Greater_Glasgow_and_Clyde_data,
                      breaks = seq(0, Greater_Glasgow_and_ClydeNew_Max, Greater_Glasgow_and_ClydeNew_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New cases per day: Greater_Glasgow_and_Clyde") +
+  ggtitle("New cases per day: Greater Glasgow and Clyde") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10412,7 +10412,7 @@ plot_Greater_Glasgow_and_ClydeCum <- ggplot(data=Greater_Glasgow_and_Clyde_data,
   scale_y_continuous(limits = c(0, Greater_Glasgow_and_ClydeCum_Max), 
                      breaks = seq(0, Greater_Glasgow_and_ClydeCum_Max, Greater_Glasgow_and_ClydeCum_Breaks), expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative cases: Greater_Glasgow_and_Clyde") +
+  ggtitle("Cumulative cases: Greater Glasgow and Clyde") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -10424,22 +10424,22 @@ Greater_Glasgow_and_Clyde_figure <- ggarrange(plot_Greater_Glasgow_and_ClydeNew 
                                plot_Greater_Glasgow_and_ClydeCum + font("x.text", size = 8), 
                                ncol = 1, nrow = 2, align = "hv")
 
-pdf("Regional plots/Greater_Glasgow_and_Clyde.pdf", height = 8.27, width = 11.69)
+pdf("Regional plots/Greater Glasgow and Clyde.pdf", height = 8.27, width = 11.69)
 Greater_Glasgow_and_Clyde_figure
 dev.off()
 
-#### Summary plot- 4 LA with highest cases 11/03/2020 #####
-
-LA_figure <- ggarrange(plot_DevonCum + font("x.text", size = 8), 
-                        plot_HampshireCum + font("x.text", size = 8), 
-                        plot_HertfordshireCum + font("x.text", size = 8), 
-                        plot_Kensington_and_ChelseaCum + font("x.text", size = 8), 
-                        ncol = 2, nrow = 2, align = "hv")
-
-Sum_figure <- annotate_figure(LA_figure,
-                              top = text_grob("Local authorities with highest total cases, 11/03/2020", face = "bold", size = 14))
-
-pdf("Plot per local authority/Highest_LA_plot.pdf", height = 8.27, width = 11.69)
-Sum_figure
-dev.off()
+# #### Summary plot- 4 LA with highest cases 11/03/2020 #####
+# 
+# LA_figure <- ggarrange(plot_DevonCum + font("x.text", size = 8), 
+#                         plot_HampshireCum + font("x.text", size = 8), 
+#                         plot_HertfordshireCum + font("x.text", size = 8), 
+#                         plot_Kensington_and_ChelseaCum + font("x.text", size = 8), 
+#                         ncol = 2, nrow = 2, align = "hv")
+# 
+# Sum_figure <- annotate_figure(LA_figure,
+#                               top = text_grob("Local authorities with highest total cases, 11/03/2020", face = "bold", size = 14))
+# 
+# pdf("Plot per local authority/Highest_LA_plot.pdf", height = 8.27, width = 11.69)
+# Sum_figure
+# dev.off()
 
