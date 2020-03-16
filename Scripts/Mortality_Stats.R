@@ -97,8 +97,10 @@ for (i in 36:nrow(df_Deaths9d)) {
 df_DeathsStats <- rbind(df_Deaths17d, df_Deaths15d, df_Deaths13d, df_Deaths11d, df_Deaths9d)
 df_DeathsStats <-df_DeathsStats[!(df_DeathsStats$CumDeaths==0),]
 
-#### Plot graph for mortslity stats ####
+#### Plot graph for mortality stats ####
+DeathStats_Sigfig <- signif(sum(df_DeathsStats$StatValue))
 DeathStats_Factor <- 10^(floor(log10(signif(max(df_DeathsStats$StatValue)))))
+DeathStats_Max <- round_any(max(df_DeathsStats$StatValue), DeathStats_Factor, f=ceiling)
 DeathStats_Breaks <- ceiling(DeathStats_Factor/2)
 
 plot_CFR <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatValue, group=DeathStat)) +
@@ -107,10 +109,12 @@ plot_CFR <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatValue, 
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(df_DeathsStats$Date), max(df_DeathsStats$Date)),
                breaks = seq(min(df_DeathsStats$Date), max(df_DeathsStats$Date), 1)) +
-  scale_y_continuous(limits = c(0, 80), 
-                     breaks = seq(0, 80, DeathStats_Breaks),
+  scale_y_continuous(limits = c(0, 300), 
+                     breaks = seq(0, 300, 10),
                      expand = c(0, 0)) +
-  ylab("Deaths/cases (%)") + xlab("Date") +
+  ylab("% reported cases that lead to death \n 
+       based on estimated time from reporting to death specified in legend") + 
+  xlab("Date deaths announced") +
   ggtitle("Estimated UK case fatality rates") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
@@ -119,9 +123,18 @@ plot_CFR <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatValue, 
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
         panel.grid.minor = element_blank()) + 
   labs(colour = "Reporting to death:") + 
-  scale_color_discrete(breaks=c("9 days","11 days","13 days","15 days","17 days"))
+  scale_color_discrete(breaks=c("9 days","11 days","13 days","15 days","17 days")) +
+  geom_hline(yintercept = 3.4, color="grey", linetype="dashed") +
+  annotate("text", min(df_DeathsStats$Date), 3.4, 
+           vjust = -1, hjust = -5.1, label = "3.4% (WHO estimated CFR)",
+           size = 2.5, color="grey")
 
-pdf("CFR_Stats_plot.pdf", height = 8.27, width = 11.69)
-plot_CFR
-dev.off()
+ggsave("CFR_Stats_plot.png")
+
+# Average time from reporting to death must be fairly short, 
+# testing must have typically only identified the most severe cases 
+# (where all/most lead to death) and/or
+# case fatality rate is very hgih in the UK
+
+
 

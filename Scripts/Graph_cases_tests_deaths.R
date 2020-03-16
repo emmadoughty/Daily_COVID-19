@@ -182,34 +182,31 @@ Sum_figure <- ggarrange(plot_NewCases + font("x.text", size = 6),
 Sum_figure <- annotate_figure(Sum_figure,
                 top = text_grob("UK data for COVID-19", face = "bold", size = 14))
 
-pdf("Summary_plot.pdf", height = 8.27, width = 11.69)
-Sum_figure
-dev.off()
+ggsave("Summary_plot.png", height = 8.27, width = 11.69)
+
 
 # Cases per day figure
 Cases_figure <- ggarrange(plot_NewCases + font("x.text", size = 8), 
                           plot_CumCases + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Cases_plot.pdf", height = 8.27, width = 11.69)
-Cases_figure
-dev.off()
+ggsave("Cases_plot.png", height = 8.27, width = 11.69)
+
 
 # Tests per day figure
 Tests_figure <- ggarrange(plot_NewTests + font("x.text", size = 8), 
                           plot_CumTests + font("x.text", size = 8), 
                           ncol = 1, nrow = 2, align = "hv")
 
-pdf("Tests_plot.pdf", height = 8.27, width = 11.69)
-Tests_figure
-dev.off()
+ggsave("Tests_plot.png", height = 8.27, width = 11.69)
+
 
 # Deaths per day figure
 Deaths_figure <- ggarrange(plot_NewDeaths + font("x.text", size = 8), 
                            plot_CumDeaths + font("x.text", size = 8), 
                            ncol = 1, nrow = 2, align = "hv")
 
-pdf("Deaths_plot.pdf", height = 8.27, width = 11.69)
-Deaths_figure
-dev.off()
+ggsave("Deaths_plot.png", height = 8.27, width = 11.69)
+
+
 
