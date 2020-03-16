@@ -76,7 +76,7 @@ Barking_and_Dagenham_figure <- ggarrange(plot_Barking_and_DagenhamNew + font("x.
 Barking_and_Dagenham_figure <- annotate_figure(Barking_and_Dagenham_figure,
                                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Barking_and_Dagenham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Barking_and_Dagenham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -137,7 +137,7 @@ Barnet_figure <- ggarrange(plot_BarnetNew + font("x.text", size = 8),
 Barnet_figure <- annotate_figure(Barnet_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Barnet_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Barnet_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -198,7 +198,7 @@ Barnsley_figure <- ggarrange(plot_BarnsleyNew + font("x.text", size = 8),
 Barnsley_figure <- annotate_figure(Barnsley_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Barnsley_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Barnsley_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -259,7 +259,7 @@ Bath_and_North_East_Somerset_figure <- ggarrange(plot_Bath_and_North_East_Somers
 Bath_and_North_East_Somerset_figure <- annotate_figure(Bath_and_North_East_Somerset_figure,
                                                        bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bath_and_North_East_Somerset_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bath_and_North_East_Somerset_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -320,7 +320,7 @@ Bedford_figure <- ggarrange(plot_BedfordNew + font("x.text", size = 8),
 Bedford_figure <- annotate_figure(Bedford_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bedford_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bedford_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -381,7 +381,7 @@ Bexley_figure <- ggarrange(plot_BexleyNew + font("x.text", size = 8),
 Bexley_figure <- annotate_figure(Bexley_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bexley_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bexley_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -442,7 +442,7 @@ Birmingham_figure <- ggarrange(plot_BirminghamNew + font("x.text", size = 8),
 Birmingham_figure <- annotate_figure(Birmingham_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Birmingham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Birmingham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -503,7 +503,7 @@ Blackburn_with_Darwen_figure <- ggarrange(plot_Blackburn_with_DarwenNew + font("
 Blackburn_with_Darwen_figure <- annotate_figure(Blackburn_with_Darwen_figure,
                                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Blackburn_with_Darwen_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Blackburn_with_Darwen_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -564,7 +564,7 @@ Blackpool_figure <- ggarrange(plot_BlackpoolNew + font("x.text", size = 8),
 Blackpool_figure <- annotate_figure(Blackpool_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Blackpool_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Blackpool_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -625,7 +625,7 @@ Bolton_figure <- ggarrange(plot_BoltonNew + font("x.text", size = 8),
 Bolton_figure <- annotate_figure(Bolton_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bolton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bolton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -686,7 +686,7 @@ Bournemouth_figure <- ggarrange(plot_BournemouthNew + font("x.text", size = 8),
 Bournemouth_figure <- annotate_figure(Bournemouth_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bournemouth_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bournemouth_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -747,7 +747,7 @@ Bracknell_Forest_figure <- ggarrange(plot_Bracknell_ForestNew + font("x.text", s
 Bracknell_Forest_figure <- annotate_figure(Bracknell_Forest_figure,
                                            bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bracknell_Forest_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bracknell_Forest_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -808,7 +808,7 @@ Bradford_figure <- ggarrange(plot_BradfordNew + font("x.text", size = 8),
 Bradford_figure <- annotate_figure(Bradford_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bradford_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bradford_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -869,7 +869,7 @@ Brent_figure <- ggarrange(plot_BrentNew + font("x.text", size = 8),
 Brent_figure <- annotate_figure(Brent_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Brent_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Brent_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -930,7 +930,7 @@ Brighton_andHove_figure <- ggarrange(plot_Brighton_andHoveNew + font("x.text", s
 Brighton_andHove_figure <- annotate_figure(Brighton_andHove_figure,
                                            bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Brighton_andHove_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Brighton_andHove_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -991,7 +991,7 @@ Bristol_figure <- ggarrange(plot_BristolNew + font("x.text", size = 8),
 Bristol_figure <- annotate_figure(Bristol_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bristol_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bristol_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1052,7 +1052,7 @@ Bromley_figure <- ggarrange(plot_BromleyNew + font("x.text", size = 8),
 Bromley_figure <- annotate_figure(Bromley_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bromley_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bromley_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1113,7 +1113,7 @@ Buckinghamshire_figure <- ggarrange(plot_BuckinghamshireNew + font("x.text", siz
 Buckinghamshire_figure <- annotate_figure(Buckinghamshire_figure,
                                           bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Buckinghamshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Buckinghamshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1174,7 +1174,7 @@ Bury_figure <- ggarrange(plot_BuryNew + font("x.text", size = 8),
 Bury_figure <- annotate_figure(Bury_figure,
                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Bury_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Bury_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1235,7 +1235,7 @@ Calderdale_figure <- ggarrange(plot_CalderdaleNew + font("x.text", size = 8),
 Calderdale_figure <- annotate_figure(Calderdale_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Calderdale_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Calderdale_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1296,7 +1296,7 @@ Cambridgeshire_figure <- ggarrange(plot_CambridgeshireNew + font("x.text", size 
 Cambridgeshire_figure <- annotate_figure(Cambridgeshire_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Cambridgeshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Cambridgeshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1357,7 +1357,7 @@ Camden_figure <- ggarrange(plot_CamdenNew + font("x.text", size = 8),
 Camden_figure <- annotate_figure(Camden_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Camden_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Camden_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1418,7 +1418,7 @@ Central_Bedfordshire_figure <- ggarrange(plot_Central_BedfordshireNew + font("x.
 Central_Bedfordshire_figure <- annotate_figure(Central_Bedfordshire_figure,
                                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Central_Bedfordshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Central_Bedfordshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1479,7 +1479,7 @@ Cheshire_East_figure <- ggarrange(plot_Cheshire_EastNew + font("x.text", size = 
 Cheshire_East_figure <- annotate_figure(Cheshire_East_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Cheshire_East_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Cheshire_East_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1540,7 +1540,7 @@ Cheshire_West_and_Chester_figure <- ggarrange(plot_Cheshire_West_and_ChesterNew 
 Cheshire_West_and_Chester_figure <- annotate_figure(Cheshire_West_and_Chester_figure,
                                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Cheshire_West_and_Chester_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Cheshire_West_and_Chester_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1601,7 +1601,7 @@ Cornwall_and_Isles_of_Scilly_figure <- ggarrange(plot_Cornwall_and_Isles_of_Scil
 Cornwall_and_Isles_of_Scilly_figure <- annotate_figure(Cornwall_and_Isles_of_Scilly_figure,
                                                        bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Cornwall_and_Isles_of_Scilly_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Cornwall_and_Isles_of_Scilly_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1662,7 +1662,7 @@ County_Durham_figure <- ggarrange(plot_County_DurhamNew + font("x.text", size = 
 County_Durham_figure <- annotate_figure(County_Durham_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/County_Durham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/County_Durham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1723,7 +1723,7 @@ Coventry_figure <- ggarrange(plot_CoventryNew + font("x.text", size = 8),
 Coventry_figure <- annotate_figure(Coventry_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Coventry_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Coventry_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1784,7 +1784,7 @@ Croydon_figure <- ggarrange(plot_CroydonNew + font("x.text", size = 8),
 Croydon_figure <- annotate_figure(Croydon_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Croydon_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Croydon_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1845,7 +1845,7 @@ Cumbria_figure <- ggarrange(plot_CumbriaNew + font("x.text", size = 8),
 Cumbria_figure <- annotate_figure(Cumbria_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Cumbria_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Cumbria_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1906,7 +1906,7 @@ Darlington_figure <- ggarrange(plot_DarlingtonNew + font("x.text", size = 8),
 Darlington_figure <- annotate_figure(Darlington_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Darlington_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Darlington_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -1967,7 +1967,7 @@ Derby_figure <- ggarrange(plot_DerbyNew + font("x.text", size = 8),
 Derby_figure <- annotate_figure(Derby_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Derby_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Derby_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2028,7 +2028,7 @@ Derbyshire_figure <- ggarrange(plot_DerbyshireNew + font("x.text", size = 8),
 Derbyshire_figure <- annotate_figure(Derbyshire_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Derbyshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Derbyshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2089,7 +2089,7 @@ Devon_figure <- ggarrange(plot_DevonNew + font("x.text", size = 8),
 Devon_figure <- annotate_figure(Devon_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Devon_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Devon_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2150,7 +2150,7 @@ Doncaster_figure <- ggarrange(plot_DoncasterNew + font("x.text", size = 8),
 Doncaster_figure <- annotate_figure(Doncaster_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Doncaster_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Doncaster_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2211,7 +2211,7 @@ Dorset_figure <- ggarrange(plot_DorsetNew + font("x.text", size = 8),
 Dorset_figure <- annotate_figure(Dorset_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Dorset_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Dorset_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2272,7 +2272,7 @@ Dudley_figure <- ggarrange(plot_DudleyNew + font("x.text", size = 8),
 Dudley_figure <- annotate_figure(Dudley_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Dudley_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Dudley_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2333,7 +2333,7 @@ Ealing_figure <- ggarrange(plot_EalingNew + font("x.text", size = 8),
 Ealing_figure <- annotate_figure(Ealing_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Ealing_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Ealing_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2394,7 +2394,7 @@ East_Riding_of_Yorkshire_figure <- ggarrange(plot_East_Riding_of_YorkshireNew + 
 East_Riding_of_Yorkshire_figure <- annotate_figure(East_Riding_of_Yorkshire_figure,
                                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/East_Riding_of_Yorkshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/East_Riding_of_Yorkshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2455,7 +2455,7 @@ East_Sussex_figure <- ggarrange(plot_East_SussexNew + font("x.text", size = 8),
 East_Sussex_figure <- annotate_figure(East_Sussex_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/East_Sussex_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/East_Sussex_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2516,7 +2516,7 @@ Enfield_figure <- ggarrange(plot_EnfieldNew + font("x.text", size = 8),
 Enfield_figure <- annotate_figure(Enfield_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Enfield_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Enfield_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2577,7 +2577,7 @@ Essex_figure <- ggarrange(plot_EssexNew + font("x.text", size = 8),
 Essex_figure <- annotate_figure(Essex_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Essex_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Essex_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2638,7 +2638,7 @@ Gateshead_figure <- ggarrange(plot_GatesheadNew + font("x.text", size = 8),
 Gateshead_figure <- annotate_figure(Gateshead_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Gateshead_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Gateshead_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2699,7 +2699,7 @@ Gloucestershire_figure <- ggarrange(plot_GloucestershireNew + font("x.text", siz
 Gloucestershire_figure <- annotate_figure(Gloucestershire_figure,
                                           bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Gloucestershire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Gloucestershire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2760,7 +2760,7 @@ Greenwich_figure <- ggarrange(plot_GreenwichNew + font("x.text", size = 8),
 Greenwich_figure <- annotate_figure(Greenwich_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Greenwich_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Greenwich_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2821,7 +2821,7 @@ Hackney_and_City_of_London_figure <- ggarrange(plot_Hackney_and_City_of_LondonNe
 Hackney_and_City_of_London_figure <- annotate_figure(Hackney_and_City_of_London_figure,
                                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hackney_and_City_of_London_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hackney_and_City_of_London_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2882,7 +2882,7 @@ Halton_figure <- ggarrange(plot_HaltonNew + font("x.text", size = 8),
 Halton_figure <- annotate_figure(Halton_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Halton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Halton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -2943,7 +2943,7 @@ Hammersmith_and_Fulham_figure <- ggarrange(plot_Hammersmith_and_FulhamNew + font
 Hammersmith_and_Fulham_figure <- annotate_figure(Hammersmith_and_Fulham_figure,
                                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hammersmith_and_Fulham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hammersmith_and_Fulham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3004,7 +3004,7 @@ Hampshire_figure <- ggarrange(plot_HampshireNew + font("x.text", size = 8),
 Hampshire_figure <- annotate_figure(Hampshire_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hampshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hampshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3065,7 +3065,7 @@ Haringey_figure <- ggarrange(plot_HaringeyNew + font("x.text", size = 8),
 Haringey_figure <- annotate_figure(Haringey_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Haringey_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Haringey_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3126,7 +3126,7 @@ Harrow_figure <- ggarrange(plot_HarrowNew + font("x.text", size = 8),
 Harrow_figure <- annotate_figure(Harrow_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Harrow_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Harrow_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3187,7 +3187,7 @@ Hartlepool_figure <- ggarrange(plot_HartlepoolNew + font("x.text", size = 8),
 Hartlepool_figure <- annotate_figure(Hartlepool_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hartlepool_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hartlepool_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3248,7 +3248,7 @@ Havering_figure <- ggarrange(plot_HaveringNew + font("x.text", size = 8),
 Havering_figure <- annotate_figure(Havering_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Havering_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Havering_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3309,7 +3309,7 @@ Herefordshire_figure <- ggarrange(plot_HerefordshireNew + font("x.text", size = 
 Herefordshire_figure <- annotate_figure(Herefordshire_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Herefordshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Herefordshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3370,7 +3370,7 @@ Hertfordshire_figure <- ggarrange(plot_HertfordshireNew + font("x.text", size = 
 Hertfordshire_figure <- annotate_figure(Hertfordshire_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hertfordshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hertfordshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3431,7 +3431,7 @@ Hillingdon_figure <- ggarrange(plot_HillingdonNew + font("x.text", size = 8),
 Hillingdon_figure <- annotate_figure(Hillingdon_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hillingdon_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hillingdon_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3492,7 +3492,7 @@ Hounslow_figure <- ggarrange(plot_HounslowNew + font("x.text", size = 8),
 Hounslow_figure <- annotate_figure(Hounslow_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Hounslow_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Hounslow_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3553,7 +3553,7 @@ Isle_of_Wight_figure <- ggarrange(plot_Isle_of_WightNew + font("x.text", size = 
 Isle_of_Wight_figure <- annotate_figure(Isle_of_Wight_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Isle_of_Wight_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Isle_of_Wight_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3614,7 +3614,7 @@ Islington_figure <- ggarrange(plot_IslingtonNew + font("x.text", size = 8),
 Islington_figure <- annotate_figure(Islington_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Islington_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Islington_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3675,7 +3675,7 @@ Kensington_and_Chelsea_figure <- ggarrange(plot_Kensington_and_ChelseaNew + font
 Kensington_and_Chelsea_figure <- annotate_figure(Kensington_and_Chelsea_figure,
                                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Kensington_and_Chelsea_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Kensington_and_Chelsea_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3736,7 +3736,7 @@ Kent_figure <- ggarrange(plot_KentNew + font("x.text", size = 8),
 Kent_figure <- annotate_figure(Kent_figure,
                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Kent_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Kent_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3797,7 +3797,7 @@ Kingston_upon_Hull_figure <- ggarrange(plot_Kingston_upon_HullNew + font("x.text
 Kingston_upon_Hull_figure <- annotate_figure(Kingston_upon_Hull_figure,
                                              bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Kingston_upon_Hull_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Kingston_upon_Hull_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3858,7 +3858,7 @@ Kingston_upon_Thames_figure <- ggarrange(plot_Kingston_upon_ThamesNew + font("x.
 Kingston_upon_Thames_figure <- annotate_figure(Kingston_upon_Thames_figure,
                                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Kingston_upon_Thames_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Kingston_upon_Thames_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3919,7 +3919,7 @@ Kirklees_figure <- ggarrange(plot_KirkleesNew + font("x.text", size = 8),
 Kirklees_figure <- annotate_figure(Kirklees_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Kirklees_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Kirklees_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -3980,7 +3980,7 @@ Knowsley_figure <- ggarrange(plot_KnowsleyNew + font("x.text", size = 8),
 Knowsley_figure <- annotate_figure(Knowsley_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Knowsley_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Knowsley_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4041,7 +4041,7 @@ Lambeth_figure <- ggarrange(plot_LambethNew + font("x.text", size = 8),
 Lambeth_figure <- annotate_figure(Lambeth_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Lambeth_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Lambeth_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4102,7 +4102,7 @@ Lancashire_figure <- ggarrange(plot_LancashireNew + font("x.text", size = 8),
 Lancashire_figure <- annotate_figure(Lancashire_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Lancashire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Lancashire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4163,7 +4163,7 @@ Leeds_figure <- ggarrange(plot_LeedsNew + font("x.text", size = 8),
 Leeds_figure <- annotate_figure(Leeds_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Leeds_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Leeds_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4224,7 +4224,7 @@ Leicester_figure <- ggarrange(plot_LeicesterNew + font("x.text", size = 8),
 Leicester_figure <- annotate_figure(Leicester_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Leicester_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Leicester_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4285,7 +4285,7 @@ Leicestershire_figure <- ggarrange(plot_LeicestershireNew + font("x.text", size 
 Leicestershire_figure <- annotate_figure(Leicestershire_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Leicestershire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Leicestershire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4346,7 +4346,7 @@ Lewisham_figure <- ggarrange(plot_LewishamNew + font("x.text", size = 8),
 Lewisham_figure <- annotate_figure(Lewisham_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Lewisham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Lewisham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4407,7 +4407,7 @@ Lincolnshire_figure <- ggarrange(plot_LincolnshireNew + font("x.text", size = 8)
 Lincolnshire_figure <- annotate_figure(Lincolnshire_figure,
                                        bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Lincolnshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Lincolnshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4468,7 +4468,7 @@ Liverpool_figure <- ggarrange(plot_LiverpoolNew + font("x.text", size = 8),
 Liverpool_figure <- annotate_figure(Liverpool_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Liverpool_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Liverpool_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4529,7 +4529,7 @@ Luton_figure <- ggarrange(plot_LutonNew + font("x.text", size = 8),
 Luton_figure <- annotate_figure(Luton_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Luton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Luton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4590,7 +4590,7 @@ Manchester_figure <- ggarrange(plot_ManchesterNew + font("x.text", size = 8),
 Manchester_figure <- annotate_figure(Manchester_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Manchester_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Manchester_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4651,7 +4651,7 @@ Medway_figure <- ggarrange(plot_MedwayNew + font("x.text", size = 8),
 Medway_figure <- annotate_figure(Medway_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Medway_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Medway_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4712,7 +4712,7 @@ Merton_figure <- ggarrange(plot_MertonNew + font("x.text", size = 8),
 Merton_figure <- annotate_figure(Merton_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Merton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Merton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4773,7 +4773,7 @@ Middlesbrough_figure <- ggarrange(plot_MiddlesbroughNew + font("x.text", size = 
 Middlesbrough_figure <- annotate_figure(Middlesbrough_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Middlesbrough_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Middlesbrough_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4834,7 +4834,7 @@ Milton_Keynes_figure <- ggarrange(plot_Milton_KeynesNew + font("x.text", size = 
 Milton_Keynes_figure <- annotate_figure(Milton_Keynes_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Milton_Keynes_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Milton_Keynes_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4895,7 +4895,7 @@ Newcastle_upon_Tyne_figure <- ggarrange(plot_Newcastle_upon_TyneNew + font("x.te
 Newcastle_upon_Tyne_figure <- annotate_figure(Newcastle_upon_Tyne_figure,
                                               bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Newcastle_upon_Tyne_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Newcastle_upon_Tyne_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -4956,7 +4956,7 @@ Newham_figure <- ggarrange(plot_NewhamNew + font("x.text", size = 8),
 Newham_figure <- annotate_figure(Newham_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Newham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Newham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5017,7 +5017,7 @@ Norfolk_figure <- ggarrange(plot_NorfolkNew + font("x.text", size = 8),
 Norfolk_figure <- annotate_figure(Norfolk_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Norfolk_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Norfolk_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5078,7 +5078,7 @@ North_East_Lincolnshire_figure <- ggarrange(plot_North_East_LincolnshireNew + fo
 North_East_Lincolnshire_figure <- annotate_figure(North_East_Lincolnshire_figure,
                                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_East_Lincolnshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_East_Lincolnshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5139,7 +5139,7 @@ North_Lincolnshire_figure <- ggarrange(plot_North_LincolnshireNew + font("x.text
 North_Lincolnshire_figure <- annotate_figure(North_Lincolnshire_figure,
                                              bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_Lincolnshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_Lincolnshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5200,7 +5200,7 @@ North_Somerset_figure <- ggarrange(plot_North_SomersetNew + font("x.text", size 
 North_Somerset_figure <- annotate_figure(North_Somerset_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_Somerset_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_Somerset_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5261,7 +5261,7 @@ North_Tyneside_figure <- ggarrange(plot_North_TynesideNew + font("x.text", size 
 North_Tyneside_figure <- annotate_figure(North_Tyneside_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_Tyneside_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_Tyneside_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5322,7 +5322,7 @@ North_Yorkshire_figure <- ggarrange(plot_North_YorkshireNew + font("x.text", siz
 North_Yorkshire_figure <- annotate_figure(North_Yorkshire_figure,
                                           bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_Yorkshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_Yorkshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5383,7 +5383,7 @@ Northamptonshire_figure <- ggarrange(plot_NorthamptonshireNew + font("x.text", s
 Northamptonshire_figure <- annotate_figure(Northamptonshire_figure,
                                            bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Northamptonshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Northamptonshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5444,7 +5444,7 @@ Northumberland_figure <- ggarrange(plot_NorthumberlandNew + font("x.text", size 
 Northumberland_figure <- annotate_figure(Northumberland_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Northumberland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Northumberland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5505,7 +5505,7 @@ Nottingham_figure <- ggarrange(plot_NottinghamNew + font("x.text", size = 8),
 Nottingham_figure <- annotate_figure(Nottingham_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Nottingham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Nottingham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5566,7 +5566,7 @@ Nottinghamshire_figure <- ggarrange(plot_NottinghamshireNew + font("x.text", siz
 Nottinghamshire_figure <- annotate_figure(Nottinghamshire_figure,
                                           bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Nottinghamshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Nottinghamshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5627,7 +5627,7 @@ Oldham_figure <- ggarrange(plot_OldhamNew + font("x.text", size = 8),
 Oldham_figure <- annotate_figure(Oldham_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Oldham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Oldham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5688,7 +5688,7 @@ Oxfordshire_figure <- ggarrange(plot_OxfordshireNew + font("x.text", size = 8),
 Oxfordshire_figure <- annotate_figure(Oxfordshire_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Oxfordshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Oxfordshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5749,7 +5749,7 @@ Peterborough_figure <- ggarrange(plot_PeterboroughNew + font("x.text", size = 8)
 Peterborough_figure <- annotate_figure(Peterborough_figure,
                                        bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Peterborough_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Peterborough_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5810,7 +5810,7 @@ Plymouth_figure <- ggarrange(plot_PlymouthNew + font("x.text", size = 8),
 Plymouth_figure <- annotate_figure(Plymouth_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Plymouth_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Plymouth_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5871,7 +5871,7 @@ Portsmouth_figure <- ggarrange(plot_PortsmouthNew + font("x.text", size = 8),
 Portsmouth_figure <- annotate_figure(Portsmouth_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Portsmouth_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Portsmouth_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5932,7 +5932,7 @@ Reading_figure <- ggarrange(plot_ReadingNew + font("x.text", size = 8),
 Reading_figure <- annotate_figure(Reading_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Reading_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Reading_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -5993,7 +5993,7 @@ Redbridge_figure <- ggarrange(plot_RedbridgeNew + font("x.text", size = 8),
 Redbridge_figure <- annotate_figure(Redbridge_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Redbridge_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Redbridge_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6054,7 +6054,7 @@ Redcar_and_Cleveland_figure <- ggarrange(plot_Redcar_and_ClevelandNew + font("x.
 Redcar_and_Cleveland_figure <- annotate_figure(Redcar_and_Cleveland_figure,
                                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Redcar_and_Cleveland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Redcar_and_Cleveland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6115,7 +6115,7 @@ Richmond_upon_Thames_figure <- ggarrange(plot_Richmond_upon_ThamesNew + font("x.
 Richmond_upon_Thames_figure <- annotate_figure(Richmond_upon_Thames_figure,
                                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Richmond_upon_Thames_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Richmond_upon_Thames_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6176,7 +6176,7 @@ Rochdale_figure <- ggarrange(plot_RochdaleNew + font("x.text", size = 8),
 Rochdale_figure <- annotate_figure(Rochdale_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Rochdale_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Rochdale_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6237,7 +6237,7 @@ Rotherham_figure <- ggarrange(plot_RotherhamNew + font("x.text", size = 8),
 Rotherham_figure <- annotate_figure(Rotherham_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Rotherham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Rotherham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6298,7 +6298,7 @@ Rutland_figure <- ggarrange(plot_RutlandNew + font("x.text", size = 8),
 Rutland_figure <- annotate_figure(Rutland_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Rutland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Rutland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6359,7 +6359,7 @@ Salford_figure <- ggarrange(plot_SalfordNew + font("x.text", size = 8),
 Salford_figure <- annotate_figure(Salford_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Salford_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Salford_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6420,7 +6420,7 @@ Sandwell_figure <- ggarrange(plot_SandwellNew + font("x.text", size = 8),
 Sandwell_figure <- annotate_figure(Sandwell_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Sandwell_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Sandwell_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6481,7 +6481,7 @@ Sefton_figure <- ggarrange(plot_SeftonNew + font("x.text", size = 8),
 Sefton_figure <- annotate_figure(Sefton_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Sefton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Sefton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6542,7 +6542,7 @@ Sheffield_figure <- ggarrange(plot_SheffieldNew + font("x.text", size = 8),
 Sheffield_figure <- annotate_figure(Sheffield_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Sheffield_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Sheffield_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6603,7 +6603,7 @@ Shropshire_figure <- ggarrange(plot_ShropshireNew + font("x.text", size = 8),
 Shropshire_figure <- annotate_figure(Shropshire_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Shropshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Shropshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6664,7 +6664,7 @@ Slough_figure <- ggarrange(plot_SloughNew + font("x.text", size = 8),
 Slough_figure <- annotate_figure(Slough_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Slough_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Slough_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6725,7 +6725,7 @@ Solihull_figure <- ggarrange(plot_SolihullNew + font("x.text", size = 8),
 Solihull_figure <- annotate_figure(Solihull_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Solihull_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Solihull_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6786,7 +6786,7 @@ Somerset_figure <- ggarrange(plot_SomersetNew + font("x.text", size = 8),
 Somerset_figure <- annotate_figure(Somerset_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Somerset_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Somerset_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6847,7 +6847,7 @@ South_Gloucestershire_figure <- ggarrange(plot_South_GloucestershireNew + font("
 South_Gloucestershire_figure <- annotate_figure(South_Gloucestershire_figure,
                                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/South_Gloucestershire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/South_Gloucestershire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6908,7 +6908,7 @@ South_Tyneside_figure <- ggarrange(plot_South_TynesideNew + font("x.text", size 
 South_Tyneside_figure <- annotate_figure(South_Tyneside_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/South_Tyneside_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/South_Tyneside_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -6969,7 +6969,7 @@ Southampton_figure <- ggarrange(plot_SouthamptonNew + font("x.text", size = 8),
 Southampton_figure <- annotate_figure(Southampton_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Southampton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Southampton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7030,7 +7030,7 @@ Southend-on-Sea_figure <- ggarrange(plot_Southend-on-SeaNew + font("x.text", siz
 Southend-on-Sea_figure <- annotate_figure(Southend-on-Sea_figure,
                                           bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Southend-on-Sea_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Southend-on-Sea_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7091,7 +7091,7 @@ Southwark_figure <- ggarrange(plot_SouthwarkNew + font("x.text", size = 8),
 Southwark_figure <- annotate_figure(Southwark_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Southwark_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Southwark_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7152,7 +7152,7 @@ St_Helens_figure <- ggarrange(plot_St_HelensNew + font("x.text", size = 8),
 St_Helens_figure <- annotate_figure(St_Helens_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/St_Helens_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/St_Helens_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7213,7 +7213,7 @@ Staffordshire_figure <- ggarrange(plot_StaffordshireNew + font("x.text", size = 
 Staffordshire_figure <- annotate_figure(Staffordshire_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Staffordshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Staffordshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7274,7 +7274,7 @@ Stockport_figure <- ggarrange(plot_StockportNew + font("x.text", size = 8),
 Stockport_figure <- annotate_figure(Stockport_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Stockport_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Stockport_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7335,7 +7335,7 @@ Stockton-on-Tees_figure <- ggarrange(plot_Stockton-on-TeesNew + font("x.text", s
 Stockton-on-Tees_figure <- annotate_figure(Stockton-on-Tees_figure,
                                            bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Stockton-on-Tees_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Stockton-on-Tees_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7396,7 +7396,7 @@ Stoke-on-Trent_figure <- ggarrange(plot_Stoke-on-TrentNew + font("x.text", size 
 Stoke-on-Trent_figure <- annotate_figure(Stoke-on-Trent_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Stoke-on-Trent_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Stoke-on-Trent_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7457,7 +7457,7 @@ Suffolk_figure <- ggarrange(plot_SuffolkNew + font("x.text", size = 8),
 Suffolk_figure <- annotate_figure(Suffolk_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Suffolk_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Suffolk_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7518,7 +7518,7 @@ Sunderland_figure <- ggarrange(plot_SunderlandNew + font("x.text", size = 8),
 Sunderland_figure <- annotate_figure(Sunderland_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Sunderland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Sunderland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7579,7 +7579,7 @@ Surrey_figure <- ggarrange(plot_SurreyNew + font("x.text", size = 8),
 Surrey_figure <- annotate_figure(Surrey_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Surrey_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Surrey_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7640,7 +7640,7 @@ Sutton_figure <- ggarrange(plot_SuttonNew + font("x.text", size = 8),
 Sutton_figure <- annotate_figure(Sutton_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Sutton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Sutton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7701,7 +7701,7 @@ Swindon_figure <- ggarrange(plot_SwindonNew + font("x.text", size = 8),
 Swindon_figure <- annotate_figure(Swindon_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Swindon_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Swindon_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7762,7 +7762,7 @@ Tameside_figure <- ggarrange(plot_TamesideNew + font("x.text", size = 8),
 Tameside_figure <- annotate_figure(Tameside_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Tameside_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Tameside_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7823,7 +7823,7 @@ Telford_and_Wrekin_figure <- ggarrange(plot_Telford_and_WrekinNew + font("x.text
 Telford_and_Wrekin_figure <- annotate_figure(Telford_and_Wrekin_figure,
                                              bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Telford_and_Wrekin_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Telford_and_Wrekin_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7884,7 +7884,7 @@ Thurrock_figure <- ggarrange(plot_ThurrockNew + font("x.text", size = 8),
 Thurrock_figure <- annotate_figure(Thurrock_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Thurrock_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Thurrock_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -7945,7 +7945,7 @@ Torbay_figure <- ggarrange(plot_TorbayNew + font("x.text", size = 8),
 Torbay_figure <- annotate_figure(Torbay_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Torbay_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Torbay_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8006,7 +8006,7 @@ Tower_Hamlets_figure <- ggarrange(plot_Tower_HamletsNew + font("x.text", size = 
 Tower_Hamlets_figure <- annotate_figure(Tower_Hamlets_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Tower_Hamlets_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Tower_Hamlets_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8067,7 +8067,7 @@ Trafford_figure <- ggarrange(plot_TraffordNew + font("x.text", size = 8),
 Trafford_figure <- annotate_figure(Trafford_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Trafford_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Trafford_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8128,7 +8128,7 @@ Wakefield_figure <- ggarrange(plot_WakefieldNew + font("x.text", size = 8),
 Wakefield_figure <- annotate_figure(Wakefield_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wakefield_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wakefield_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8189,7 +8189,7 @@ Walsall_figure <- ggarrange(plot_WalsallNew + font("x.text", size = 8),
 Walsall_figure <- annotate_figure(Walsall_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Walsall_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Walsall_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8250,7 +8250,7 @@ Waltham_Forest_figure <- ggarrange(plot_Waltham_ForestNew + font("x.text", size 
 Waltham_Forest_figure <- annotate_figure(Waltham_Forest_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Waltham_Forest_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Waltham_Forest_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8311,7 +8311,7 @@ Wandsworth_figure <- ggarrange(plot_WandsworthNew + font("x.text", size = 8),
 Wandsworth_figure <- annotate_figure(Wandsworth_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wandsworth_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wandsworth_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8372,7 +8372,7 @@ Warrington_figure <- ggarrange(plot_WarringtonNew + font("x.text", size = 8),
 Warrington_figure <- annotate_figure(Warrington_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Warrington_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Warrington_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8433,7 +8433,7 @@ Warwickshire_figure <- ggarrange(plot_WarwickshireNew + font("x.text", size = 8)
 Warwickshire_figure <- annotate_figure(Warwickshire_figure,
                                        bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Warwickshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Warwickshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8494,7 +8494,7 @@ West_Berkshire_figure <- ggarrange(plot_West_BerkshireNew + font("x.text", size 
 West_Berkshire_figure <- annotate_figure(West_Berkshire_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/West_Berkshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/West_Berkshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8555,7 +8555,7 @@ West_Sussex_figure <- ggarrange(plot_West_SussexNew + font("x.text", size = 8),
 West_Sussex_figure <- annotate_figure(West_Sussex_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/West_Sussex_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/West_Sussex_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8616,7 +8616,7 @@ Westminster_figure <- ggarrange(plot_WestminsterNew + font("x.text", size = 8),
 Westminster_figure <- annotate_figure(Westminster_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Westminster_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Westminster_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8677,7 +8677,7 @@ Wigan_figure <- ggarrange(plot_WiganNew + font("x.text", size = 8),
 Wigan_figure <- annotate_figure(Wigan_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wigan_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wigan_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8738,7 +8738,7 @@ Wiltshire_figure <- ggarrange(plot_WiltshireNew + font("x.text", size = 8),
 Wiltshire_figure <- annotate_figure(Wiltshire_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wiltshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wiltshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8799,7 +8799,7 @@ Windsor_and_Maidenhead_figure <- ggarrange(plot_Windsor_and_MaidenheadNew + font
 Windsor_and_Maidenhead_figure <- annotate_figure(Windsor_and_Maidenhead_figure,
                                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Windsor_and_Maidenhead_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Windsor_and_Maidenhead_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8860,7 +8860,7 @@ Wirral_figure <- ggarrange(plot_WirralNew + font("x.text", size = 8),
 Wirral_figure <- annotate_figure(Wirral_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wirral_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wirral_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8921,7 +8921,7 @@ Wokingham_figure <- ggarrange(plot_WokinghamNew + font("x.text", size = 8),
 Wokingham_figure <- annotate_figure(Wokingham_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wokingham_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wokingham_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -8982,7 +8982,7 @@ Wolverhampton_figure <- ggarrange(plot_WolverhamptonNew + font("x.text", size = 
 Wolverhampton_figure <- annotate_figure(Wolverhampton_figure,
                                         bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wolverhampton_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wolverhampton_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9043,7 +9043,7 @@ Worcestershire_figure <- ggarrange(plot_WorcestershireNew + font("x.text", size 
 Worcestershire_figure <- annotate_figure(Worcestershire_figure,
                                          bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Worcestershire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Worcestershire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9104,7 +9104,7 @@ York_figure <- ggarrange(plot_YorkNew + font("x.text", size = 8),
 York_figure <- annotate_figure(York_figure,
                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/York_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/York_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9165,7 +9165,7 @@ East_of_England_figure <- ggarrange(plot_East_of_EnglandNew + font("x.text", siz
 East_of_England_figure <- annotate_figure(East_of_England_figure,
                                           bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/East_of_England_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/East_of_England_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9226,7 +9226,7 @@ London_figure <- ggarrange(plot_LondonNew + font("x.text", size = 8),
 London_figure <- annotate_figure(London_figure,
                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/London_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/London_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9287,7 +9287,7 @@ Midlands_figure <- ggarrange(plot_MidlandsNew + font("x.text", size = 8),
 Midlands_figure <- annotate_figure(Midlands_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Midlands_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Midlands_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9348,7 +9348,7 @@ North_East_and_Yorkshire_figure <- ggarrange(plot_North_East_and_YorkshireNew + 
 North_East_and_Yorkshire_figure <- annotate_figure(North_East_and_Yorkshire_figure,
                                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_East_and_Yorkshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_East_and_Yorkshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9409,7 +9409,7 @@ North_West_figure <- ggarrange(plot_North_WestNew + font("x.text", size = 8),
 North_West_figure <- annotate_figure(North_West_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/North_West_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/North_West_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9470,7 +9470,7 @@ South_East_figure <- ggarrange(plot_South_EastNew + font("x.text", size = 8),
 South_East_figure <- annotate_figure(South_East_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/South_East_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/South_East_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9531,7 +9531,7 @@ South_West_figure <- ggarrange(plot_South_WestNew + font("x.text", size = 8),
 South_West_figure <- annotate_figure(South_West_figure,
                                      bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/South_West_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/South_West_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9592,7 +9592,7 @@ England_figure <- ggarrange(plot_EnglandNew + font("x.text", size = 8),
 England_figure <- annotate_figure(England_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/England_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/England_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9653,7 +9653,7 @@ Scotland_figure <- ggarrange(plot_ScotlandNew + font("x.text", size = 8),
 Scotland_figure <- annotate_figure(Scotland_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Scotland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Scotland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9714,7 +9714,7 @@ Wales_figure <- ggarrange(plot_WalesNew + font("x.text", size = 8),
 Wales_figure <- annotate_figure(Wales_figure,
                                 bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Wales_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Wales_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9775,7 +9775,7 @@ Northern_Ireland_figure <- ggarrange(plot_Northern_IrelandNew + font("x.text", s
 Northern_Ireland_figure <- annotate_figure(Northern_Ireland_figure,
                                            bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Northern_Ireland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Northern_Ireland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9836,7 +9836,7 @@ Ayrshire_and_Arran_figure <- ggarrange(plot_Ayrshire_and_ArranNew + font("x.text
 Ayrshire_and_Arran_figure <- annotate_figure(Ayrshire_and_Arran_figure,
                                              bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Ayrshire_and_Arran_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Ayrshire_and_Arran_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9897,7 +9897,7 @@ Borders_figure <- ggarrange(plot_BordersNew + font("x.text", size = 8),
 Borders_figure <- annotate_figure(Borders_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Borders_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Borders_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -9958,7 +9958,7 @@ Fife_figure <- ggarrange(plot_FifeNew + font("x.text", size = 8),
 Fife_figure <- annotate_figure(Fife_figure,
                                bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Fife_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Fife_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10019,7 +10019,7 @@ Forth_Valley_figure <- ggarrange(plot_Forth_ValleyNew + font("x.text", size = 8)
 Forth_Valley_figure <- annotate_figure(Forth_Valley_figure,
                                        bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Forth_Valley_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Forth_Valley_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10080,7 +10080,7 @@ Grampian_figure <- ggarrange(plot_GrampianNew + font("x.text", size = 8),
 Grampian_figure <- annotate_figure(Grampian_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Grampian_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Grampian_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10141,7 +10141,7 @@ Greater_Glasgow_and_Clyde_figure <- ggarrange(plot_Greater_Glasgow_and_ClydeNew 
 Greater_Glasgow_and_Clyde_figure <- annotate_figure(Greater_Glasgow_and_Clyde_figure,
                                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Greater_Glasgow_and_Clyde_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Greater_Glasgow_and_Clyde_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10202,7 +10202,7 @@ Highlands_figure <- ggarrange(plot_HighlandsNew + font("x.text", size = 8),
 Highlands_figure <- annotate_figure(Highlands_figure,
                                     bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Highlands_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Highlands_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10263,7 +10263,7 @@ Lanarkshire_figure <- ggarrange(plot_LanarkshireNew + font("x.text", size = 8),
 Lanarkshire_figure <- annotate_figure(Lanarkshire_figure,
                                       bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Lanarkshire_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Lanarkshire_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10324,7 +10324,7 @@ Lothian_figure <- ggarrange(plot_LothianNew + font("x.text", size = 8),
 Lothian_figure <- annotate_figure(Lothian_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Lothian_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Lothian_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10385,7 +10385,7 @@ Shetland_figure <- ggarrange(plot_ShetlandNew + font("x.text", size = 8),
 Shetland_figure <- annotate_figure(Shetland_figure,
                                    bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Shetland_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Shetland_cases_plot.png", height = 7.27, width = 11.69)
 
 
 
@@ -10446,4 +10446,64 @@ Tayside_figure <- ggarrange(plot_TaysideNew + font("x.text", size = 8),
 Tayside_figure <- annotate_figure(Tayside_figure,
                                   bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
 
-ggsave("Plots/Tayside_cases_plot.png", height = 7.27, width = 11.69)
+ggsave("Location_plots/Tayside_cases_plot.png", height = 7.27, width = 11.69)
+
+#### Dumfries_and_Gallow plots ####
+#Read in new cases per day from summarised data, format date correctly
+Dumfries_and_Gallow_data <- data.frame(Date=c(COVID19_local$Date), ntimes=c(COVID19_local$Dumfries_and_Gallow))
+Dumfries_and_Gallow_data <- as.data.frame(lapply(Dumfries_and_Gallow_data, rep, Dumfries_and_Gallow_data$ntimes))
+
+# Plot number of NEW CASES per day
+Dumfries_and_GallowNew_Sigfig <- signif(max(COVID19_local$Dumfries_and_Gallow))
+Dumfries_and_GallowNew_Factor <- 10^(floor(log10(Dumfries_and_GallowNew_Sigfig)))
+Dumfries_and_GallowNew_Max <- round_any(max(COVID19_local$Dumfries_and_Gallow), Dumfries_and_GallowNew_Factor, f=ceiling)
+Dumfries_and_GallowNew_Breaks <- ceiling(Dumfries_and_GallowNew_Factor/2)
+
+plot_Dumfries_and_GallowNew <- ggplot(data=Dumfries_and_Gallow_data, aes(x=Dumfries_and_Gallow_data$Date)) +
+  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#E5E1EE") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0),
+               limits = c(min(COVID19_local$Date)-1, max(COVID19_local$Date)),
+               breaks = seq(min(COVID19_local$Date)-1, max(COVID19_local$Date), 1)) +
+  scale_y_continuous(limits = c(0, Dumfries_and_GallowNew_Max),
+                     breaks = seq(0, Dumfries_and_GallowNew_Max, Dumfries_and_GallowNew_Breaks),
+                     expand = c(0, 0)) +
+  ylab("Frequency") + xlab("Date") +
+  ggtitle("New cases per day: Dumfries_and_Gallow") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1),
+        panel.grid.minor = element_blank())
+
+# Plot CUMULATIVE CASES per day
+Dumfries_and_GallowCum_Sigfig <- signif(sum(COVID19_local$Dumfries_and_Gallow))
+Dumfries_and_GallowCum_Factor <- 10^(floor(log10(Dumfries_and_GallowCum_Sigfig)))
+Dumfries_and_GallowCum_Max <- round_any(sum(COVID19_local$Dumfries_and_Gallow), Dumfries_and_GallowCum_Factor, f=ceiling)
+Dumfries_and_GallowCum_Breaks <- ceiling(Dumfries_and_GallowCum_Factor/2)
+
+plot_Dumfries_and_GallowCum <- ggplot(data=Dumfries_and_Gallow_data, aes(x=Dumfries_and_Gallow_data$Date)) +
+  geom_histogram(aes(y = cumsum(..count..)), binwidth=1,
+                 boundary = 1, colour="black", fill= "#DFFDFF") +
+  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0),
+               limits = c(min(COVID19_local$Date)-1, max(COVID19_local$Date)),
+               breaks = seq(min(COVID19_local$Date)-1, max(COVID19_local$Date), 1)) +
+  scale_y_continuous(limits = c(0, Dumfries_and_GallowCum_Max),
+                     breaks = seq(0, Dumfries_and_GallowCum_Max, Dumfries_and_GallowCum_Breaks), expand = c(0, 0)) +
+  ylab("Cumulative frequency") + xlab("Date") +
+  ggtitle("Cumulative cases: Dumfries_and_Gallow") +
+  theme_minimal() +
+  theme(plot.title = element_text(size=13, face="bold"),
+        axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1),
+        panel.grid.minor = element_blank())
+
+# Generate figures
+Dumfries_and_Gallow_figure <- ggarrange(plot_Dumfries_and_GallowNew + font("x.text", size = 8),
+                            plot_Dumfries_and_GallowCum + font("x.text", size = 8),
+                            ncol = 1, nrow = 2, align = "hv")
+
+Dumfries_and_Gallow_figure <- annotate_figure(Dumfries_and_Gallow_figure,
+                                  bottom = text_grob("New cases reported for 07/03/2020 include all cases reported before this point", size = 8))
+
+ggsave("Location_plots/Dumfries_and_Gallow_cases_plot.png", height = 7.27, width = 11.69)
+
