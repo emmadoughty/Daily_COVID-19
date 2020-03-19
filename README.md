@@ -13,7 +13,7 @@
 - Cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8)
 - Cases in Scottish health boards collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 
-Previosuly I had a file containing calculated new cases per day that I was feeding into my own analyses/visualisations. I am no longer making these visualisations owing to the data quality concerns raised above. For the time being, I will only collate the raw PHE data.
+Previously I had a file containing calculated new cases per day that I was feeding into my own analyses/visualisations. I am no longer making these visualisations owing to the data quality concerns raised above. For the time being, I will only collate the raw PHE data and urge you to use that.
 
 ## Analyses
 #### Summary plots
