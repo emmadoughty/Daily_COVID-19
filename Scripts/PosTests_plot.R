@@ -28,7 +28,6 @@ df_NewPos <- data.frame(Date = COVID19_by_day$Date,
                           StatValue = (100 * (COVID19_by_day$NewCases / COVID19_by_day$NewTests)),
                           stringsAsFactors = FALSE)
 
-#    <- df_NewPos$StatValue / df_NewPos$NewCases
 
 df_CumPos <- data.frame(Date = COVID19_by_day$Date,
                         NewCases = COVID19_by_day$NewCases,
@@ -54,10 +53,10 @@ plot_PosTests <- ggplot(data=df_PosTests, aes(x=Date, y=df_PosTests$StatValue, g
                      breaks = seq(0, 15, 3),
                      expand = c(0, 0)) +
   ylab("Positive cases (%)") + xlab("") +
-  ggtitle("UK Test positivity by day") +
+  ggtitle("% postive tests per day") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
-        #legend.title = element_text("% Positive cases"),
+        legend.title = element_blank(),
         legend.position = "bottom", 
         axis.line = element_line(colour = "black"),
         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1, size = 7), 
