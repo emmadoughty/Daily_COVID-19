@@ -4,18 +4,16 @@
 
 **COVID19_by_day**.csv contains daily numbers of cases, tests and deaths
 - The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initally used for daily updates.
-
 - Collated data on daily confirmed cases are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in case numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
 
-**COVID19_local.csv** contains the number of new cases per day for each Upper Tier Local Authority (England) and numbers of cases with national breakdowns, NHS regions and Scottish heath boards
-- Cumulative cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6). When calculating new cases per UTLA, it can sometimes be observed that the cumulative numbers of cases per UTLA goes down from one day to the next (presumably also due to data cleaning).
-  - In the data I'm calculating for new cases per day, if the reported cumulative cases decrease in a UTLA, I'm considering the number of new cases tat day to be zero and deducting cases from the last day when positive cases were confirmed such that that total number of cases per UTLA is always in line with the most up-to-date cumulative counts from PHE.
-  - NB Breakdowns of cases per UTLA were first released on 07/03/2020 so the number of cases shown for 07/03/2020 represent cumulative cases until this point rather than the number of new cases announced that day.
-  - See **COVID_cum.csv** for the original cumulative values 
-- Data for cases in each nation collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
-- Data for cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8)
-- Data for cases in Scottish health boards collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
-- NB For the first day where location-specific data are provided, the new daily counts represent the cumulative number of cases until that point.
+**COVID19_cum.csv** contains the total number of cases announced per day for each Upper Tier Local Authority (England),  country, NHS region and Scottish heath board
+**NB DATA QUALIITY ISSUES: Total number of cases per geogrpahic area sometimes decreases from one day to the next which makes little sense.**
+- Cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6). 
+- Cases in each country collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
+- Cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8)
+- Cases in Scottish health boards collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
+
+Previosuly I had a file containing calculated new cases per day that I was feeding into my own analyses/visualisations. I am no longer making these visualisations owing to the data quality concerns raised above. For hte time being, I will only collate
 
 ## Analyses
 #### Summary plots
