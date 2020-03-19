@@ -2,7 +2,7 @@
 
 ## Data sources
 
-**COVID19_by_day**.csv contains daily numbers of cases, tests and deaths
+**COVID19_by_day.csv** contains daily numbers of cases, tests and deaths
 - The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initally used for daily updates.
 - Collated data on daily confirmed cases are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in case numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
 
