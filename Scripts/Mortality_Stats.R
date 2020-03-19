@@ -109,13 +109,13 @@ plot_CFR <- ggplot(data=df_DeathsStats, aes(x=Date, y=df_DeathsStats$StatValue, 
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
                limits = c(min(df_DeathsStats$Date), max(df_DeathsStats$Date)),
                breaks = seq(min(df_DeathsStats$Date), max(df_DeathsStats$Date), 1)) +
-  scale_y_continuous(limits = c(0, 300), 
-                     breaks = seq(0, 300, 10),
+  scale_y_continuous(limits = c(0, 370), 
+                     breaks = seq(0, 370, 10),
                      expand = c(0, 0)) +
   ylab("% reported cases that lead to death \n 
        based on estimated time from reporting to death specified in legend") + 
   xlab("Date deaths announced") +
-  ggtitle("Estimated UK case fatality rates") +
+  ggtitle("Deaths as a proportion of reported cases x days ago") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         legend.position = "bottom",
