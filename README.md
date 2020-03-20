@@ -8,7 +8,7 @@ I am aware that various projects are now using the data collated here. For scien
 - The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initally used for daily updates.
 - Collated data on daily confirmed cases are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in case numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
 
-**COVID19_cum.csv** contains the total number of cases announced per day for each Upper Tier Local Authority (England),  country, NHS region and Scottish heath board
+**COVID19_cum.csv** contains the total number of cases announced per day for each Upper Tier Local Authority (England),  country, NHS region and Scottish health board*.
 **NB DATA QUALIITY ISSUES: Total number of cases per geographic area sometimes decreases from one day to the next which makes little sense.**
 - Cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6). 
 - Cases in each country collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
