@@ -18,7 +18,7 @@ I am aware that various projects are now using the data collated here. For scien
 Previously I had a file containing calculated new cases per day that I was feeding into my own analyses/visualisations. I am no longer making these visualisations owing to the data quality concerns raised above. For the time being, I will only collate the raw PHE data and urge you to use that.
 
 **ukmidyearestimates20182019ladcodes.xls** Contains mid-2018 data from the Office for National Statistics with population demographic data (age, gender, population, population density, deaths and more) in geographical areas reporting COVID-19 cases (Country, Region, Unitary authority corresponding with UTLAs). If you need help extracting and formatting this data for your research project, let me know and I'll try to help.
-- Data. from: https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland
+- Data from [this](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland) website 
 
 
 ## Analyses
