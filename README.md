@@ -6,6 +6,8 @@
 
 I am aware that various projects are now using the data collated here. For scientific research, I am more than happy to collate data in a format that works best for your project or try and find the additional metadata that you might need- don't hestiate to reach out.
 
+For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type
+
 
 ### UK cases, deaths and tests
 
@@ -38,7 +40,7 @@ As original cases per area above but additionally with local-breakdown data for 
 Previously I included a file containing calculated new cases per day that I was feeding into my own analyses/visualisations. I am no longer making these visualisations owing to the data quality concerns raised above. For the time being, I will only collate the raw PHE data and urge you to use that.
 
 ### Deaths by area
-The total number of deaths reported daily from each country of the UK: [Wide format (COVID19_deaths.csv)], (https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_deaths.csv), [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
+The total number of deaths reported daily from each country of the UK: [Wide format (COVID19_deaths.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_deaths.csv), [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
 - Deaths in Scotland collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 - Deaths in Wales collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
 - Deaths in Northern Ireland collated from [Northern Irish government daily updates](https://www.health-ni.gov.uk/news/)
