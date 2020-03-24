@@ -2,7 +2,7 @@
 
 ![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
 
-### COVID-19 data
+## COVID-19 data
 
 I am aware that various projects are now using the data collated here. For scientific research, I am more than happy to collate data in a format that works best for your project or try and find the additional metadata that you might need- don't hestiate to reach out.
 
@@ -65,7 +65,7 @@ These administrative geogrpahy codes are included in the [Long format (cases_by_
 
 
 
-### Other Analyses
+## Other Analyses
 
 Other people have nice visualisations [here](https://www.arcgis.com/home/webmap/viewer.html?webmap=2c122cca2af644339cb636a9844672af&extent=-1.8598,50.9565,2.1969,52.3368)
 https://trafforddatalab.shinyapps.io/covid-19
