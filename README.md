@@ -29,7 +29,7 @@ The total number of cases announced per day for each Upper Tier Local Authority 
 
 **NB DATA QUALIITY ISSUES: Total number of cases per geographic area sometimes decreases from one day to the next which makes little sense.**
 
-**Expanded cases by area**
+### Expanded cases by area
 As original cases per area above but additionally with local-breakdown data for Wales and data prior to 07/03/2020 when available: [Wide format (COVID19_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_area.csv), [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv)
 - Cases in Welsh health boards collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
 - Addtional data is from official sources only, e.g. statements and reports from governemnt and public health agencies
