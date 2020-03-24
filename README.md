@@ -2,11 +2,10 @@
 
 ![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
 
-## Data sources
+### COVID-19 data
 
 I am aware that various projects are now using the data collated here. For scientific research, I am more than happy to collate data in a format that works best for your project or try and find the additional metadata that you might need- don't hestiate to reach out.
 
-### COVID-19 data
 
 **UK cases, deaths and tests**
 
@@ -16,7 +15,7 @@ I am aware that various projects are now using the data collated here. For scien
 - Collated data on daily confirmed cases are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in case numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
 - Numbers of recoveries are taken from the PHE dashbord each day after it updates
 
-**Original cases by area** 
+**Cases by area** 
 
 
 The total number of cases announced per day for each Upper Tier Local Authority (England),  country, NHS region and Scottish health board: [Wide format (COVID19_cum.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_cum.csv), [Long format (cases_by_utla.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_utla.csv)
@@ -51,7 +50,7 @@ The total number of deaths reported daily from each country of the UK: [Wide for
 
 
 
-### Metadata
+## Metadata
 
 These administrative geogrpahy codes are included in the [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv) and [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
 
@@ -66,7 +65,7 @@ These administrative geogrpahy codes are included in the [Long format (cases_by_
 
 
 
-## Other Analyses
+### Other Analyses
 
 Other people have nice visualisations [here](https://www.arcgis.com/home/webmap/viewer.html?webmap=2c122cca2af644339cb636a9844672af&extent=-1.8598,50.9565,2.1969,52.3368)
 https://trafforddatalab.shinyapps.io/covid-19
