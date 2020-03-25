@@ -1,4 +1,4 @@
-# Visualisation and collation of COVID-19 official UK data
+# Visualisation and collation of official UK COVID-19 data
 
 ![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
 
