@@ -50,7 +50,7 @@ The total number of deaths reported daily from each country of the UK: [Wide for
 ### Case demographics for Northern Ireland
 [NI_cases_demographics.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/NI_cases_demographics.csv) contains the data released so far from NI on about the age and sex of COVID-19 patients
 
-**NB [DHSC twitter](https://twitter.com/DHSCgovuk/status/1242950122981470208) reported on 25/03/2020 that "these figures do not cover a full 24 hour period". I *think* this refers only to England since Scotland, Wales and NI reported much earlier. This may refer to deaths only but is unclear.**
+**NB [DHSC twitter](https://twitter.com/DHSCgovuk/status/1243237211119800323) announced on that from 25/03/2020 the reporting time period for deaths would change. From 25/03/2020, the latest figures counted from the previous day (for a period from 5pm-5pm) are being published at 2pm the following day. The figures for 24/03/2020 did not cover a full 24 hour period, comprising the period from 9am 24 March to 5pm on 24 March. Figures issued on 25/03/2020 are recorded as of 5pm 24 March to 5pm 25 March.**
 
 ## Metadata
 
