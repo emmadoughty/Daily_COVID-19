@@ -44,7 +44,7 @@ Previously I included a file containing calculated new cases per day that I was 
 The total number of deaths reported daily from each country of the UK: [Wide format (COVID19_deaths.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_deaths.csv), [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
 - Deaths in Scotland collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 - Deaths in Wales collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
-- Deaths in Northern Ireland collated from [Northern Irish government daily updates](https://www.health-ni.gov.uk/news/)
+- Deaths in Northern Ireland collated from Northern Irish government daily updates [here](https://www.publichealth.hscni.net/news/covid-19-coronavirus) and [here](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
 - Deaths in UK collated from [Department of Health and Social Care twitter](https://twitter.com/DHSCgovuk)
 - Deaths in England are not published but calculated by subtraction of total cases in Scotland, Wales and Northern Ireland from all UK cases
 
