@@ -49,11 +49,11 @@ plot_PosTests <- ggplot(data=df_PosTests, aes(x=Date, y=df_PosTests$StatValue, g
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 1), 
                limits = c(min(df_PosTests$Date), max(df_PosTests$Date)),
                breaks = seq(min(df_PosTests$Date), max(df_PosTests$Date), 1)) +
-  scale_y_continuous(limits = c(0, 15), 
-                     breaks = seq(0, 15, 3),
+  scale_y_continuous(limits = c(0, 33), 
+                     breaks = seq(0, 33, 3),
                      expand = c(0, 0)) +
   ylab("Positive cases (%)") + xlab("") +
-  ggtitle("% postive tests per day") +
+  ggtitle("% postive tests") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         legend.title = element_blank(),
