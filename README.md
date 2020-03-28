@@ -4,10 +4,9 @@
 
 ## COVID-19 data
 
-I am aware that various projects are now using the data collated here. For scientific research, I am more than happy to collate data in a format that works best for your project or try and find the additional metadata that you might need- don't hestiate to reach out.
+Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error**. Please do raise issues via GitHub if you notice any discrepancies with the data and I will investiagte them asap.
 
-For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type
-
+For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type.
 
 ### UK cases, deaths and tests
 
