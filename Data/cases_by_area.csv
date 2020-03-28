@@ -6571,3 +6571,215 @@
 26/03/2020,Torfaen County,NA,UTLA,Wales,W06000020
 26/03/2020,Vale of Glamorgan,NA,UTLA,Wales,W06000014
 26/03/2020,Wrexham,NA,UTLA,Wales,W06000006
+27/03/2020,England,12288,Country,England,E92
+27/03/2020,Northern Ireland,275,Country,Northern Ireland,N92
+27/03/2020,Scotland,1059,Country,Scotland,S92
+27/03/2020,Wales,921,Country,Wales,W92
+27/03/2020,Ayrshire and Arran,75,Health board,Scotland,S08000015
+27/03/2020,Borders,28,Health board,Scotland,S08000016
+27/03/2020,Dumfries and Gallow,47,Health board,Scotland,S08000017
+27/03/2020,Fife,41,Health board,Scotland,S08000029
+27/03/2020,Forth Valley,81,Health board,Scotland,S08000019
+27/03/2020,Grampian,45,Health board,Scotland,S08000020
+27/03/2020,Greater Glasgow and Clyde,299,Health board,Scotland,S08000031
+27/03/2020,Highland,33,Health board,Scotland,S08000022
+27/03/2020,Lanarkshire,140,Health board,Scotland,S08000032
+27/03/2020,Lothian,139,Health board,Scotland,S08000024
+27/03/2020,Shetland,24,Health board,Scotland,S08000026
+27/03/2020,Tayside,107,Health board,Scotland,S08000030
+27/03/2020,Swansea Bay,93,Health board,Wales,W11000031
+27/03/2020,Aneurin Bevan,432,Health board,Wales,W11000028
+27/03/2020,Betsi Cadwaladr,45,Health board,Wales,W11000023
+27/03/2020,Cardiff and Vale,194,Health board,Wales,W11000029
+27/03/2020,Cwm Taf,68,Health board,Wales,W11000030
+27/03/2020,Hywel Dda,52,Health board,Wales,W11000025
+27/03/2020,Powys,18,Health board,Wales,W11000024
+27/03/2020,Antrim and Newtownabbey,18,LGD,Northern Ireland,N09000001
+27/03/2020,Armagh City Banbridge and Craigavon,29,LGD,Northern Ireland,N09000002
+27/03/2020,Belfast,86,LGD,Northern Ireland,N09000003
+27/03/2020,Causeway Coast and Glens,5,LGD,Northern Ireland,N09000004
+27/03/2020,Derry City and Strabane,9,LGD,Northern Ireland,N09000005
+27/03/2020,Fermanagh and Omagh,17,LGD,Northern Ireland,N09000006
+27/03/2020,Lisburn and Castlereagh,39,LGD,Northern Ireland,N09000007
+27/03/2020,Mid and East Antrim,16,LGD,Northern Ireland,N09000008
+27/03/2020,Mid Ulster,8,LGD,Northern Ireland,N09000009
+27/03/2020,Newry Mourne and Down,16,LGD,Northern Ireland,N09000010
+27/03/2020,Ards and North Down,25,LGD,Northern Ireland,N09000011
+27/03/2020,East of England,796,NHSR,England,E40000007
+27/03/2020,London,4637,NHSR,England,E40000003
+27/03/2020,Midlands,2090,NHSR,England,E40000008
+27/03/2020,North East and Yorkshire,1222,NHSR,England,E40000009
+27/03/2020,North West,1020,NHSR,England,E40000010
+27/03/2020,South East,1606,NHSR,England,E40000005
+27/03/2020,South West,534,NHSR,England,E40000006
+27/03/2020,Barking and Dagenham,82,UTLA,England,E09000002
+27/03/2020,Barnet,115,UTLA,England,E09000003
+27/03/2020,Barnsley,42,UTLA,England,E08000016
+27/03/2020,Bath and North East Somerset,26,UTLA,England,E06000022
+27/03/2020,Bedford,20,UTLA,England,E06000055
+27/03/2020,Bexley,85,UTLA,England,E09000004
+27/03/2020,Birmingham,366,UTLA,England,E08000025
+27/03/2020,Blackburn with Darwen,7,UTLA,England,E06000008
+27/03/2020,Blackpool,9,UTLA,England,E06000009
+27/03/2020,Bolton,27,UTLA,England,E08000001
+27/03/2020,Bournemouth,20,UTLA,England,E06000058
+27/03/2020,Bracknell Forest,16,UTLA,England,E06000036
+27/03/2020,Bradford,29,UTLA,England,E08000032
+27/03/2020,Brent,265,UTLA,England,E09000005
+27/03/2020,Brighton and Hove,33,UTLA,England,E06000043
+27/03/2020,Bristol,56,UTLA,England,E06000023
+27/03/2020,Bromley,188,UTLA,England,E09000006
+27/03/2020,Buckinghamshire,106,UTLA,England,E10000002
+27/03/2020,Bury,30,UTLA,England,E08000002
+27/03/2020,Calderdale,11,UTLA,England,E08000033
+27/03/2020,Cambridgeshire,68,UTLA,England,E10000003
+27/03/2020,Camden,99,UTLA,England,E09000007
+27/03/2020,Central Bedfordshire,42,UTLA,England,E06000056
+27/03/2020,Cheshire East,35,UTLA,England,E06000049
+27/03/2020,Cheshire West and Chester,25,UTLA,England,E06000050
+27/03/2020,Cornwall and Isles of Scilly,48,UTLA,England,E06000052
+27/03/2020,County Durham,56,UTLA,England,E06000047
+27/03/2020,Coventry,47,UTLA,England,E08000026
+27/03/2020,Croydon,219,UTLA,England,E09000008
+27/03/2020,Cumbria,211,UTLA,England,E10000006
+27/03/2020,Darlington,11,UTLA,England,E06000005
+27/03/2020,Derby,77,UTLA,England,E06000015
+27/03/2020,Derbyshire,170,UTLA,England,E10000007
+27/03/2020,Devon,65,UTLA,England,E10000008
+27/03/2020,Doncaster,24,UTLA,England,E08000017
+27/03/2020,Dorset,29,UTLA,England,E06000059
+27/03/2020,Dudley,81,UTLA,England,E08000027
+27/03/2020,Ealing,209,UTLA,England,E09000009
+27/03/2020,East Riding of Yorkshire,23,UTLA,England,E06000011
+27/03/2020,East Sussex,39,UTLA,England,E10000011
+27/03/2020,Enfield,136,UTLA,England,E09000010
+27/03/2020,Essex,166,UTLA,England,E10000012
+27/03/2020,Gateshead,23,UTLA,England,E08000037
+27/03/2020,Gloucestershire,78,UTLA,England,E10000013
+27/03/2020,Greenwich,128,UTLA,England,E09000011
+27/03/2020,Hackney and City of London,134,UTLA,England,E09000012
+27/03/2020,Halton,10,UTLA,England,E06000006
+27/03/2020,Hammersmith and Fulham,112,UTLA,England,E09000013
+27/03/2020,Hampshire,317,UTLA,England,E10000014
+27/03/2020,Haringey,113,UTLA,England,E09000014
+27/03/2020,Harrow,196,UTLA,England,E09000015
+27/03/2020,Hartlepool,6,UTLA,England,E06000001
+27/03/2020,Havering,82,UTLA,England,E09000016
+27/03/2020,Herefordshire,23,UTLA,England,E06000019
+27/03/2020,Hertfordshire,206,UTLA,England,E10000015
+27/03/2020,Hillingdon,129,UTLA,England,E09000017
+27/03/2020,Hounslow,126,UTLA,England,E09000018
+27/03/2020,Isle of Wight,8,UTLA,England,E06000046
+27/03/2020,Islington,120,UTLA,England,E09000019
+27/03/2020,Kensington and Chelsea,116,UTLA,England,E09000020
+27/03/2020,Kent,182,UTLA,England,E10000016
+27/03/2020,Kingston upon Hull,5,UTLA,England,E06000010
+27/03/2020,Kingston upon Thames,52,UTLA,England,E09000021
+27/03/2020,Kirklees,33,UTLA,England,E08000034
+27/03/2020,Knowsley,15,UTLA,England,E08000011
+27/03/2020,Lambeth,276,UTLA,England,E09000022
+27/03/2020,Lancashire,141,UTLA,England,E10000017
+27/03/2020,Leeds,80,UTLA,England,E08000035
+27/03/2020,Leicester,61,UTLA,England,E06000016
+27/03/2020,Leicestershire,128,UTLA,England,E10000018
+27/03/2020,Lewisham,158,UTLA,England,E09000023
+27/03/2020,Lincolnshire,39,UTLA,England,E10000019
+27/03/2020,Liverpool,100,UTLA,England,E08000012
+27/03/2020,Luton,47,UTLA,England,E06000032
+27/03/2020,Manchester,63,UTLA,England,E08000003
+27/03/2020,Medway,48,UTLA,England,E06000035
+27/03/2020,Merton,128,UTLA,England,E09000024
+27/03/2020,Middlesbrough,17,UTLA,England,E06000002
+27/03/2020,Milton Keynes,58,UTLA,England,E06000042
+27/03/2020,Newcastle upon Tyne,121,UTLA,England,E08000021
+27/03/2020,Newham,148,UTLA,England,E09000025
+27/03/2020,Norfolk,70,UTLA,England,E10000020
+27/03/2020,North East Lincolnshire,5,UTLA,England,E06000012
+27/03/2020,North Lincolnshire,6,UTLA,England,E06000013
+27/03/2020,North Somerset,24,UTLA,England,E06000024
+27/03/2020,North Tyneside,36,UTLA,England,E08000022
+27/03/2020,North Yorkshire,69,UTLA,England,E10000023
+27/03/2020,Northamptonshire,86,UTLA,England,E10000021
+27/03/2020,Northumberland,45,UTLA,England,E06000057
+27/03/2020,Nottingham,79,UTLA,England,E06000018
+27/03/2020,Nottinghamshire,135,UTLA,England,E10000024
+27/03/2020,Oldham,51,UTLA,England,E08000004
+27/03/2020,Oxfordshire,113,UTLA,England,E10000025
+27/03/2020,Peterborough,11,UTLA,England,E06000031
+27/03/2020,Plymouth,32,UTLA,England,E06000026
+27/03/2020,Portsmouth,50,UTLA,England,E06000044
+27/03/2020,Reading,25,UTLA,England,E06000038
+27/03/2020,Redbridge,115,UTLA,England,E09000026
+27/03/2020,Redcar and Cleveland,13,UTLA,England,E06000003
+27/03/2020,Richmond upon Thames,68,UTLA,England,E09000027
+27/03/2020,Rochdale,40,UTLA,England,E08000005
+27/03/2020,Rotherham,39,UTLA,England,E08000018
+27/03/2020,Rutland,0,UTLA,England,E06000017
+27/03/2020,Salford,58,UTLA,England,E08000006
+27/03/2020,Sandwell,103,UTLA,England,E08000028
+27/03/2020,Sefton,30,UTLA,England,E08000014
+27/03/2020,Sheffield,286,UTLA,England,E08000019
+27/03/2020,Shropshire,53,UTLA,England,E06000051
+27/03/2020,Slough,59,UTLA,England,E06000039
+27/03/2020,Solihull,39,UTLA,England,E08000029
+27/03/2020,Somerset,25,UTLA,England,E10000027
+27/03/2020,South Gloucestershire,37,UTLA,England,E06000025
+27/03/2020,South Tyneside,19,UTLA,England,E08000023
+27/03/2020,Southampton,37,UTLA,England,E06000045
+27/03/2020,Southend-on-Sea,17,UTLA,England,E06000033
+27/03/2020,Southwark,290,UTLA,England,E09000028
+27/03/2020,St Helens,32,UTLA,England,E08000013
+27/03/2020,Staffordshire,145,UTLA,England,E10000028
+27/03/2020,Stockport,59,UTLA,England,E08000007
+27/03/2020,Stockton-on-Tees,24,UTLA,England,E06000004
+27/03/2020,Stoke-on-Trent,21,UTLA,England,E06000021
+27/03/2020,Suffolk,61,UTLA,England,E10000029
+27/03/2020,Sunderland,55,UTLA,England,E08000024
+27/03/2020,Surrey,271,UTLA,England,E10000030
+27/03/2020,Sutton,69,UTLA,England,E09000029
+27/03/2020,Swindon,16,UTLA,England,E06000030
+27/03/2020,Tameside,43,UTLA,England,E08000008
+27/03/2020,Telford and Wrekin,21,UTLA,England,E06000020
+27/03/2020,Thurrock,26,UTLA,England,E06000034
+27/03/2020,Torbay,23,UTLA,England,E06000027
+27/03/2020,Tower Hamlets,129,UTLA,England,E09000030
+27/03/2020,Trafford,53,UTLA,England,E08000009
+27/03/2020,Wakefield,34,UTLA,England,E08000036
+27/03/2020,Walsall,100,UTLA,England,E08000030
+27/03/2020,Waltham Forest,130,UTLA,England,E09000031
+27/03/2020,Wandsworth,228,UTLA,England,E09000032
+27/03/2020,Warrington,15,UTLA,England,E06000007
+27/03/2020,Warwickshire,101,UTLA,England,E10000031
+27/03/2020,West Berkshire,32,UTLA,England,E06000037
+27/03/2020,West Sussex,86,UTLA,England,E10000032
+27/03/2020,Westminster,189,UTLA,England,E09000033
+27/03/2020,Wigan,21,UTLA,England,E08000010
+27/03/2020,Wiltshire,54,UTLA,England,E06000054
+27/03/2020,Windsor and Maidenhead,37,UTLA,England,E06000040
+27/03/2020,Wirral,32,UTLA,England,E08000015
+27/03/2020,Wokingham,22,UTLA,England,E06000041
+27/03/2020,Wolverhampton,128,UTLA,England,E08000031
+27/03/2020,Worcestershire,93,UTLA,England,E10000034
+27/03/2020,York,17,UTLA,England,E06000014
+27/03/2020,Blaenau Gwent,NA,UTLA,Wales,W06000019
+27/03/2020,Bridgend,NA,UTLA,Wales,W06000013
+27/03/2020,Caerphilly,NA,UTLA,Wales,W06000018
+27/03/2020,Carmarthenshire,NA,UTLA,Wales,W06000010
+27/03/2020,Ceredigion,NA,UTLA,Wales,W06000008
+27/03/2020,City and County of Swansea,NA,UTLA,Wales,W06000011
+27/03/2020,City of Cardiff,NA,UTLA,Wales,W06000015
+27/03/2020,Conwy,NA,UTLA,Wales,W06000003
+27/03/2020,Denbighshire,NA,UTLA,Wales,W06000004
+27/03/2020,Flintshire,NA,UTLA,Wales,W06000005
+27/03/2020,Gwynedd,NA,UTLA,Wales,W06000002
+27/03/2020,Isle of Anglesey,NA,UTLA,Wales,W06000001
+27/03/2020,Merthyr Tydfil,NA,UTLA,Wales,W06000024
+27/03/2020,Monmouthshire,NA,UTLA,Wales,W06000021
+27/03/2020,Neath Port Talbot,NA,UTLA,Wales,W06000012
+27/03/2020,Newport,NA,UTLA,Wales,W06000022
+27/03/2020,Pembrokeshire,NA,UTLA,Wales,W06000009
+27/03/2020,Powys,NA,UTLA,Wales,W06000023
+27/03/2020,Rhondda Cynon Taf,NA,UTLA,Wales,W06000016
+27/03/2020,Torfaen County,NA,UTLA,Wales,W06000020
+27/03/2020,Vale of Glamorgan,NA,UTLA,Wales,W06000014
+27/03/2020,Wrexham,NA,UTLA,Wales,W06000006
