@@ -2,6 +2,8 @@
 
 ![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
 
+![% Positive tests](https://github.com/emmadoughty/Daily_COVID-19/blob/master/PosTests_plot.png)
+
 ## COVID-19 data
 
 Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error**. Please do raise issues via GitHub if you notice any discrepancies with the data and I will investiagte them asap.
