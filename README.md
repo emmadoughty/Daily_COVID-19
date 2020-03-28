@@ -4,17 +4,16 @@
 
 ## COVID-19 data
 
-I am aware that various projects are now using the data collated here. For scientific research, I am more than happy to collate data in a format that works best for your project or try and find the additional metadata that you might need- don't hestiate to reach out.
+Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error**. Please do raise issues via GitHub if you notice any discrepancies with the data and I will investiagte them asap.
 
-For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type
-
+For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type.
 
 ### UK cases, deaths and tests
 
 
 [COVID19_by_day.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_day.csv) contains daily numbers of cases, tests, deaths and recoveries
 - The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initally used for daily updates.
-- Collated data on daily confirmed cases are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in case numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
+- Collated data on daily confirmed cases (and deaths since 27/03/2020) are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in case numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
 - Numbers of recoveries are taken from the PHE dashbord each day after it updates
 
 ### Cases by area
@@ -31,22 +30,20 @@ The total number of cases announced per day for each Upper Tier Local Authority 
 
 ### Expanded cases by area
 As original cases per area above but additionally with local-breakdown data for Wales and Northern Ireland, plus data prior to 07/03/2020 when available: [Wide format (COVID19_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_area.csv), [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv)
-- Cases in Welsh health boards collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
-- Cases in Northern Irish Local Government Districts from [Nothern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
-- Addtional data is from official sources only, e.g. statements and reports from governemnt and public health agencies
+- Cases in Welsh health boards collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/) and other official Welsh government sources, e.g. CMO statements, for early data
+- Cases in Northern Irish Local Government Districts from [Nothern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports) and other official Public Health Agency sources 
+- Prior data for Scotland and England is from official sources only, e.g. statements and reports from governemnt and public health agencies
 
-
-
-
-Previously I included a file containing calculated new cases per day that I was feeding into my own analyses/visualisations. I am no longer making these visualisations owing to the data quality concerns raised above. For the time being, I will only collate the raw PHE data and urge you to use that.
 
 ### Deaths by area
 The total number of deaths reported daily from each country of the UK: [Wide format (COVID19_deaths.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_deaths.csv), [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
+Prior to 27/03/2020:
 - Deaths in Scotland collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 - Deaths in Wales collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
 - Deaths in Northern Ireland collated from Northern Irish government daily updates [here](https://www.publichealth.hscni.net/news/covid-19-coronavirus) and [here](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
 - Deaths in UK collated from [Department of Health and Social Care twitter](https://twitter.com/DHSCgovuk)
 - Deaths in England are not published but calculated by subtraction of total cases in Scotland, Wales and Northern Ireland from all UK cases
+From 27/03/2020, deaths per country are reported daily as [daily indicators](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
 
 **NB [DHSC twitter](https://twitter.com/DHSCgovuk/status/1243237211119800323) announced on that from 25/03/2020 the reporting time period for deaths would change. From 25/03/2020, the latest figures counted from the previous day (for a period from 5pm-5pm) are being published at 2pm the following day. The figures for 25/03/2020 did not cover a full 24 hour period, comprising the period from 9am 24 March to 5pm on 24 March. Figures issued on 26/03/2020 are recorded as of 5pm 24 March to 5pm 25 March.**
 
