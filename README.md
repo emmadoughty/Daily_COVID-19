@@ -24,7 +24,7 @@ For most data, two formats are avialable: The "wide" format that I originally cr
 The total number of cases announced per day for each Upper Tier Local Authority (England), country, NHS region and Scottish health board: [Wide format (COVID19_cum.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_cum.csv), [Long format (cases_by_utla.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_utla.csv)
 - Cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6) 
 - Cases in each country collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
-- Cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8) and previously from the "information to the public" page on the UK givernemtn [website] (https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public)
+- Cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8) and previously from the "information to the public" page on the UK government [website](https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public)
 - Cases in Scottish health boards collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 
 
