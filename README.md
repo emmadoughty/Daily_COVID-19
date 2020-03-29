@@ -34,13 +34,12 @@ The total number of cases announced per day for each Upper Tier Local Authority 
 As original cases per area above but additionally with local-breakdown data for Wales and Northern Ireland, plus earlier data when available: [Wide format (COVID19_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_area.csv), [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv)
 - Cases in Welsh health boards collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/) and other official Welsh government sources, e.g. CMO statements, for early data
 - Cases in Northern Irish Local Government Districts from [Nothern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports) and other official Public Health Agency sources 
-- Ealier data for Scotland and England is from official sources only, e.g. statements and reports from governemnt and public health agencies
+- Earlier data for Scotland and England is from official sources only, e.g. statements and reports from governemnt and public health agencies
 
 
 ### Deaths by area
 The total number of deaths reported daily from each country of the UK: [Wide format (COVID19_deaths.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_deaths.csv), [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
-From 27/03/2020, deaths per country are reported daily as [daily indicators](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67) and collated from here
-Prior to 27/03/2020:
+From 27/03/2020, deaths per country are reported daily and collated from [daily indicators](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Prior to 27/03/2020:
 - Deaths in Scotland collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
 - Deaths in Wales collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
 - Deaths in Northern Ireland collated from Northern Irish government daily updates [here](https://www.publichealth.hscni.net/news/covid-19-coronavirus) and [here](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
