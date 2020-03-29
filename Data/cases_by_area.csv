@@ -1696,7 +1696,7 @@
 03/03/2020,Vale of Glamorgan,0,UTLA,Wales,W06000014
 03/03/2020,Wrexham,0,UTLA,Wales,W06000006
 04/03/2020,England,NA,Country,England,E92
-04/03/2020,Northern Ireland,1,Country,Northern Ireland,N92
+04/03/2020,Northern Ireland,3,Country,Northern Ireland,N92
 04/03/2020,Scotland,3,Country,Scotland,S92
 04/03/2020,Wales,1,Country,Wales,W92
 04/03/2020,Ayrshire and Arran,1,Health board,Scotland,S08000015
@@ -2120,7 +2120,7 @@
 05/03/2020,Vale of Glamorgan,0,UTLA,Wales,W06000014
 05/03/2020,Wrexham,0,UTLA,Wales,W06000006
 06/03/2020,England,143,Country,England,E92
-06/03/2020,Northern Ireland,4,Country,Northern Ireland,N92
+06/03/2020,Northern Ireland,3,Country,Northern Ireland,N92
 06/03/2020,Scotland,11,Country,Scotland,S92
 06/03/2020,Wales,2,Country,Wales,W92
 06/03/2020,Ayrshire and Arran,1,Health board,Scotland,S08000015
@@ -2333,7 +2333,7 @@
 06/03/2020,Wrexham,0,UTLA,Wales,W06000006
 07/03/2020,England,184,Country,England,E92
 07/03/2020,Northern Ireland,7,Country,Northern Ireland,N92
-07/03/2020,Scotland,11,Country,Scotland,S92
+07/03/2020,Scotland,16,Country,Scotland,S92
 07/03/2020,Wales,2,Country,Wales,W92
 07/03/2020,Ayrshire and Arran,1,Health board,Scotland,S08000015
 07/03/2020,Borders,0,Health board,Scotland,S08000016
@@ -2545,7 +2545,7 @@
 07/03/2020,Wrexham,0,UTLA,Wales,W06000006
 08/03/2020,England,244,Country,England,E92
 08/03/2020,Northern Ireland,12,Country,Northern Ireland,N92
-08/03/2020,Scotland,16,Country,Scotland,S92
+08/03/2020,Scotland,18,Country,Scotland,S92
 08/03/2020,Wales,4,Country,Wales,W92
 08/03/2020,Ayrshire and Arran,1,Health board,Scotland,S08000015
 08/03/2020,Borders,0,Health board,Scotland,S08000016

@@ -156,7 +156,7 @@ date,UTLA,confirm,type,GSS_CD
 07/03/2020,South East,30,NHS_region,E40000005
 07/03/2020,South West,25,NHS_region,E40000006
 07/03/2020,England,184,Country,E92
-07/03/2020,Scotland,11,Country,S92
+07/03/2020,Scotland,16,Country,S92
 07/03/2020,Ayrshire and Arran,1,NHS_region,S08000015
 07/03/2020,Borders,0,NHS_region,S08000016
 07/03/2020,Dumfries and Gallow,0,NHS_region,S08000017
@@ -326,7 +326,7 @@ date,UTLA,confirm,type,GSS_CD
 08/03/2020,South East,41,NHS_region,E40000005
 08/03/2020,South West,35,NHS_region,E40000006
 08/03/2020,England,244,Country,E92
-08/03/2020,Scotland,16,Country,S92
+08/03/2020,Scotland,18,Country,S92
 08/03/2020,Ayrshire and Arran,1,NHS_region,S08000015
 08/03/2020,Borders,0,NHS_region,S08000016
 08/03/2020,Dumfries and Gallow,0,NHS_region,S08000017
