@@ -41,6 +41,7 @@ df_CumPos <- data.frame(Date = COVID19_by_day$Date,
 df_PosTests <- rbind(df_NewPos, df_CumPos)
 
 PosTests_Factor <- 10^(floor(log10(signif(max(df_PosTests$StatValue)))))
+PosTests_Max <- round_any(signif(max(df_PosTests$StatValue)), PosTests_Factor, f=ceiling)
 PosTests_Breaks <- ceiling(PosTests_Factor/2)
 
 plot_PosTests <- ggplot(data=df_PosTests, aes(x=Date, y=df_PosTests$StatValue, group=TestStat)) +
@@ -49,8 +50,8 @@ plot_PosTests <- ggplot(data=df_PosTests, aes(x=Date, y=df_PosTests$StatValue, g
   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 1), 
                limits = c(min(df_PosTests$Date), max(df_PosTests$Date)),
                breaks = seq(min(df_PosTests$Date), max(df_PosTests$Date), 1)) +
-  scale_y_continuous(limits = c(0, 33), 
-                     breaks = seq(0, 33, 3),
+  scale_y_continuous(limits = c(0, PosTests_Max), 
+                     breaks = seq(0, PosTests_Max, PosTests_Breaks),
                      expand = c(0, 0)) +
   ylab("Positive cases (%)") + xlab("") +
   ggtitle("% postive tests") +
