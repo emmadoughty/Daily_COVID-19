@@ -2880,7 +2880,7 @@
 09/03/2020,Norfolk,0,UTLA,England,E10000020
 09/03/2020,North East Lincolnshire,0,UTLA,England,E06000012
 09/03/2020,North Lincolnshire,0,UTLA,England,E06000013
-09/03/2020,North Somerset,0,UTLA,England,E06000024
+09/03/2020,North Somerset,1,UTLA,England,E06000024
 09/03/2020,North Tyneside,1,UTLA,England,E08000022
 09/03/2020,North Yorkshire,0,UTLA,England,E10000023
 09/03/2020,Northamptonshire,4,UTLA,England,E10000021
@@ -2970,7 +2970,7 @@
 10/03/2020,England,324,Country,England,E92
 10/03/2020,Northern Ireland,16,Country,Northern Ireland,N92
 10/03/2020,Scotland,27,Country,Scotland,S92
-10/03/2020,Wales,15,Country,Wales,W92
+10/03/2020,Wales,6,Country,Wales,W92
 10/03/2020,Ayrshire and Arran,1,Health board,Scotland,S08000015
 10/03/2020,Borders,0,Health board,Scotland,S08000016
 10/03/2020,Dumfries and Gallow,0,Health board,Scotland,S08000017
@@ -3182,7 +3182,7 @@
 11/03/2020,England,387,Country,England,E92
 11/03/2020,Northern Ireland,18,Country,Northern Ireland,N92
 11/03/2020,Scotland,36,Country,Scotland,S92
-11/03/2020,Wales,19,Country,Wales,W92
+11/03/2020,Wales,15,Country,Wales,W92
 11/03/2020,Ayrshire and Arran,3,Health board,Scotland,S08000015
 11/03/2020,Borders,2,Health board,Scotland,S08000016
 11/03/2020,Dumfries and Gallow,0,Health board,Scotland,S08000017
@@ -7207,3 +7207,71 @@
 29/03/2020,Torfaen County,NA,UTLA,Wales,W06000020
 29/03/2020,Vale of Glamorgan,NA,UTLA,Wales,W06000014
 29/03/2020,Wrexham,NA,UTLA,Wales,W06000006
+25/02/2020,Unconfirmed,NA,NHSR,England,NA
+26/02/2020,Unconfirmed,NA,NHSR,England,NA
+27/02/2020,Unconfirmed,NA,NHSR,England,NA
+28/02/2020,Unconfirmed,NA,NHSR,England,NA
+29/02/2020,Unconfirmed,NA,NHSR,England,NA
+01/03/2020,Unconfirmed,NA,NHSR,England,NA
+02/03/2020,Unconfirmed,NA,NHSR,England,NA
+03/03/2020,Unconfirmed,NA,NHSR,England,NA
+04/03/2020,Unconfirmed,NA,NHSR,England,NA
+05/03/2020,Unconfirmed,NA,NHSR,England,NA
+06/03/2020,Unconfirmed,NA,NHSR,England,NA
+07/03/2020,Unconfirmed,NA,NHSR,England,NA
+08/03/2020,Unconfirmed,NA,NHSR,England,NA
+09/03/2020,Unconfirmed,26,NHSR,England,NA
+10/03/2020,Unconfirmed,15,NHSR,England,NA
+11/03/2020,Unconfirmed,30,NHSR,England,NA
+12/03/2020,Unconfirmed,57,NHSR,England,NA
+13/03/2020,Unconfirmed,110,NHSR,England,NA
+14/03/2020,Unconfirmed,161,NHSR,England,NA
+15/03/2020,Unconfirmed,124,NHSR,England,NA
+16/03/2020,Unconfirmed,87,NHSR,England,NA
+17/03/2020,Unconfirmed,136,NHSR,England,NA
+18/03/2020,Unconfirmed,117,NHSR,England,NA
+19/03/2020,Unconfirmed,212,NHSR,England,NA
+20/03/2020,Unconfirmed,138,NHSR,England,NA
+21/03/2020,Unconfirmed,262,NHSR,England,NA
+22/03/2020,Unconfirmed,169,NHSR,England,NA
+23/03/2020,Unconfirmed,183,NHSR,England,NA
+24/03/2020,Unconfirmed,237,NHSR,England,NA
+25/03/2020,Unconfirmed,276,NHSR,England,NA
+26/03/2020,Unconfirmed,325,NHSR,England,NA
+27/03/2020,Unconfirmed,383,NHSR,England,NA
+28/03/2020,Unconfirmed,563,NHSR,England,NA
+29/03/2020,Unconfirmed,NA,NHSR,England,NA
+25/02/2020,Unconfirmed,NA,UTLA,England,NA
+26/02/2020,Unconfirmed,NA,UTLA,England,NA
+27/02/2020,Unconfirmed,NA,UTLA,England,NA
+28/02/2020,Unconfirmed,NA,UTLA,England,NA
+29/02/2020,Unconfirmed,NA,UTLA,England,NA
+01/03/2020,Unconfirmed,NA,UTLA,England,NA
+02/03/2020,Unconfirmed,NA,UTLA,England,NA
+03/03/2020,Unconfirmed,NA,UTLA,England,NA
+04/03/2020,Unconfirmed,NA,UTLA,England,NA
+05/03/2020,Unconfirmed,NA,UTLA,England,NA
+06/03/2020,Unconfirmed,NA,UTLA,England,NA
+07/03/2020,Unconfirmed,NA,UTLA,England,NA
+08/03/2020,Unconfirmed,NA,UTLA,England,NA
+09/03/2020,Unconfirmed,26,UTLA,England,NA
+10/03/2020,Unconfirmed,15,UTLA,England,NA
+11/03/2020,Unconfirmed,30,UTLA,England,NA
+12/03/2020,Unconfirmed,57,UTLA,England,NA
+13/03/2020,Unconfirmed,110,UTLA,England,NA
+14/03/2020,Unconfirmed,161,UTLA,England,NA
+15/03/2020,Unconfirmed,124,UTLA,England,NA
+16/03/2020,Unconfirmed,87,UTLA,England,NA
+17/03/2020,Unconfirmed,136,UTLA,England,NA
+18/03/2020,Unconfirmed,117,UTLA,England,NA
+19/03/2020,Unconfirmed,212,UTLA,England,NA
+20/03/2020,Unconfirmed,138,UTLA,England,NA
+21/03/2020,Unconfirmed,262,UTLA,England,NA
+22/03/2020,Unconfirmed,169,UTLA,England,NA
+23/03/2020,Unconfirmed,183,UTLA,England,NA
+24/03/2020,Unconfirmed,237,UTLA,England,NA
+25/03/2020,Unconfirmed,276,UTLA,England,NA
+26/03/2020,Unconfirmed,458,UTLA,England,NA
+27/03/2020,Unconfirmed,516,UTLA,England,NA
+28/03/2020,Unconfirmed,563,UTLA,England,NA
+29/03/2020,Unconfirmed,NA,UTLA,England,NA
