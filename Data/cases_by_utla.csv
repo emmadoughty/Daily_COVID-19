@@ -423,7 +423,7 @@ date,UTLA,confirm,type,GSS_CD
 09/03/2020,Norfolk,0,UTLA,E10000020
 09/03/2020,North East Lincolnshire,0,UTLA,E06000012
 09/03/2020,North Lincolnshire,0,UTLA,E06000013
-09/03/2020,North Somerset,0,UTLA,E06000024
+09/03/2020,North Somerset,1,UTLA,E06000024
 09/03/2020,North Tyneside,1,UTLA,E08000022
 09/03/2020,North Yorkshire,0,UTLA,E10000023
 09/03/2020,Northamptonshire,4,UTLA,E10000021
@@ -1007,7 +1007,7 @@ date,UTLA,confirm,type,GSS_CD
 12/03/2020,South West,42,NHS_region,E40000006
 12/03/2020,England,491,Country,E92
 12/03/2020,Scotland,60,Country,S92
-12/03/2020,Wales,19,Country,W92
+12/03/2020,Wales,25,Country,W92
 12/03/2020,Northern Ireland,20,Country,N92
 12/03/2020,Ayrshire and Arran,4,NHS_region,S08000015
 12/03/2020,Borders,2,NHS_region,S08000016
