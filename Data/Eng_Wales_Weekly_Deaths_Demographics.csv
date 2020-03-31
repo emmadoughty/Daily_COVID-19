@@ -1,0 +1,65 @@
+Week end,Group,Sub-group,Deaths,Code
+13/03/2020,Age,Total deaths,5,NA
+13/03/2020,Age,Under 1 year,0,NA
+13/03/2020,Age,1-14,0,NA
+13/03/2020,Age,15-44,0,NA
+13/03/2020,Age,45-64,1,NA
+13/03/2020,Age,65-74,1,NA
+13/03/2020,Age,75-84,3,NA
+13/03/2020,Age,85+,0,NA
+13/03/2020,Age Male,Under 1 year,0,NA
+13/03/2020,Age Male,1-14,0,NA
+13/03/2020,Age Male,15-44,0,NA
+13/03/2020,Age Male,45-64,1,NA
+13/03/2020,Age Male,65-74,0,NA
+13/03/2020,Age Male,75-84,1,NA
+13/03/2020,Age Male,85+,0,NA
+13/03/2020,Age Female,Under 1 year,0,NA
+13/03/2020,Age Female,1-14,0,NA
+13/03/2020,Age Female,15-44,0,NA
+13/03/2020,Age Female,45-64,0,NA
+13/03/2020,Age Female,65-74,1,NA
+13/03/2020,Age Female,75-84,2,NA
+13/03/2020,Age Female,85+,0,NA
+13/03/2020,Region,North East,0,E12000001
+13/03/2020,Region,North West,1,E12000002
+13/03/2020,Region,Yorkshire and The Humber,0,E12000003
+13/03/2020,Region,East Midlands,0,E12000004
+13/03/2020,Region,West Midlands,2,E12000005
+13/03/2020,Region,East,0,E12000006
+13/03/2020,Region,London,0,E12000007
+13/03/2020,Region,South East,2,E12000008
+13/03/2020,Region,South West,0,E12000009
+13/03/2020,Region,Wales,0,W92000004
+20/03/2020,Age,Total deaths,103,NA
+20/03/2020,Age,Under 1 year,0,NA
+20/03/2020,Age,1-14,0,NA
+20/03/2020,Age,15-44,1,NA
+20/03/2020,Age,45-64,6,NA
+20/03/2020,Age,65-74,20,NA
+20/03/2020,Age,75-84,31,NA
+20/03/2020,Age,85+,45,NA
+20/03/2020,Age Male,Under 1 year,0,NA
+20/03/2020,Age Male,1-14,0,NA
+20/03/2020,Age Male,15-44,0,NA
+20/03/2020,Age Male,45-64,3,NA
+20/03/2020,Age Male,65-74,13,NA
+20/03/2020,Age Male,75-84,19,NA
+20/03/2020,Age Male,85+,27,NA
+20/03/2020,Age Female,Under 1 year,0,NA
+20/03/2020,Age Female,1-14,0,NA
+20/03/2020,Age Female,15-44,1,NA
+20/03/2020,Age Female,45-64,3,NA
+20/03/2020,Age Female,65-74,7,NA
+20/03/2020,Age Female,75-84,12,NA
+20/03/2020,Age Female,85+,18,NA
+20/03/2020,Region,North East,1,E12000001
+20/03/2020,Region,North West,12,E12000002
+20/03/2020,Region,Yorkshire and The Humber,5,E12000003
+20/03/2020,Region,East Midlands,3,E12000004
+20/03/2020,Region,West Midlands,14,E12000005
+20/03/2020,Region,East,3,E12000006
+20/03/2020,Region,London,44,E12000007
+20/03/2020,Region,South East,17,E12000008
+20/03/2020,Region,South West,1,E12000009
+20/03/2020,Region,Wales,2,W92000004
