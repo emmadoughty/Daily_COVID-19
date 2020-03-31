@@ -34,7 +34,7 @@ The total number of cases announced per day for each Upper Tier Local Authority 
 As original cases per area above but additionally with local-breakdown data for Wales and Northern Ireland, plus earlier data when available: [Wide format (COVID19_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_area.csv), [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv)
 - Cases in Welsh health boards collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/) and other official Welsh government sources, e.g. CMO statements, for early data
 - Cases in Northern Irish Local Government Districts from [Nothern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports) and other official Public Health Agency sources 
-- Earlier data for Scotland and England is from official sources only, e.g. statements and reports from governemnt and public health agencies
+- Earlier data are from official sources only, e.g. statements and reports from governemnt and public health agencies, and collated to be correct at 2pm on the day cases are reported when possible
 
 
 ### Deaths by area
