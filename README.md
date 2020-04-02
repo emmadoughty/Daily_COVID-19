@@ -14,18 +14,17 @@ For most data, two formats are avialable: The "wide" format that I originally cr
 
 
 [COVID19_by_day.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_day.csv) contains daily numbers of cases, tests, deaths and recoveries
-- The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initally used for daily updates.
-- Collated data on daily confirmed cases (and deaths added on 27/03/2020 but backdated to 10/03/2020 with some ommissions) are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Differences in numbers can be observed relative to those provided on twitter, even for for data released on previous days (presumably differences are due to improvements in data cleaning). Once PHE data are available I update my collated data with these values.
-- Numbers of recoveries are taken from the PHE [dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/f94c3c90da5b4e9f9a0b19484dd4bb14) each day after it updates
+- The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initially used for daily updates.
+- Collated data on daily confirmed cases (and deaths added on 27/03/2020 but backdated to 10/03/2020 with some ommissions) are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Sometimes, differences in numbers have been observed relative to those provided on twitter (presumably differences are due to improvements in data cleaning) so once PHE data are available I update this collated data with these values.
+- Numbers of recoveries are taken from the PHE [dashboard](https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx) when available. I understand a new process for collecting numbers of recovered patients is in development.
 
 ### Cases by area
 
 
 The total number of cases announced per day for each Upper Tier Local Authority (England), country, NHS region and Scottish health board: [Wide format (COVID19_cum.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_cum.csv), [Long format (cases_by_utla.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_utla.csv)
-- Cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6) 
-- Cases in each country collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
-- Cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8) and previously from the "information to the public" page on the UK government [website](https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public)
+- Cases per country, and per UTLA and NHS region in England obtained daily from [PHE](https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx) 
 - Cases in Scottish health boards collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
+- These files are subject to the minimum possible changes to structure and do not contain data for cases in unconfirmed locations.
 
 
 **NB DATA QUALIITY ISSUES: Total number of cases per geographic area sometimes decreases from one day to the next, particularly early in the epidemic, which makes little sense.**
