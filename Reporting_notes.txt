@@ -3,6 +3,9 @@
 10/03/2020 - PHE dashboard reports 6 cases, CMO for Wales reports 15 cases (8:43pm on twitter) (https://twitter.com/PublicHealthW/status/1237479240548986881)
 11/03/2020 - PHE dashboard reports 15 cases in Wales, CMO for Wales reports 19 cases (4:17pm on twitter) (https://gov.wales/chief-medical-officer-wales-confirms-four-new-cases-coronavirus-covid-19; https://twitter.com/PublicHealthW/status/1237774594704052224)
 12/03/2020 - PHE dashboard reports 19 cases in NI; NI reports 20 cases in NI (both supposedly at 2pm) (https://twitter.com/publichealthni/status/1238104757186842625 and https://www.health-ni.gov.uk/news/latest-update-coronavirus-covid-19-4)
+18/03/2020 - PHW stopped reporting cases in local authorities, instead favouring reporting in health boards.
+20/03/2020 - PHW recommenced LA reporting for this one day
+21/03/2020 - PHW started reporting health boards, not local authorities
 21/03/2020 - PHW reports 3 deaths (archived here: https://github.com/tomwhite/covid-19-uk-data/blob/master/data/raw/coronavirus-covid-19-number-of-cases-in-wales-2020-03-21.html) but a further 2 deaths are reported on twitter (https://twitter.com/PublicHealthW/status/1241402961189888001)
 24/03/2020 - NI surveillance report shows 4 cases (https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports); on the same day (later) a fifth case is reported (https://twitter.com/healthdpt/status/1242528268844138497)
 25/03/2020 - [DHSC twitter](https://twitter.com/DHSCgovuk/status/1243237211119800323) announced on that from 25/03/2020 their reporting time period for deaths would change. From 25/03/2020, the latest figures counted from the previous day (for a period from 5pm-5pm) are being published at 2pm the following day. The figures for 25/03/2020 did not cover a full 24 hour period, comprising the period from 9am 24 March to 5pm on 24 March. Figures issued on 26/03/2020 are recorded as of 5pm 24 March to 5pm 25 March.
