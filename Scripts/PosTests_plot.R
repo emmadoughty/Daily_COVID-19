@@ -54,7 +54,7 @@ plot_PosTests <- ggplot(data=df_PosTests, aes(x=Date, y=df_PosTests$StatValue, g
                      breaks = seq(0, PosTests_Max, PosTests_Breaks),
                      expand = c(0, 0)) +
   ylab("Positive cases (%)") + xlab("") +
-  ggtitle("% postive tests") +
+  ggtitle("% people testing positive") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         legend.title = element_blank(),

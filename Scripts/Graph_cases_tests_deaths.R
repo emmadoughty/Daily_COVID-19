@@ -90,7 +90,7 @@ plot_NewTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) +
   scale_y_continuous(limits = c(0, NewTests_Max), 
                      breaks = seq(0, NewTests_Max, NewTests_Breaks), expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date") +
-  ggtitle("New UK tests per day") +
+  ggtitle("New people tested") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
@@ -112,7 +112,7 @@ plot_CumTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) +
   scale_y_continuous(limits = c(0, CumTests_Max), 
                      breaks = seq(0, CumTests_Max, CumTests_Breaks),  expand = c(0, 0)) +
   ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative UK tests") +
+  ggtitle("Cumulative people tested") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
