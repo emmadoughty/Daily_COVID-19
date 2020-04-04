@@ -26,3 +26,7 @@
 02/04/2020 - PHE dashboard/UK gov shows 76 deaths in Scotland, Scottish government website shows 126
 02/04/2020 - Scottish government website re deaths: "Following a change in how deaths are reported, today’s increased figures reflect the difference between the previous and new reporting systems."
 02/04/2020 - Scotland announced that there was a change to how deaths are reported but did not specify how.
+03/04/2020 - PHE dashboard/UK gov shows 36 deaths for NI; NI reports 48 deaths (https://www.publichealth.hscni.net/sites/default/files/2020-04/COVID-19%20Surveillance%20Bulletin%2003.04.20.pdf)
+03/04/2020 - PHE dashboard/UK gov shows 126 deaths for Scotland; Scottish government website shows 172 deaths
+04/04/2020 - PHE dashboard/UK gov shows 172 deaths for Scotland; Scottish government website shows 218 deaths
+04/04/2020 - PHE dashboard/UK gov shows 48 deaths for NI; NI reports 56 deaths (https://www.publichealth.hscni.net/sites/default/files/2020-04/COVID-19%20Surveillance%20Bulletin%2004.04.20.pdf)
