@@ -14,6 +14,7 @@
 29/03/2020 - Scottish government reports that "one case from Forth Valley has been reassigned to Greater Glasgow and Clyde as more information became available" but unclear when this case was first reported
 30/03/2020 - PHE dashboard reports 41 deaths in Scotland; Scottish government reports that "47 patients who tested positive have died"
 30/03/2020 - PHE dashboard reports 21 deaths in NI; NI report shows 22 deaths in NI correct to 30/03/2020 at 09:58 (https://www.publichealth.hscni.net/sites/default/files/2020-03/COVID-19%20Surveillance%20Bulletin%2030.03.20.pdf)
+30/03/2020 - Reporting of numbers of tests switched from being for number of concluded tests/positive tests to number of tested patients/confirmed cases, I.e. "Across the UK, there have been x concluded tests which y were confirmed negative and z positive." Became "Across the UK, x people have been tested of which z tested positive."
 31/03/2020 - PHE dashboard reports 47 deaths in Scotland; Scottish government reports 60 deaths
 31/03/2020 - PHE dashboard reports 22 deaths in NI; NI report shows 28 deaths in NI correct to  31/03/2020 at 11:10 (https://www.publichealth.hscni.net/sites/default/files/2020-03/COVID-19%20Surveillance%20Report%2031.03.20.pdf)
 31/03/2020 - Scotland: "Please note: delays to reporting over the weekend have contributed to the increase in total test figures and deaths confirmed today."
@@ -30,3 +31,7 @@
 03/04/2020 - PHE dashboard/UK gov shows 126 deaths for Scotland; Scottish government website shows 172 deaths
 04/04/2020 - PHE dashboard/UK gov shows 172 deaths for Scotland; Scottish government website shows 218 deaths
 04/04/2020 - PHE dashboard/UK gov shows 48 deaths for NI; NI reports 56 deaths (https://www.publichealth.hscni.net/sites/default/files/2020-04/COVID-19%20Surveillance%20Bulletin%2004.04.20.pdf)
+05/04/2020 - Welsh reporting stated that "*Following continuous ongoing data reconciliation, 11 duplicate cases which were previously reported have been identified and removed from the overall figures." referring to data for Cardiff and Vale, Cwm Taf Morgannwg, Swansea Bay and Aneurin Bevan.
+05/04/2020 - PHE dashboard/UK gov shows 218 deaths for Scotland; Scottish government website shows 220 deaths
+05/04/2020 - From Scottish government website "Please note: as highlighted by the First Minister today, these figures are not fully representative of developments this weekend as we continue to move to a new process for reporting deaths." Using this new approach, "HPS old data collation approach: Tuesday 31 March - 60; Wednesday 1 April - 76; Thursday 2 April - 86; HPS new approach using NRS records linked to laboratory data: Tuesday 31 March - 69; Wednesday 1 April - 97; Thursday 2 April - 126" (https://www.gov.scot/news/new-process-for-reporting-covid-19-deaths/)
+05/04/2020 - PHE dashboard/UK gov shows 56 deaths for NI; NI reports 63 deaths
