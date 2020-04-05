@@ -171,12 +171,12 @@ plot_CumDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) +
 
 #### Generate plots ####
 # Cases, tests and deaths summary figure
-Sum_figure <- ggarrange(plot_NewCases + font("x.text", size = 6), 
-                    plot_CumCases + font("x.text", size = 6), 
-                    plot_NewTests + font("x.text", size = 6), 
-                    plot_CumTests + font("x.text", size = 6), 
-                    plot_NewDeaths + font("x.text", size = 6), 
-                    plot_CumDeaths + font("x.text", size = 6),
+Sum_figure <- ggarrange(plot_NewCases + font("x.text", size = 5), 
+                    plot_CumCases + font("x.text", size = 5), 
+                    plot_NewTests + font("x.text", size = 5), 
+                    plot_CumTests + font("x.text", size = 5), 
+                    plot_NewDeaths + font("x.text", size = 5), 
+                    plot_CumDeaths + font("x.text", size = 5),
           ncol = 2, nrow = 3, align = "hv")
 
 Sum_figure <- annotate_figure(Sum_figure,
