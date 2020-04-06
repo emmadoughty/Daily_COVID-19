@@ -52,6 +52,10 @@ From 27/03/2020, deaths per country are reported daily and collated from [daily 
 
 NB [DHSC twitter](https://twitter.com/DHSCgovuk/status/1243237211119800323) announced on that from 25/03/2020 their reporting time period for deaths would change. From 25/03/2020, the latest figures counted from the previous day (for a period from 5pm-5pm) are being published at 2pm the following day. The figures for 25/03/2020 did not cover a full 24 hour period, comprising the period from 9am 24 March to 5pm on 24 March. Figures issued on 26/03/2020 are recorded as of 5pm 24 March to 5pm 25 March.
 
+NB From 29/03/2020, I have noticed that the number of deaths reported by the governments for Scotland and Northern Ireland is not reported in the UK government daily indicators until the following day (i.e. there seems to be a one day lag).
+
+NB From 02/04/2020, Scotland changed the way that deaths are [reported](https://www.gov.scot/news/new-process-for-reporting-covid-19-deaths/), increasing the number of deaths where the link with COVID-19 could be reported. "There is no change in the definition used to report deaths of COVID-19, which is defined as an individual who has died and has had a laboratory confirmed report of COVID-19 in the 28 days prior to death." Revised data for 31/03 to 02/04 were provided in line with the new definition, detailed [here](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Reporting_notes.txt).
+
 ### Case demographics for Northern Ireland
 [NI_cases_demographics.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/NI_cases_demographics.csv) contains the data released so far from NI on about the age and sex of COVID-19 patients from [Nothern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
 
