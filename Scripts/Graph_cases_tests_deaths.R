@@ -71,53 +71,53 @@ plot_CumCases <- ggplot(data=df_NewCases, aes(x=df_NewCases$Date)) +
         panel.grid.minor = element_blank())
 
 
-#### TESTS per day ####
-# Read in new tests per day from summarised data, format date correctly
-df_NewTests <- data.frame(Date=c(COVID19_by_day$Date), ntimes=c(COVID19_by_day$NewTests))
-df_NewTests<- as.data.frame(lapply(df_NewTests, rep, df_NewTests$ntimes))
-
-# Plot NEW TESTS per day #
-NewTests_Sigfig <- signif(max(COVID19_by_day$NewTests))
-NewTests_Factor <- 10^(floor(log10(NewTests_Sigfig)))
-NewTests_Max <- round_any(max(COVID19_by_day$NewTests), NewTests_Factor, f=ceiling)
-NewTests_Breaks <- ceiling(NewTests_Factor/2)
-
-plot_NewTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) + 
-  geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#90BEDE") +
-  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
-               limits = c(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date)),
-               breaks = seq(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date), 1)) +
-  scale_y_continuous(limits = c(0, NewTests_Max), 
-                     breaks = seq(0, NewTests_Max, NewTests_Breaks), expand = c(0, 0)) +
-  ylab("Frequency") + xlab("Date") +
-  ggtitle("New tests/people tested") +
-  theme_minimal() +
-  theme(plot.title = element_text(size=13, face="bold"),
-        axis.line = element_line(colour = "black"),
-        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
-        panel.grid.minor = element_blank())
-
-# Plot CUMULATIVE TESTS per day
-CumTests_Sigfig <- signif(sum(COVID19_by_day$NewTests))
-CumTests_Factor <- 10^(floor(log10(CumTests_Sigfig)))
-CumTests_Max <- round_any(sum(COVID19_by_day$NewTests), CumTests_Factor, f=ceiling)
-CumTests_Breaks <- ceiling(CumTests_Factor/2)
-
-plot_CumTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) + 
-  geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
-                 boundary = 1, colour="black", fill= "#68EDC6") +
-  scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
-               limits = c(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date)),
-               breaks = seq(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date), 1)) +
-  scale_y_continuous(limits = c(0, CumTests_Max), 
-                     breaks = seq(0, CumTests_Max, CumTests_Breaks),  expand = c(0, 0)) +
-  ylab("Cumulative frequency") + xlab("Date") +
-  ggtitle("Cumulative tests/people tested") +
-  theme_minimal() +
-  theme(plot.title = element_text(size=13, face="bold"),
-        axis.line = element_line(colour = "black"),
-        axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
-        panel.grid.minor = element_blank())
+# #### TESTS per day ####
+# # Read in new tests per day from summarised data, format date correctly
+# df_NewTests <- data.frame(Date=c(COVID19_by_day$Date), ntimes=c(COVID19_by_day$NewTests))
+# df_NewTests<- as.data.frame(lapply(df_NewTests, rep, df_NewTests$ntimes))
+# 
+# # Plot NEW TESTS per day #
+# NewTests_Sigfig <- signif(max(COVID19_by_day$NewTests))
+# NewTests_Factor <- 10^(floor(log10(NewTests_Sigfig)))
+# NewTests_Max <- round_any(max(COVID19_by_day$NewTests), NewTests_Factor, f=ceiling)
+# NewTests_Breaks <- ceiling(NewTests_Factor/2)
+# 
+# plot_NewTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) + 
+#   geom_histogram(binwidth=1, boundary = 1, colour="black", fill= "#90BEDE") +
+#   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+#                limits = c(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date)),
+#                breaks = seq(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date), 1)) +
+#   scale_y_continuous(limits = c(0, NewTests_Max), 
+#                      breaks = seq(0, NewTests_Max, NewTests_Breaks), expand = c(0, 0)) +
+#   ylab("Frequency") + xlab("Date") +
+#   ggtitle("New tests/people tested") +
+#   theme_minimal() +
+#   theme(plot.title = element_text(size=13, face="bold"),
+#         axis.line = element_line(colour = "black"),
+#         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+#         panel.grid.minor = element_blank())
+# 
+# # Plot CUMULATIVE TESTS per day
+# CumTests_Sigfig <- signif(sum(COVID19_by_day$NewTests))
+# CumTests_Factor <- 10^(floor(log10(CumTests_Sigfig)))
+# CumTests_Max <- round_any(sum(COVID19_by_day$NewTests), CumTests_Factor, f=ceiling)
+# CumTests_Breaks <- ceiling(CumTests_Factor/2)
+# 
+# plot_CumTests <- ggplot(data=df_NewTests, aes(x=df_NewTests$Date)) + 
+#   geom_histogram(aes(y = cumsum(..count..)), binwidth=1, 
+#                  boundary = 1, colour="black", fill= "#68EDC6") +
+#   scale_x_date(labels = date_format("%d/%m/%y"), expand = c(0, 0), 
+#                limits = c(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date)),
+#                breaks = seq(min(COVID19_by_day$Date)-1, max(COVID19_by_day$Date), 1)) +
+#   scale_y_continuous(limits = c(0, CumTests_Max), 
+#                      breaks = seq(0, CumTests_Max, CumTests_Breaks),  expand = c(0, 0)) +
+#   ylab("Cumulative frequency") + xlab("Date") +
+#   ggtitle("Cumulative tests/people tested") +
+#   theme_minimal() +
+#   theme(plot.title = element_text(size=13, face="bold"),
+#         axis.line = element_line(colour = "black"),
+#         axis.text.x = element_text(angle = 70, hjust = 1, vjust = 1), 
+#         panel.grid.minor = element_blank())
 
 
 #### DEATHS per day ####
@@ -173,11 +173,11 @@ plot_CumDeaths <- ggplot(data=df_NewDeaths, aes(x=df_NewDeaths$Date)) +
 # Cases, tests and deaths summary figure
 Sum_figure <- ggarrange(plot_NewCases + font("x.text", size = 5), 
                     plot_CumCases + font("x.text", size = 5), 
-                    plot_NewTests + font("x.text", size = 5), 
-                    plot_CumTests + font("x.text", size = 5), 
+                    #plot_NewTests + font("x.text", size = 5), 
+                    #plot_CumTests + font("x.text", size = 5), 
                     plot_NewDeaths + font("x.text", size = 5), 
                     plot_CumDeaths + font("x.text", size = 5),
-          ncol = 2, nrow = 3, align = "hv")
+          ncol = 2, nrow = 2, align = "hv")
 
 Sum_figure <- annotate_figure(Sum_figure,
                 top = text_grob("UK data for COVID-19", face = "bold", size = 14))
@@ -193,12 +193,12 @@ Cases_figure <- ggarrange(plot_NewCases + font("x.text", size = 8),
 ggsave("Cases_plot.png", height = 8.27, width = 11.69)
 
 
-# Tests per day figure
-Tests_figure <- ggarrange(plot_NewTests + font("x.text", size = 8), 
-                          plot_CumTests + font("x.text", size = 8), 
-                          ncol = 1, nrow = 2, align = "hv")
-
-ggsave("Tests_plot.png", height = 8.27, width = 11.69)
+# # Tests per day figure
+# Tests_figure <- ggarrange(plot_NewTests + font("x.text", size = 8), 
+#                           plot_CumTests + font("x.text", size = 8), 
+#                           ncol = 1, nrow = 2, align = "hv")
+# 
+# ggsave("Tests_plot.png", height = 8.27, width = 11.69)
 
 
 # Deaths per day figure
