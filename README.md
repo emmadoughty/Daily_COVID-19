@@ -2,13 +2,11 @@
 
 ![Daily and cumulative cases, tests and deaths, 10.03.2020](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Summary_plot.png)
 
-![% Positive tests](https://github.com/emmadoughty/Daily_COVID-19/blob/master/PosTests_plot.png)
-
 ## COVID-19 data
 
-Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error**. Please do raise issues via GitHub if you notice any discrepancies with the data and I will investigate them asap.
+Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error and change**. Please do raise issues via GitHub if you notice any discrepancies with the data or any queries and I will investigate them asap.
 
-For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type.
+For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type. For researchers, I am happy to compile data in the formats needed for your project or to pull together data from additional sources, e.g. additional data from the [Public Health Wales dashboard](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary) (I have started taking screenshots to capture as much of this as possible on a daily basis and can enter the data into a csv if useful to you) or reformatting data on [daily deaths per NHS trust/NHS England region](https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/).
 
 ## Available files and COVID-19 data sources
 
@@ -17,6 +15,7 @@ For most data, two formats are avialable: The "wide" format that I originally cr
 
 [COVID19_by_day.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_day.csv) contains daily numbers of cases, tests, deaths and recoveries
 - The Department of Health and Social Care [twitter](https://twitter.com/DHSCgovuk) is first to update with numbers of new confirmed cases, deaths and tests and these figures are initially used for daily updates.
+- NB As of 30/03/2020, tests being reported and included in the COVID19_by_day.csv file changed from being "tests concluded" to "people tested". See [reportin notes](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Reporting_notes.txt) for further information.
 - Collated data on daily confirmed cases (and deaths added on 27/03/2020 but backdated to 10/03/2020 with some ommissions) are updated by [PHE](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Sometimes, differences in numbers have been observed relative to those provided on twitter (presumably differences are due to improvements in data cleaning) so once PHE data are available I update this collated data with these values.
 - Numbers of recoveries are taken from the PHE [dashboard](https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx) when available. I understand a new process for collecting numbers of recovered patients is in development.
 
