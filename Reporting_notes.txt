@@ -42,4 +42,9 @@
 07/04/2020 - Case and death counts in each country listed as NA when numbers reported have not been updated since the previous day: From PHE dashboard: "DHSC figures for Scotland, Wales and NI not yet received: England case count is as of 09:00 07/04/2020, Scotland case count is as of 09:00 06/04/2020, Wales case count is as of 07:00 06/04/2020, Northern Ireland case count is as of 09:41 06/04/2020, UK death count is as of 17:00 06/04/2020. England, Wales and Northern Ireland death counts are as of 17:00 05/04/2020 and Scotland death count is as of 09:00 05/04/2020."
 07/04/2020 - Scotland reports 4229 positive tests and 296 deaths
 07/04/2020 - Wales reports 3790 total cases and 212 deaths
-07/04/2020 - NI reports 1255 total cases and 73 deaths
+07/04/2020 - NI reports 1255 total cases and 73 deaths (https://www.publichealth.hscni.net/sites/default/files/2020-04/COVID-19%20Surveillance%20Bulletin%2007.04.20.pdf)
+08/04/2020 - DHSC tweet (https://twitter.com/DHSCgovuk/status/1247914958568009728) states 5492 new cases but deduction of total cases on 07/04 from total cases on 08/04 gives 5491 and this was stated in the historic dashboard data xlxs released later the same day
+08/04/2020 - Scotland reports 366 deaths; PHE dashboard/UK gov shows 296 deaths for Scotland
+08/04/2020 - Scotland provides new webpage showing much more detail for cases in Scotland (https://www.gov.scot/publications/coronavirus-covid-19-tests-and-cases-in-scotland/) Here, cases in Shetland and Eileanan Siar (Western Isles), are shown with a * to have <5 cases. In my collated data this is "NA" to maintain machine-readable format. 
+08/04/2020 - PHE dashboard/UK gov shows 70 deaths for NI; NI reports 78 deaths (https://www.publichealth.hscni.net/sites/default/files/2020-04/COVID-19%20Surveillance%20Bulletin%2008.04.20.pdf)
+08/04/2020 - Wales: "For operational reasons, we are moving the point at which we count new cases of Novel Coronavirus (Covid-19) back from 7pm to 1pm.  Case numbers on Thursday will therefore be lower than usual, and will return to normal on Friday."
