@@ -4,6 +4,8 @@
 
 ## COVID-19 data
 
+**Many sources of official UK data only the present day's data and do not offer historical/time-series figures. Here, I am collating the UK data avilable on a daily basis as a resource for analysis and visualisation. If you are finding this helpful, I'd really appreciate appropriate creditation in your work as this is a largely manual and time-consuming process. Feel free to drop me an email at e.doughty@bham.ac.uk.**
+
 Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error and change**. Please do raise issues via GitHub if you notice any discrepancies with the data or any queries and I will investigate them asap.
 
 For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type. For researchers, I am happy to compile data in the formats needed for your project or to pull together data from additional sources, e.g. additional data from the [Public Health Wales dashboard](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary) (I have started taking screenshots to capture as much of this as possible on a daily basis and can enter the data into a csv if useful to you) or reformatting data on [daily deaths per NHS trust/NHS England region](https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/).
