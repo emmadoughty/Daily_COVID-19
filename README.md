@@ -4,11 +4,18 @@
 
 ## COVID-19 data
 
-**Many sources of official UK data only the present day's data and do not offer historical/time-series figures. Here, I am collating the UK data avilable on a daily basis as a resource for analysis and visualisation. If you are finding this helpful, I'd really appreciate appropriate creditation in your work as this is a largely manual and time-consuming process. Feel free to drop me an email at e.doughty@bham.ac.uk.**
+**Many sources of official UK data only the present day's data and do not offer historical/time-series figures. Here, I am collating the UK data that is not availble from other UK sources as a resource for analysis and visualisation. If you are finding this helpful, I'd really appreciate appropriate creditation in your work as this is a largely manual and time-consuming process. Feel free to drop me an email at e.doughty@bham.ac.uk.**
+
+Availability of time-series data from official sources has been improving and as it does, I intend to stop collating such data in this repo. The following are now avialable directly from these official UK sources:
+- [Daily COVID-19 cases by date of sampling in England](https://coronavirus.data.gov.uk/#) (for England, and the regions and upper tier local authorities of England)
+- [Daily COVID-19 deaths in hospitals in England by reporting date](https://coronavirus.data.gov.uk/#) (for the UK, and each country of the UK)
+- [Daily COVID-19 deaths in hospitals in England by by date of death](https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/)(total, and broken down for NHS trusts, regions and ages group)
+- [Weekly COVID-19 deaths occuring in countries of the UK (mostly England and Wales)](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales) (in hospitals and in the community, by age group and gender, by location)
+Where I had been collating data in this repo that covered these sources, this has now 
+
+At present, collated data for Wales, Scotland and Northern Ireland is not availble via official sources and I am collating it here, alongside data for testing. For researchers, I am happy to compile data in the formats needed for your project or to pull together data from additional sources, e.g. additional data Wales, Scotland and Northern Ireland (I have started taking screenshots to capture as much of this as possible on a daily basis, even if I have not yet collated it).
 
 Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error and change**. Please do raise issues via GitHub if you notice any discrepancies with the data or any queries and I will investigate them asap.
-
-For most data, two formats are avialable: The "wide" format that I originally created and a "long" format that includes GSS_CD geographical codes and indication of data type. For researchers, I am happy to compile data in the formats needed for your project or to pull together data from additional sources, e.g. additional data from the [Public Health Wales dashboard](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary) (I have started taking screenshots to capture as much of this as possible on a daily basis and can enter the data into a csv if useful to you) or reformatting data on [daily deaths per NHS trust/NHS England region](https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/).
 
 ## Available files and COVID-19 data sources
 
@@ -22,50 +29,16 @@ For most data, two formats are avialable: The "wide" format that I originally cr
 - Numbers of recoveries are taken from the PHE [dashboard](https://fingertips.phe.org.uk/documents/Historic%20COVID-19%20Dashboard%20Data.xlsx) when available. I understand a new process for collecting numbers of recovered patients is in development.
 
 ### Cases by area
-
-
-The total number of cases announced per day for each country, Upper Tier Local Authority (England), NHS region (England) and Scottish health board: [Wide format (COVID19_cum.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_cum.csv), [Long format (cases_by_utla.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_utla.csv)
-- Cases in each country collated from [PHE daily indicator updates](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67)
-- Cases per UTLA obtained daily from [PHE](https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6) 
-- Cases in each NHS region collated from daily [PHE NHS regions updates](https://www.arcgis.com/home/item.html?id=ca796627a2294c51926865748c4a56e8) and previously from the "information to the public" page on the UK government [website](https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public)
+Cases in Wales, Scotland and Northern Ireland: [Wide format (COVID19_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_area.csv), [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv)
 - Cases in Scottish health boards initially collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/) before a second webpage was provided for [tests and cases in Scotland](https://www.gov.scot/publications/coronavirus-covid-19-tests-and-cases-in-scotland/)
-- These files are subject to the minimum possible changes to structure and do not contain data for cases in unconfirmed locations.
-
-
-**NB DATA QUALITY ISSUES: Early in the epidemic, total number of cases per geographic area sometimes decreased from one day to the next, particularly early in the epidemic, which makes little sense.**
-
-### Expanded cases by area
-As cases per area described above but additionally with local-breakdown of data for Wales and Northern Ireland, plus earlier data when available: [Wide format (COVID19_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_by_area.csv), [Long format (cases_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/cases_by_area.csv)
-- Data was initially collated from the [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/) which fiest provided data from local authorities then moved to reporting for health boards only. Since the [PHW dashboard](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary) became available, data is now provided for both health boards and local authorities.
+- Data was initially collated from the [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/) which first provided data from local authorities then moved to reporting for health boards only. Since the [PHW dashboard](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary) became available, data is now provided for both health boards and local authorities.
 - Cases in Northern Irish Local Government Districts are collated from [Northern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports) and previously from [NI situation updates](https://www.publichealth.hscni.net/news/covid-19-coronavirus)
 - Earlier data collated from ad hoc official sources only, e.g. statements and reports from government and public health agencies only
 - These files are subject to change to provide the maximum information possible. They include cases with unconfirmed locations (English NHSRs and UTLAs; Welsh health boards (also inc residents outside Wales); NI LGDs)
 
-
-### Deaths by area
-The total number of deaths reported daily from each country of the UK: [Wide format (COVID19_deaths.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/COVID19_deaths.csv), [Long format (deaths_by_area.csv)](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/deaths_by_area.csv)
-From 27/03/2020, deaths per country are reported daily and collated from [daily indicators](https://www.arcgis.com/home/item.html?id=bc8ee90225644ef7a6f4dd1b13ea1d67). Prior to 27/03/2020:
-- Deaths in Scotland collated from [Scottish government daily updates](https://www.gov.scot/coronavirus-covid-19/)
-- Deaths in Wales collated from [Welsh government daily updates](https://covid19-phwstatement.nhs.wales/)
-- Deaths in Northern Ireland collated from Northern Irish government daily updates [here](https://www.publichealth.hscni.net/news/covid-19-coronavirus) and [here](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
-- Deaths in UK collated from [Department of Health and Social Care twitter](https://twitter.com/DHSCgovuk)
-- Deaths in England were not published but calculated by subtraction of total cases in Scotland, Wales and Northern Ireland from all UK cases
-
-NB [DHSC twitter](https://twitter.com/DHSCgovuk/status/1243237211119800323) announced on that from 25/03/2020 their reporting time period for deaths would change. From 25/03/2020, the latest figures counted from the previous day (for a period from 5pm-5pm) are being published at 2pm the following day. The figures for 25/03/2020 did not cover a full 24 hour period, comprising the period from 9am 24 March to 5pm on 24 March. Figures issued on 26/03/2020 are recorded as of 5pm 24 March to 5pm 25 March.
-
-NB From 29/03/2020, I have noticed that the number of deaths reported by the governments for Scotland and Northern Ireland is not reported in the UK government daily indicators until the following day (i.e. there seems to be a one day lag).
-
-NB From 02/04/2020, Scotland changed the way that deaths are [reported](https://www.gov.scot/news/new-process-for-reporting-covid-19-deaths/), increasing the number of deaths where the link with COVID-19 could be reported. "There is no change in the definition used to report deaths of COVID-19, which is defined as an individual who has died and has had a laboratory confirmed report of COVID-19 in the 28 days prior to death." Revised data for 31/03 to 02/04 were provided in line with the new definition, detailed [here](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Reporting_notes.txt).
-
-### Case demographics for Northern Ireland
-[NI_cases_demographics.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/NI_cases_demographics.csv) contains the data released so far from NI on about the age and sex of COVID-19 patients from [Nothern Ireland's Public Health Authority Surveillance reports](https://www.publichealth.hscni.net/publications/covid-19-surveillance-reports)
-
-### Death demographics for England and Wales
-The Office for National Statistics publish [data](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/latest) on the deaths across England and Wales each week. As of 31 March, these data include figures for the number of COVID-19 associated deaths in each age group for males and females, and in geographic regions. Data re-formatted for each of use in [Eng_Wales_Weekly_Deaths_Demographics.csv](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Data/Eng_Wales_Weekly_Deaths_Demographics.csv) with important explanations of where this data comes from [here](https://blog.ons.gov.uk/2020/03/31/counting-deaths-involving-the-coronavirus-covid-19/).
-
 ## Notes on COVID-19 reporting
-- Reporting methods from the public health authorities have been variable between them and throughout the time of the epidemic. Discrepancies often seem to arise due to variations in time of data extraction/reporting on a given day. I have started compiling [notes](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Reporting_notes.txt) on reporting variations/changes that I have noticed.
-- PHE offer an ["about the data" pdf](https://fingertips.phe.org.uk/documents/PHE%20COVID-19%20Dashboard%20Metadata.pdf) that describes how their data are collected. 
+- Reporting methods from the public health authorities have been variable between them and throughout the time of the epidemic. Discrepancies often seem to arise due to variations in time of data extraction/reporting on a given day. I have started compiling [notes](https://github.com/emmadoughty/Daily_COVID-19/blob/master/Reporting_notes.txt) on reporting variations/changes that I have noticed. Some of these notes are more relevan to older data formats that I am no longer maintaining in this repo
+- PHE offer an ["about the data" page](https://coronavirus.data.gov.uk/about) that describes how their data are collected. 
 
 ## Available metadata files
 
