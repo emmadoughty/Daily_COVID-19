@@ -6,14 +6,13 @@
 
 **Many sources of official UK data only the present day's data and do not offer historical/time-series figures. Here, I am collating the UK data that is not availble from other UK sources as a resource for analysis and visualisation. If you are finding this helpful, I'd really appreciate appropriate creditation in your work as this is a largely manual and time-consuming process. Feel free to drop me an email at e.doughty@bham.ac.uk.**
 
-Availability of time-series data from official sources has been improving and as it does, I intend to stop collating such data in this repo. The following are now avialable directly from these official UK sources:
+Availability of time-series data from official sources has been improving and as it does, I intend to stop collating such data in this repo. The following are now available directly from these official UK sources in machine-readable format:
 - [Daily COVID-19 cases by date of sampling in England](https://coronavirus.data.gov.uk/#) (for England, and the regions and upper tier local authorities of England)
 - [Daily COVID-19 deaths in hospitals in England by reporting date](https://coronavirus.data.gov.uk/#) (for the UK, and each country of the UK)
 - [Daily COVID-19 deaths in hospitals in England by by date of death](https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-daily-deaths/)(total, and broken down for NHS trusts, regions and ages group)
 - [Weekly COVID-19 deaths occuring in countries of the UK (mostly England and Wales)](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales) (in hospitals and in the community, by age group and gender, by location)
-Where I had been collating data in this repo that covered these sources, this has now 
 
-At present, collated data for Wales, Scotland and Northern Ireland is not availble via official sources and I am collating it here, alongside data for testing. For researchers, I am happy to compile data in the formats needed for your project or to pull together data from additional sources, e.g. additional data Wales, Scotland and Northern Ireland (I have started taking screenshots to capture as much of this as possible on a daily basis, even if I have not yet collated it).
+At present, collated data for Wales, Scotland and Northern Ireland is not availble via official sources and I am collating it here, alongside data for testing (more deatils on this to be privded soon). For researchers, I am happy to compile data in the formats needed for your project or to pull together data from additional sources, e.g. additional data for Wales, Scotland and Northern Ireland (I have started capturing as much of this data as possible on a daily basis so I have it available, even if I have not yet collated it).
 
 Whilst I am trying hard to ensure accuracy, collation of this data is largely a manual process, owing to the inconsistency of reporting coming from the governments/public health agencies, and therefore **subject to error and change**. Please do raise issues via GitHub if you notice any discrepancies with the data or any queries and I will investigate them asap.
 
