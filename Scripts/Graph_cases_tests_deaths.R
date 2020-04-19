@@ -41,7 +41,7 @@ plot_NewCases <- ggplot(data=df_NewCases, aes(x=df_NewCases$Date)) +
                      breaks = seq(0, NewCases_Max, NewCases_Breaks),
                      expand = c(0, 0)) +
   ylab("Frequency") + xlab("Date")+
-  ggtitle("New UK cases per day") +
+  ggtitle("New UK reported cases") +
   theme_minimal() +
   theme(plot.title = element_text(size=13, face="bold"),
         axis.line = element_line(colour = "black"),
