@@ -3212,3 +3212,255 @@
 15/04/2020,Newry Mourne and Down,27,LGD,Northern Ireland,N09000010
 15/04/2020,Ards and North Down,154,LGD,Northern Ireland,N09000011
 15/04/2020,Unconfirmed,34,LGD,Northern Ireland,NA
+16/04/2020,Scotland,7102,Country,Scotland,S92
+16/04/2020,Wales,6401,Country,Wales,W92
+16/04/2020,Northern Ireland,2201,Country,Northern Ireland,N92
+16/04/2020,Ayrshire and Arran,503,Health board,Scotland,S08000015
+16/04/2020,Borders,220,Health board,Scotland,S08000016
+16/04/2020,Dumfries and Gallow,207,Health board,Scotland,S08000017
+16/04/2020,Fife,446,Health board,Scotland,S08000029
+16/04/2020,Forth Valley,400,Health board,Scotland,S08000019
+16/04/2020,Grampian,389,Health board,Scotland,S08000020
+16/04/2020,Greater Glasgow and Clyde,1742,Health board,Scotland,S08000031
+16/04/2020,Highland,184,Health board,Scotland,S08000022
+16/04/2020,Lanarkshire,911,Health board,Scotland,S08000032
+16/04/2020,Lothian,1107,Health board,Scotland,S08000024
+16/04/2020,Orkney,5,Health board,Scotland,S08000025
+16/04/2020,Shetland,45,Health board,Scotland,S08000026
+16/04/2020,Tayside,937,Health board,Scotland,S08000030
+16/04/2020,Eileanan Siar (Western Isles),6,Health board,Scotland,S08000028
+16/04/2020,Golden Jubilee National Hospital,NA,NA,Scotland,NA
+16/04/2020,Swansea Bay,935,Health board,Wales,W11000031
+16/04/2020,Aneurin Bevan,1609,Health board,Wales,W11000028
+16/04/2020,Betsi Cadwaladr,594,Health board,Wales,W11000023
+16/04/2020,Cardiff and Vale,1544,Health board,Wales,W11000029
+16/04/2020,Cwm Taf,1046,Health board,Wales,W11000030
+16/04/2020,Hywel Dda,456,Health board,Wales,W11000025
+16/04/2020,Powys,103,Health board,Wales,W11000024
+16/04/2020,Resident outside Wales,51,Health board,Wales,NA
+16/04/2020,Unconfirmed,65,Health board,Wales,NA
+16/04/2020,Blaenau Gwent,193,UTLA,Wales,W06000019
+16/04/2020,Bridgend,250,UTLA,Wales,W06000013
+16/04/2020,Caerphilly,426,UTLA,Wales,W06000018
+16/04/2020,Carmarthenshire,295,UTLA,Wales,W06000010
+16/04/2020,Ceredigion,31,UTLA,Wales,W06000008
+16/04/2020,City and County of Swansea,640,UTLA,Wales,W06000011
+16/04/2020,City of Cardiff,1184,UTLA,Wales,W06000015
+16/04/2020,Conwy,80,UTLA,Wales,W06000003
+16/04/2020,Denbighshire,133,UTLA,Wales,W06000004
+16/04/2020,Flintshire,133,UTLA,Wales,W06000005
+16/04/2020,Gwynedd,103,UTLA,Wales,W06000002
+16/04/2020,Isle of Anglesey,36,UTLA,Wales,W06000001
+16/04/2020,Merthyr Tydfil,136,UTLA,Wales,W06000024
+16/04/2020,Monmouthshire,191,UTLA,Wales,W06000021
+16/04/2020,Neath Port Talbot,295,UTLA,Wales,W06000012
+16/04/2020,Newport,565,UTLA,Wales,W06000022
+16/04/2020,Pembrokeshire,130,UTLA,Wales,W06000009
+16/04/2020,Powys,103,UTLA,Wales,W06000023
+16/04/2020,Rhondda Cynon Taf,660,UTLA,Wales,W06000016
+16/04/2020,Torfaen County,234,UTLA,Wales,W06000020
+16/04/2020,Vale of Glamorgan,360,UTLA,Wales,W06000014
+16/04/2020,Wrexham,109,UTLA,Wales,W06000006
+16/04/2020,Resident outside Wales,51,UTLA,Wales,NA
+16/04/2020,Unconfirmed,65,UTLA,Wales,NA
+16/04/2020,Antrim and Newtownabbey,156,LGD,Northern Ireland,N09000001
+16/04/2020,Armagh City Banbridge and Craigavon,246,LGD,Northern Ireland,N09000002
+16/04/2020,Belfast,689,LGD,Northern Ireland,N09000003
+16/04/2020,Causeway Coast and Glens,103,LGD,Northern Ireland,N09000004
+16/04/2020,Derry City and Strabane,144,LGD,Northern Ireland,N09000005
+16/04/2020,Fermanagh and Omagh,61,LGD,Northern Ireland,N09000006
+16/04/2020,Lisburn and Castlereagh,232,LGD,Northern Ireland,N09000007
+16/04/2020,Mid and East Antrim,144,LGD,Northern Ireland,N09000008
+16/04/2020,Mid Ulster,111,LGD,Northern Ireland,N09000009
+16/04/2020,Newry Mourne and Down,132,LGD,Northern Ireland,N09000010
+16/04/2020,Ards and North Down,157,LGD,Northern Ireland,N09000011
+16/04/2020,Unconfirmed,26,LGD,Northern Ireland,NA
+17/04/2020,Scotland,7409,Country,Scotland,S92
+17/04/2020,Wales,6645,Country,Wales,W92
+17/04/2020,Northern Ireland,2338,Country,Northern Ireland,N92
+17/04/2020,Ayrshire and Arran,536,Health board,Scotland,S08000015
+17/04/2020,Borders,229,Health board,Scotland,S08000016
+17/04/2020,Dumfries and Gallow,209,Health board,Scotland,S08000017
+17/04/2020,Fife,488,Health board,Scotland,S08000029
+17/04/2020,Forth Valley,431,Health board,Scotland,S08000019
+17/04/2020,Grampian,394,Health board,Scotland,S08000020
+17/04/2020,Greater Glasgow and Clyde,1794,Health board,Scotland,S08000031
+17/04/2020,Highland,187,Health board,Scotland,S08000022
+17/04/2020,Lanarkshire,934,Health board,Scotland,S08000032
+17/04/2020,Lothian,1172,Health board,Scotland,S08000024
+17/04/2020,Orkney,5,Health board,Scotland,S08000025
+17/04/2020,Shetland,45,Health board,Scotland,S08000026
+17/04/2020,Tayside,979,Health board,Scotland,S08000030
+17/04/2020,Eileanan Siar (Western Isles),6,Health board,Scotland,S08000028
+17/04/2020,Golden Jubilee National Hospital,NA,NA,Scotland,NA
+17/04/2020,Swansea Bay,971,Health board,Wales,W11000031
+17/04/2020,Aneurin Bevan,1639,Health board,Wales,W11000028
+17/04/2020,Betsi Cadwaladr,634,Health board,Wales,W11000023
+17/04/2020,Cardiff and Vale,1609,Health board,Wales,W11000029
+17/04/2020,Cwm Taf,1096,Health board,Wales,W11000030
+17/04/2020,Hywel Dda,475,Health board,Wales,W11000025
+17/04/2020,Powys,109,Health board,Wales,W11000024
+17/04/2020,Resident outside Wales,56,Health board,Wales,NA
+17/04/2020,Unconfirmed,56,Health board,Wales,NA
+17/04/2020,Blaenau Gwent,196,UTLA,Wales,W06000019
+17/04/2020,Bridgend,269,UTLA,Wales,W06000013
+17/04/2020,Caerphilly,434,UTLA,Wales,W06000018
+17/04/2020,Carmarthenshire,310,UTLA,Wales,W06000010
+17/04/2020,Ceredigion,31,UTLA,Wales,W06000008
+17/04/2020,City and County of Swansea,665,UTLA,Wales,W06000011
+17/04/2020,City of Cardiff,1231,UTLA,Wales,W06000015
+17/04/2020,Conwy,84,UTLA,Wales,W06000003
+17/04/2020,Denbighshire,136,UTLA,Wales,W06000004
+17/04/2020,Flintshire,140,UTLA,Wales,W06000005
+17/04/2020,Gwynedd,112,UTLA,Wales,W06000002
+17/04/2020,Isle of Anglesey,39,UTLA,Wales,W06000001
+17/04/2020,Merthyr Tydfil,141,UTLA,Wales,W06000024
+17/04/2020,Monmouthshire,195,UTLA,Wales,W06000021
+17/04/2020,Neath Port Talbot,306,UTLA,Wales,W06000012
+17/04/2020,Newport,576,UTLA,Wales,W06000022
+17/04/2020,Pembrokeshire,134,UTLA,Wales,W06000009
+17/04/2020,Powys,109,UTLA,Wales,W06000023
+17/04/2020,Rhondda Cynon Taf,686,UTLA,Wales,W06000016
+17/04/2020,Torfaen County,238,UTLA,Wales,W06000020
+17/04/2020,Vale of Glamorgan,378,UTLA,Wales,W06000014
+17/04/2020,Wrexham,123,UTLA,Wales,W06000006
+17/04/2020,Resident outside Wales,56,UTLA,Wales,NA
+17/04/2020,Unconfirmed,56,UTLA,Wales,NA
+17/04/2020,Antrim and Newtownabbey,14,LGD,Northern Ireland,N09000001
+17/04/2020,Armagh City Banbridge and Craigavon,269,LGD,Northern Ireland,N09000002
+17/04/2020,Belfast,719,LGD,Northern Ireland,N09000003
+17/04/2020,Causeway Coast and Glens,116,LGD,Northern Ireland,N09000004
+17/04/2020,Derry City and Strabane,146,LGD,Northern Ireland,N09000005
+17/04/2020,Fermanagh and Omagh,61,LGD,Northern Ireland,N09000006
+17/04/2020,Lisburn and Castlereagh,241,LGD,Northern Ireland,N09000007
+17/04/2020,Mid and East Antrim,160,LGD,Northern Ireland,N09000008
+17/04/2020,Mid Ulster,119,LGD,Northern Ireland,N09000009
+17/04/2020,Newry Mourne and Down,140,LGD,Northern Ireland,N09000010
+17/04/2020,Ards and North Down,161,LGD,Northern Ireland,N09000011
+17/04/2020,Unconfirmed,32,LGD,Northern Ireland,NA
+18/04/2020,Scotland,7820,Country,Scotland,S92
+18/04/2020,Wales,6936,Country,Wales,W92
+18/04/2020,Northern Ireland,2486,Country,Northern Ireland,N92
+18/04/2020,Ayrshire and Arran,560,Health board,Scotland,S08000015
+18/04/2020,Borders,231,Health board,Scotland,S08000016
+18/04/2020,Dumfries and Gallow,222,Health board,Scotland,S08000017
+18/04/2020,Fife,514,Health board,Scotland,S08000029
+18/04/2020,Forth Valley,451,Health board,Scotland,S08000019
+18/04/2020,Grampian,432,Health board,Scotland,S08000020
+18/04/2020,Greater Glasgow and Clyde,1905,Health board,Scotland,S08000031
+18/04/2020,Highland,193,Health board,Scotland,S08000022
+18/04/2020,Lanarkshire,995,Health board,Scotland,S08000032
+18/04/2020,Lothian,1239,Health board,Scotland,S08000024
+18/04/2020,Orkney,5,Health board,Scotland,S08000025
+18/04/2020,Shetland,45,Health board,Scotland,S08000026
+18/04/2020,Tayside,1022,Health board,Scotland,S08000030
+18/04/2020,Eileanan Siar (Western Isles),6,Health board,Scotland,S08000028
+18/04/2020,Golden Jubilee National Hospital,NA,NA,Scotland,NA
+18/04/2020,Swansea Bay,1022,Health board,Wales,W11000031
+18/04/2020,Aneurin Bevan,1688,Health board,Wales,W11000028
+18/04/2020,Betsi Cadwaladr,679,Health board,Wales,W11000023
+18/04/2020,Cardiff and Vale,1671,Health board,Wales,W11000029
+18/04/2020,Cwm Taf,1146,Health board,Wales,W11000030
+18/04/2020,Hywel Dda,492,Health board,Wales,W11000025
+18/04/2020,Powys,118,Health board,Wales,W11000024
+18/04/2020,Resident outside Wales,59,Health board,Wales,NA
+18/04/2020,Unconfirmed,61,Health board,Wales,NA
+18/04/2020,Blaenau Gwent,207,UTLA,Wales,W06000019
+18/04/2020,Bridgend,278,UTLA,Wales,W06000013
+18/04/2020,Caerphilly,446,UTLA,Wales,W06000018
+18/04/2020,Carmarthenshire,320,UTLA,Wales,W06000010
+18/04/2020,Ceredigion,31,UTLA,Wales,W06000008
+18/04/2020,City and County of Swansea,698,UTLA,Wales,W06000011
+18/04/2020,City of Cardiff,1278,UTLA,Wales,W06000015
+18/04/2020,Conwy,92,UTLA,Wales,W06000003
+18/04/2020,Denbighshire,153,UTLA,Wales,W06000004
+18/04/2020,Flintshire,147,UTLA,Wales,W06000005
+18/04/2020,Gwynedd,119,UTLA,Wales,W06000002
+18/04/2020,Isle of Anglesey,39,UTLA,Wales,W06000001
+18/04/2020,Merthyr Tydfil,159,UTLA,Wales,W06000024
+18/04/2020,Monmouthshire,200,UTLA,Wales,W06000021
+18/04/2020,Neath Port Talbot,324,UTLA,Wales,W06000012
+18/04/2020,Newport,583,UTLA,Wales,W06000022
+18/04/2020,Pembrokeshire,141,UTLA,Wales,W06000009
+18/04/2020,Powys,118,UTLA,Wales,W06000023
+18/04/2020,Rhondda Cynon Taf,709,UTLA,Wales,W06000016
+18/04/2020,Torfaen County,252,UTLA,Wales,W06000020
+18/04/2020,Vale of Glamorgan,393,UTLA,Wales,W06000014
+18/04/2020,Wrexham,129,UTLA,Wales,W06000006
+18/04/2020,Resident outside Wales,59,UTLA,Wales,NA
+18/04/2020,Unconfirmed,61,UTLA,Wales,NA
+18/04/2020,Antrim and Newtownabbey,NA,LGD,Northern Ireland,N09000001
+18/04/2020,Armagh City Banbridge and Craigavon,NA,LGD,Northern Ireland,N09000002
+18/04/2020,Belfast,NA,LGD,Northern Ireland,N09000003
+18/04/2020,Causeway Coast and Glens,NA,LGD,Northern Ireland,N09000004
+18/04/2020,Derry City and Strabane,NA,LGD,Northern Ireland,N09000005
+18/04/2020,Fermanagh and Omagh,NA,LGD,Northern Ireland,N09000006
+18/04/2020,Lisburn and Castlereagh,NA,LGD,Northern Ireland,N09000007
+18/04/2020,Mid and East Antrim,NA,LGD,Northern Ireland,N09000008
+18/04/2020,Mid Ulster,NA,LGD,Northern Ireland,N09000009
+18/04/2020,Newry Mourne and Down,NA,LGD,Northern Ireland,N09000010
+18/04/2020,Ards and North Down,NA,LGD,Northern Ireland,N09000011
+18/04/2020,Unconfirmed,NA,LGD,Northern Ireland,NA
+19/04/2020,Scotland,8187,Country,Scotland,S92
+19/04/2020,Wales,7270,Country,Wales,W92
+19/04/2020,Northern Ireland,2645,Country,Northern Ireland,N92
+19/04/2020,Ayrshire and Arran,586,Health board,Scotland,S08000015
+19/04/2020,Borders,237,Health board,Scotland,S08000016
+19/04/2020,Dumfries and Gallow,229,Health board,Scotland,S08000017
+19/04/2020,Fife,532,Health board,Scotland,S08000029
+19/04/2020,Forth Valley,509,Health board,Scotland,S08000019
+19/04/2020,Grampian,464,Health board,Scotland,S08000020
+19/04/2020,Greater Glasgow and Clyde,1949,Health board,Scotland,S08000031
+19/04/2020,Highland,197,Health board,Scotland,S08000022
+19/04/2020,Lanarkshire,1022,Health board,Scotland,S08000032
+19/04/2020,Lothian,1344,Health board,Scotland,S08000024
+19/04/2020,Orkney,5,Health board,Scotland,S08000025
+19/04/2020,Shetland,51,Health board,Scotland,S08000026
+19/04/2020,Tayside,1056,Health board,Scotland,S08000030
+19/04/2020,Eileanan Siar (Western Isles),6,Health board,Scotland,S08000028
+19/04/2020,Golden Jubilee National Hospital,NA,NA,Scotland,NA
+19/04/2020,Swansea Bay,1081,Health board,Wales,W11000031
+19/04/2020,Aneurin Bevan,1733,Health board,Wales,W11000028
+19/04/2020,Betsi Cadwaladr,741,Health board,Wales,W11000023
+19/04/2020,Cardiff and Vale,1727,Health board,Wales,W11000029
+19/04/2020,Cwm Taf,1235,Health board,Wales,W11000030
+19/04/2020,Hywel Dda,504,Health board,Wales,W11000025
+19/04/2020,Powys,121,Health board,Wales,W11000024
+19/04/2020,Resident outside Wales,62,Health board,Wales,NA
+19/04/2020,Unconfirmed,66,Health board,Wales,NA
+19/04/2020,Blaenau Gwent,216,UTLA,Wales,W06000019
+19/04/2020,Bridgend,295,UTLA,Wales,W06000013
+19/04/2020,Caerphilly,463,UTLA,Wales,W06000018
+19/04/2020,Carmarthenshire,325,UTLA,Wales,W06000010
+19/04/2020,Ceredigion,33,UTLA,Wales,W06000008
+19/04/2020,City and County of Swansea,732,UTLA,Wales,W06000011
+19/04/2020,City of Cardiff,1322,UTLA,Wales,W06000015
+19/04/2020,Conwy,105,UTLA,Wales,W06000003
+19/04/2020,Denbighshire,161,UTLA,Wales,W06000004
+19/04/2020,Flintshire,157,UTLA,Wales,W06000005
+19/04/2020,Gwynedd,130,UTLA,Wales,W06000002
+19/04/2020,Isle of Anglesey,45,UTLA,Wales,W06000001
+19/04/2020,Merthyr Tydfil,163,UTLA,Wales,W06000024
+19/04/2020,Monmouthshire,203,UTLA,Wales,W06000021
+19/04/2020,Neath Port Talbot,349,UTLA,Wales,W06000012
+19/04/2020,Newport,592,UTLA,Wales,W06000022
+19/04/2020,Pembrokeshire,146,UTLA,Wales,W06000009
+19/04/2020,Powys,121,UTLA,Wales,W06000023
+19/04/2020,Rhondda Cynon Taf,777,UTLA,Wales,W06000016
+19/04/2020,Torfaen County,259,UTLA,Wales,W06000020
+19/04/2020,Vale of Glamorgan,405,UTLA,Wales,W06000014
+19/04/2020,Wrexham,143,UTLA,Wales,W06000006
+19/04/2020,Resident outside Wales,62,UTLA,Wales,NA
+19/04/2020,Unconfirmed,66,UTLA,Wales,NA
+19/04/2020,Antrim and Newtownabbey,NA,LGD,Northern Ireland,N09000001
+19/04/2020,Armagh City Banbridge and Craigavon,NA,LGD,Northern Ireland,N09000002
+19/04/2020,Belfast,NA,LGD,Northern Ireland,N09000003
+19/04/2020,Causeway Coast and Glens,NA,LGD,Northern Ireland,N09000004
+19/04/2020,Derry City and Strabane,NA,LGD,Northern Ireland,N09000005
+19/04/2020,Fermanagh and Omagh,NA,LGD,Northern Ireland,N09000006
+19/04/2020,Lisburn and Castlereagh,NA,LGD,Northern Ireland,N09000007
+19/04/2020,Mid and East Antrim,NA,LGD,Northern Ireland,N09000008
+19/04/2020,Mid Ulster,NA,LGD,Northern Ireland,N09000009
+19/04/2020,Newry Mourne and Down,NA,LGD,Northern Ireland,N09000010
+19/04/2020,Ards and North Down,NA,LGD,Northern Ireland,N09000011
+19/04/2020,Unconfirmed,NA,LGD,Northern Ireland,NA
